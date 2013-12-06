@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  6 DEC 2013 12:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  6 DEC 2013 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -921,27 +921,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 591--592
 
  []
 
+<images/tree_structure.png, id=130, 718.685pt x 474.77374pt>
+File: images/tree_structure.png Graphic file (type png)
 
-! LaTeX Error: File `tree_structure' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.596 \includegraphics[width=7cm]{tree_structure}
-                                                 
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
+<use images/tree_structure.png>
+Package pdftex.def Info: images/tree_structure.png used on input line 596.
+(pdftex.def)             Requested size: 455.24408pt x 300.74629pt.
+ [28 <./images/tree_structure.png>]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 603--603
 [][][][][][][] 
  []
 
-(./sourceCode/leafNode.cpp) [28]
-<images/mFlags.png, id=133, 621.32124pt x 179.67125pt>
+(./sourceCode/leafNode.cpp)
+<images/mFlags.png, id=134, 621.32124pt x 179.67125pt>
 File: images/mFlags.png Graphic file (type png)
  <use images/mFlags.png>
 Package pdftex.def Info: images/mFlags.png used on input line 610.
@@ -951,12 +943,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 615--616
 
  []
 
-
+[29 <./images/mFlags.png>]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 619--619
 [][][][][][][] 
  []
 
-(./sourceCode/internalNode.cpp [29 <./images/mFlags.png>])
+(./sourceCode/internalNode.cpp)
 Underfull \hbox (badness 10000) in paragraph at lines 621--622
 
  []
@@ -966,11 +958,12 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 625--625
 [][][][][][][] 
  []
 
-(./sourceCode/root.cpp) [30]
+(./sourceCode/root.cpp [30])
 Underfull \hbox (badness 10000) in paragraph at lines 634--635
 
  []
 
+[31]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 638.
 
@@ -983,7 +976,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 640--641
 
  []
 
-[31]
+
 Overfull \hbox (6.0pt too wide) in paragraph at lines 642--642
 [][][][][][][] 
  []
@@ -998,7 +991,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 646--646
 [][][][][][][] 
  []
 
-(./sourceCode/offset.cpp)
+(./sourceCode/offset.cpp) [32]
 Underfull \hbox (badness 10000) in paragraph at lines 650--651
 
  []
@@ -1008,7 +1001,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 652--652
 [][][][][][][] 
  []
 
-(./sourceCode/leafOffset.cpp [32])
+(./sourceCode/leafOffset.cpp)
 Underfull \hbox (badness 10000) in paragraph at lines 654--655
 
  []
@@ -1023,19 +1016,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 658--659
 
  []
 
-
+[33]
 Underfull \hbox (badness 10000) in paragraph at lines 663--664
 
  []
 
-[33]
+
 Underfull \hbox (badness 10000) in paragraph at lines 677--678
 
  []
 
-<images/Octree2.png, id=153, 803.0pt x 460.72125pt>
+[34] <images/Octree2.png, id=157, 803.0pt x 460.72125pt>
 File: images/Octree2.png Graphic file (type png)
- <use images/Octree2.png>
+
+<use images/Octree2.png>
 Package pdftex.def Info: images/Octree2.png used on input line 687.
 (pdftex.def)             Requested size: 284.52756pt x 163.25137pt.
 
@@ -1043,13 +1037,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 694--695
 
  []
 
-[34]
+[35 <./images/Octree2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 702--703
 
  []
 
-[35 <./images/Octree2.png>]
-<images/Bplustree.png, id=161, 623.18977pt x 286.85631pt>
+<images/Bplustree.png, id=162, 623.18977pt x 286.85631pt>
 File: images/Bplustree.png Graphic file (type png)
 
 <use images/Bplustree.png>
@@ -1057,10 +1050,10 @@ Package pdftex.def Info: images/Bplustree.png used on input line 709.
 (pdftex.def)             Requested size: 284.52756pt x 130.96628pt.
  [36 <./images/Bplustree.png>] (./tcc.aux) ) 
 Here is how much of TeX's memory you used:
- 6835 strings out of 493315
- 97140 string characters out of 6137904
+ 6828 strings out of 493315
+ 97213 string characters out of 6137904
  295884 words of memory out of 5000000
- 10064 multiletter control sequences out of 15000+600000
+ 10068 multiletter control sequences out of 15000+600000
  28567 words of font info for 80 fonts, out of 8000000 for 9000
  958 hyphenation exceptions out of 8191
  42i,9n,41p,1477b,1665s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1097,10 +1090,10 @@ ve/2013/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2
 013/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2013/texm
 f-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on tcc.pdf (36 pages, 1727443 bytes).
+Output written on tcc.pdf (36 pages, 1771375 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
+ 266 PDF objects out of 1000 (max. 8388607)
  176 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
