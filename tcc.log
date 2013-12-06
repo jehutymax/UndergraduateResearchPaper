@@ -1,0 +1,1106 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  6 DEC 2013 12:44
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**tcc.tex -recorder
+(./tcc.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/05/16 v3.9f The Babel package
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/05/16 v3.9f Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+Package babel Info: Making " an active character on input line 145.
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen104
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen105
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks15
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks16
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsxtra.sty
+Package: amsxtra 1999/11/15 v1.2c
+LaTeX Info: Redefining \nobreakspace on input line 65.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count101
+))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count102
+\lst@gtempboxa=\box28
+\lst@token=\toks22
+\lst@length=\count103
+\lst@currlwidth=\dimen115
+\lst@column=\count104
+\lst@pos=\count105
+\lst@lostspace=\dimen116
+\lst@width=\dimen117
+\lst@newlines=\count106
+\lst@lineno=\count107
+\lst@maxwidth=\dimen118
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count108
+\lst@skipnumbers=\count109
+\lst@framebox=\box29
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen119
+\captionmargin@=\dimen120
+\captionwidth=\dimen121
+\caption@tempdima=\dimen122
+\caption@indent=\dimen123
+\caption@parindent=\dimen124
+\caption@hangindent=\dimen125
+)
+\c@ContinuedFloat=\count110
+Package caption Info: listings package is loaded.
+)
+\c@subfigure=\count111
+\c@subtable=\count112
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/mh/mathtools.sty
+Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count113
+\calc@Bcount=\count114
+\calc@Adimen=\dimen126
+\calc@Bdimen=\dimen127
+\calc@Askip=\skip46
+\calc@Bskip=\skip47
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count115
+\calc@Cskip=\skip48
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/mh/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count116
+\l_MT_multwidth_dim=\dimen128
+\origjot=\skip49
+\l_MT_shortvdotswithinadjustabove_dim=\dimen129
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen130
+\l_MT_above_intertext_sep=\dimen131
+\l_MT_below_intertext_sep=\dimen132
+\l_MT_above_shortintertext_sep=\dimen133
+\l_MT_below_shortintertext_sep=\dimen134
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+) (./tcc.aux)
+\openout1 = `tcc.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+ (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count117
+\scratchdimen=\dimen135
+\scratchbox=\box30
+\nofMPsegments=\count118
+\nofMParguments=\count119
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen136
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
+\everyMPtoPDFconversion=\toks24
+) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count123
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+Cap\'{\i }tulo 1.
+LaTeX Font Info:    Try loading font information for U+msa on input line 88.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 88.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 88.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+[1
+
+
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+
+Overfull \hbox (0.87091pt too wide) in paragraph at lines 118--119
+\T1/cmr/m/n/12 Trata-se de um ren-de-ri-za-dor re-a-lista (fi-si-ca-mente plau-
+sí-vel), com su-porte a multi-threading
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+[4]
+Cap\'{\i }tulo 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+<images/blender_gui.png, id=29, 1445.4pt x 903.375pt>
+File: images/blender_gui.png Graphic file (type png)
+
+<use images/blender_gui.png>
+Package pdftex.def Info: images/blender_gui.png used on input line 158.
+(pdftex.def)             Requested size: 483.69684pt x 302.30511pt.
+
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 158--159
+ [] 
+ []
+
+[5
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--173
+
+ []
+
+<images/blender_render_option.png, id=33, 322.20375pt x 145.54375pt>
+File: images/blender_render_option.png Graphic file (type png)
+
+<use images/blender_render_option.png>
+Package pdftex.def Info: images/blender_render_option.png used on input line 17
+7.
+(pdftex.def)             Requested size: 227.62204pt x 102.82376pt.
+ [6 <./images/blender_gui.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
+<images/Cycles_nodes.png, id=37, 492.33937pt x 277.035pt>
+File: images/Cycles_nodes.png Graphic file (type png)
+
+<use images/Cycles_nodes.png>
+Package pdftex.def Info: images/Cycles_nodes.png used on input line 195.
+(pdftex.def)             Requested size: 426.79134pt x 240.16037pt.
+ [7 <./images/blender_render_option.png>] [8 <./images/Cycles_nodes.png>]
+<images/tex_mapping.jpg, id=47, 564.1075pt x 479.7925pt>
+File: images/tex_mapping.jpg Graphic file (type jpg)
+
+<use images/tex_mapping.jpg>
+Package pdftex.def Info: images/tex_mapping.jpg used on input line 230.
+(pdftex.def)             Requested size: 312.9803pt x 266.20012pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
+ []
+
+[9]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 242.
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Overfull \hbox (6.0pt too wide) in paragraph at lines 244--244
+[][][][][][][] 
+ []
+
+(./sourceCode/wrap_enum.cpp [10 <./images/tex_mapping.jpg>])
+<images/grid_example.png, id=56, 582.175pt x 286.06876pt>
+File: images/grid_example.png Graphic file (type png)
+
+<use images/grid_example.png>
+Package pdftex.def Info: images/grid_example.png used on input line 258.
+(pdftex.def)             Requested size: 312.9803pt x 153.79387pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--266
+
+ []
+
+[11 <./images/grid_example.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 273--273
+[][][][][][][] 
+ []
+
+(./sourceCode/vdb_coordinates.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--288
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
+
+ []
+
+<images/recon_filters.png, id=72, 604.2575pt x 226.8475pt>
+File: images/recon_filters.png Graphic file (type png)
+
+<use images/recon_filters.png>
+Package pdftex.def Info: images/recon_filters.png used on input line 316.
+(pdftex.def)             Requested size: 426.79134pt x 160.22517pt.
+ [14 <./images/recon_filters.png>]
+<images/produtoTensorial.png, id=76, 605.26125pt x 231.86626pt>
+File: images/produtoTensorial.png Graphic file (type png)
+
+<use images/produtoTensorial.png>
+Package pdftex.def Info: images/produtoTensorial.png used on input line 326.
+(pdftex.def)             Requested size: 426.79134pt x 163.49756pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
+
+ []
+
+[15 <./images/produtoTensorial.png>]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 348--348
+[][][][][][][] 
+ []
+
+(./sourceCode/nearestNeighbor.cpp)
+<images/nearestNeighbor.png, id=80, 352.31625pt x 279.0425pt>
+File: images/nearestNeighbor.png Graphic file (type png)
+
+<use images/nearestNeighbor.png>
+Package pdftex.def Info: images/nearestNeighbor.png used on input line 355.
+(pdftex.def)             Requested size: 256.0748pt x 202.81795pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--362
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--362
+
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 364--364
+[][][][][][][] 
+ []
+
+(./sourceCode/nearestNeighbor3d.cpp [16 <./images/nearestNeighbor.png>])
+Overfull \hbox (6.0pt too wide) in paragraph at lines 377--377
+[][][][][][][] 
+ []
+
+(./sourceCode/linear1d.cpp [17])
+<images/linear.png, id=89, 457.71pt x 361.35pt>
+File: images/linear.png Graphic file (type png)
+ <use images/linear.png>
+Package pdftex.def Info: images/linear.png used on input line 382.
+(pdftex.def)             Requested size: 256.0748pt x 202.17267pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 387--388
+
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 389--389
+[][][][][][][] 
+ []
+
+(./sourceCode/linear3d.cpp) [18 <./images/linear.png>] [19]
+
+LaTeX Warning: Command \' invalid in math mode on input line 464.
+
+Missing character: There is no ú in font cmr8!
+<images/cubic.png, id=100, 418.56375pt x 325.215pt>
+File: images/cubic.png Graphic file (type png)
+ <use images/cubic.png>
+Package pdftex.def Info: images/cubic.png used on input line 471.
+(pdftex.def)             Requested size: 256.0748pt x 198.96146pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 476--476
+[][][][][][][] 
+ []
+
+(./sourceCode/cubic.cpp [20]) [21 <./images/cubic.png>]
+<images/objectSpace.png, id=107, 386.44376pt x 275.0275pt>
+File: images/objectSpace.png Graphic file (type png)
+
+<use images/objectSpace.png>
+Package pdftex.def Info: images/objectSpace.png used on input line 488.
+(pdftex.def)             Requested size: 199.16928pt x 141.74776pt.
+
+<images/worldSpace.png, id=108, 260.975pt x 229.85875pt>
+File: images/worldSpace.png Graphic file (type png)
+
+<use images/worldSpace.png>
+Package pdftex.def Info: images/worldSpace.png used on input line 500.
+(pdftex.def)             Requested size: 199.16928pt x 175.42398pt.
+ [22 <./images/objectSpace.png>] [23 <./images/worldSpace.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 542--543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--553
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
+
+ []
+
+[24]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 561--561
+[][][][][][][] 
+ []
+
+(./sourceCode/osl_structure.cpp) [25]
+Cap\'{\i }tulo 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--569
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
+
+ []
+
+[26
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 587--588
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
+
+ []
+
+
+! LaTeX Error: File `tree_structure' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.596 \includegraphics[width=7cm]{tree_structure}
+                                                 
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 603--603
+[][][][][][][] 
+ []
+
+(./sourceCode/leafNode.cpp) [28]
+<images/mFlags.png, id=133, 621.32124pt x 179.67125pt>
+File: images/mFlags.png Graphic file (type png)
+ <use images/mFlags.png>
+Package pdftex.def Info: images/mFlags.png used on input line 610.
+(pdftex.def)             Requested size: 341.43306pt x 98.73448pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 615--616
+
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 619--619
+[][][][][][][] 
+ []
+
+(./sourceCode/internalNode.cpp [29 <./images/mFlags.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 621--622
+
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 625--625
+[][][][][][][] 
+ []
+
+(./sourceCode/root.cpp) [30]
+Underfull \hbox (badness 10000) in paragraph at lines 634--635
+
+ []
+
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 638.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 638--638
+[][][][][][][] 
+ []
+
+(./sourceCode/rootKey.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 640--641
+
+ []
+
+[31]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 642--642
+[][][][][][][] 
+ []
+
+(./sourceCode/rootHash.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 644--645
+
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 646--646
+[][][][][][][] 
+ []
+
+(./sourceCode/offset.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 650--651
+
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 652--652
+[][][][][][][] 
+ []
+
+(./sourceCode/leafOffset.cpp [32])
+Underfull \hbox (badness 10000) in paragraph at lines 654--655
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--657
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--659
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 663--664
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 677--678
+
+ []
+
+<images/Octree2.png, id=153, 803.0pt x 460.72125pt>
+File: images/Octree2.png Graphic file (type png)
+ <use images/Octree2.png>
+Package pdftex.def Info: images/Octree2.png used on input line 687.
+(pdftex.def)             Requested size: 284.52756pt x 163.25137pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--695
+
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 702--703
+
+ []
+
+[35 <./images/Octree2.png>]
+<images/Bplustree.png, id=161, 623.18977pt x 286.85631pt>
+File: images/Bplustree.png Graphic file (type png)
+
+<use images/Bplustree.png>
+Package pdftex.def Info: images/Bplustree.png used on input line 709.
+(pdftex.def)             Requested size: 284.52756pt x 130.96628pt.
+ [36 <./images/Bplustree.png>] (./tcc.aux) ) 
+Here is how much of TeX's memory you used:
+ 6835 strings out of 493315
+ 97140 string characters out of 6137904
+ 295884 words of memory out of 5000000
+ 10064 multiletter control sequences out of 15000+600000
+ 28567 words of font info for 80 fonts, out of 8000000 for 9000
+ 958 hyphenation exceptions out of 8191
+ 42i,9n,41p,1477b,1665s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist
+/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvip
+s/cm-super/cm-super-t1.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
+pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.p
+fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbi1440.p
+fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/tex
+live/2013/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2
+013/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2013/texm
+f-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on tcc.pdf (36 pages, 1727443 bytes).
+PDF statistics:
+ 265 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+
