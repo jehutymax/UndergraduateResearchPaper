@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  6 DEC 2013 12:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  7 DEC 2013 13:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -666,14 +666,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--173
 
  []
 
-<images/blender_render_option.png, id=33, 322.20375pt x 145.54375pt>
+[6 <./images/blender_gui.png>]
+<images/blender_render_option.png, id=36, 322.20375pt x 145.54375pt>
 File: images/blender_render_option.png Graphic file (type png)
 
 <use images/blender_render_option.png>
 Package pdftex.def Info: images/blender_render_option.png used on input line 17
 7.
 (pdftex.def)             Requested size: 227.62204pt x 102.82376pt.
- [6 <./images/blender_gui.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
@@ -1052,7 +1053,7 @@ Package pdftex.def Info: images/Bplustree.png used on input line 709.
 Here is how much of TeX's memory you used:
  6828 strings out of 493315
  97213 string characters out of 6137904
- 295884 words of memory out of 5000000
+ 294884 words of memory out of 5000000
  10068 multiletter control sequences out of 15000+600000
  28567 words of font info for 80 fonts, out of 8000000 for 9000
  958 hyphenation exceptions out of 8191
@@ -1090,7 +1091,7 @@ ve/2013/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2
 013/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2013/texm
 f-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on tcc.pdf (36 pages, 1771375 bytes).
+Output written on tcc.pdf (36 pages, 1773261 bytes).
 PDF statistics:
  266 PDF objects out of 1000 (max. 8388607)
  176 compressed objects within 2 object streams
