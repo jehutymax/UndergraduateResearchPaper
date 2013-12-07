@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  7 DEC 2013 16:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  7 DEC 2013 16:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -566,83 +566,82 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Cap\'{\i }tulo 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+(./introducao.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 115.
-
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 25.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 115.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 
-LaTeX Warning: Reference `cap:blender' on page 5 undefined on input line 155.
+LaTeX Warning: Reference `cap:blender' on page 5 undefined on input line 65.
 
 
-LaTeX Warning: Reference `resultados' on page 5 undefined on input line 155.
+LaTeX Warning: Reference `resultados' on page 5 undefined on input line 65.
 
 
-LaTeX Warning: Reference `conclusao' on page 5 undefined on input line 155.
+LaTeX Warning: Reference `conclusao' on page 5 undefined on input line 65.
 
-[5]
+) [5]
 Cap\'{\i }tulo 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+(./blender.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
@@ -650,22 +649,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--167
 File: images/blender_gui.png Graphic file (type png)
 
 <use images/blender_gui.png>
-Package pdftex.def Info: images/blender_gui.png used on input line 171.
+Package pdftex.def Info: images/blender_gui.png used on input line 12.
 (pdftex.def)             Requested size: 483.69684pt x 302.30511pt.
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 171--172
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 12--13
  [] 
  []
 
 [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--186
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
@@ -674,11 +673,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--186
 File: images/blender_render_option.png Graphic file (type png)
 
 <use images/blender_render_option.png>
-Package pdftex.def Info: images/blender_render_option.png used on input line 19
-0.
+Package pdftex.def Info: images/blender_render_option.png used on input line 31
+.
 (pdftex.def)             Requested size: 227.62204pt x 102.82376pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
@@ -686,27 +685,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--204
 File: images/Cycles_nodes.png Graphic file (type png)
 
 <use images/Cycles_nodes.png>
-Package pdftex.def Info: images/Cycles_nodes.png used on input line 208.
+Package pdftex.def Info: images/Cycles_nodes.png used on input line 49.
 (pdftex.def)             Requested size: 426.79134pt x 240.16037pt.
  [8 <./images/blender_render_option.png>] [9 <./images/Cycles_nodes.png>]
 <images/tex_mapping.png, id=51, 345.79187pt x 328.22626pt>
 File: images/tex_mapping.png Graphic file (type png)
 
 <use images/tex_mapping.png>
-Package pdftex.def Info: images/tex_mapping.png used on input line 270.
+Package pdftex.def Info: images/tex_mapping.png used on input line 111.
 (pdftex.def)             Requested size: 312.9803pt x 297.0887pt.
  [10]
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 [11 <./images/tex_mapping.png>]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 282.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 123.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (6.0pt too wide) in paragraph at lines 284--284
+Overfull \hbox (6.0pt too wide) in paragraph at lines 125--125
 [][][][][][][] 
  []
 
@@ -715,55 +714,55 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 284--284
 File: images/grid_example.png Graphic file (type png)
 
 <use images/grid_example.png>
-Package pdftex.def Info: images/grid_example.png used on input line 298.
+Package pdftex.def Info: images/grid_example.png used on input line 139.
 (pdftex.def)             Requested size: 312.9803pt x 153.79387pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--306
+Underfull \hbox (badness 10000) in paragraph at lines 144--147
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 [13 <./images/grid_example.png>]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 313--313
+Overfull \hbox (6.0pt too wide) in paragraph at lines 154--154
 [][][][][][][] 
  []
 
 (./sourceCode/vdb_coordinates.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--320
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--328
+Underfull \hbox (badness 10000) in paragraph at lines 167--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
@@ -771,32 +770,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 351--352
 File: images/recon_filters.png Graphic file (type png)
 
 <use images/recon_filters.png>
-Package pdftex.def Info: images/recon_filters.png used on input line 356.
+Package pdftex.def Info: images/recon_filters.png used on input line 197.
 (pdftex.def)             Requested size: 426.79134pt x 160.22517pt.
  [15]
 <images/produtoTensorial.png, id=80, 605.26125pt x 231.86626pt>
 File: images/produtoTensorial.png Graphic file (type png)
 
 <use images/produtoTensorial.png>
-Package pdftex.def Info: images/produtoTensorial.png used on input line 366.
+Package pdftex.def Info: images/produtoTensorial.png used on input line 207.
 (pdftex.def)             Requested size: 426.79134pt x 163.49756pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
 [16 <./images/recon_filters.png> <./images/produtoTensorial.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--378
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 388--388
+Overfull \hbox (6.0pt too wide) in paragraph at lines 229--229
 [][][][][][][] 
  []
 
@@ -805,25 +804,25 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 388--388
 File: images/nearestNeighbor.png Graphic file (type png)
 
 <use images/nearestNeighbor.png>
-Package pdftex.def Info: images/nearestNeighbor.png used on input line 395.
+Package pdftex.def Info: images/nearestNeighbor.png used on input line 236.
 (pdftex.def)             Requested size: 256.0748pt x 202.81795pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--402
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--402
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 404--404
+Overfull \hbox (6.0pt too wide) in paragraph at lines 245--245
 [][][][][][][] 
  []
 
 (./sourceCode/nearestNeighbor3d.cpp [17]) [18 <./images/nearestNeighbor.png>]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 417--417
+Overfull \hbox (6.0pt too wide) in paragraph at lines 258--258
 [][][][][][][] 
  []
 
@@ -831,30 +830,30 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 417--417
 File: images/linear.png Graphic file (type png)
 
 <use images/linear.png>
-Package pdftex.def Info: images/linear.png used on input line 422.
+Package pdftex.def Info: images/linear.png used on input line 263.
 (pdftex.def)             Requested size: 256.0748pt x 202.17267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 427--428
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 429--429
+Overfull \hbox (6.0pt too wide) in paragraph at lines 270--270
 [][][][][][][] 
  []
 
 (./sourceCode/linear3d.cpp [19 <./images/linear.png>]) [20]
 
-LaTeX Warning: Command \' invalid in math mode on input line 504.
+LaTeX Warning: Command \' invalid in math mode on input line 345.
 
 Missing character: There is no ú in font cmr8!
 <images/cubic.png, id=100, 418.56375pt x 325.215pt>
 File: images/cubic.png Graphic file (type png)
  <use images/cubic.png>
-Package pdftex.def Info: images/cubic.png used on input line 511.
+Package pdftex.def Info: images/cubic.png used on input line 352.
 (pdftex.def)             Requested size: 256.0748pt x 198.96146pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 516--516
+Overfull \hbox (6.0pt too wide) in paragraph at lines 357--357
 [][][][][][][] 
  []
 
@@ -863,66 +862,66 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 516--516
 File: images/objectSpace.png Graphic file (type png)
 
 <use images/objectSpace.png>
-Package pdftex.def Info: images/objectSpace.png used on input line 528.
+Package pdftex.def Info: images/objectSpace.png used on input line 369.
 (pdftex.def)             Requested size: 199.16928pt x 141.74776pt.
  [23 <./images/objectSpace.png>]
 <images/worldSpace.png, id=114, 260.975pt x 229.85875pt>
 File: images/worldSpace.png Graphic file (type png)
 
 <use images/worldSpace.png>
-Package pdftex.def Info: images/worldSpace.png used on input line 540.
+Package pdftex.def Info: images/worldSpace.png used on input line 381.
 (pdftex.def)             Requested size: 199.16928pt x 175.42398pt.
  [24 <./images/worldSpace.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 582--583
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 590--593
+Underfull \hbox (badness 10000) in paragraph at lines 431--434
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 594--595
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 601--601
+Overfull \hbox (6.0pt too wide) in paragraph at lines 442--442
 [][][][][][][] 
  []
 
-(./sourceCode/osl_structure.cpp) [26]
+(./sourceCode/osl_structure.cpp)) [26]
 Cap\'{\i }tulo 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 608--609
+(./openvdb.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 618--619
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
 [27
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 622--623
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--628
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 629--630
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 631--632
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
@@ -930,10 +929,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 631--632
 File: images/tree_structure.png Graphic file (type png)
 
 <use images/tree_structure.png>
-Package pdftex.def Info: images/tree_structure.png used on input line 636.
+Package pdftex.def Info: images/tree_structure.png used on input line 30.
 (pdftex.def)             Requested size: 455.24408pt x 300.74629pt.
  [29 <./images/tree_structure.png>]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 643--643
+Overfull \hbox (6.0pt too wide) in paragraph at lines 37--37
 [][][][][][][] 
  []
 
@@ -941,25 +940,25 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 643--643
 <images/mFlags.png, id=137, 621.32124pt x 179.67125pt>
 File: images/mFlags.png Graphic file (type png)
  <use images/mFlags.png>
-Package pdftex.def Info: images/mFlags.png used on input line 650.
+Package pdftex.def Info: images/mFlags.png used on input line 44.
 (pdftex.def)             Requested size: 341.43306pt x 98.73448pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 655--656
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
 [30 <./images/mFlags.png>]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 659--659
+Overfull \hbox (6.0pt too wide) in paragraph at lines 53--53
 [][][][][][][] 
  []
 
 (./sourceCode/internalNode.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 661--662
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 665--665
+Overfull \hbox (6.0pt too wide) in paragraph at lines 59--59
 [][][][][][][] 
  []
 
@@ -968,35 +967,35 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 665--665
 File: images/tree_inverted.png Graphic file (type png)
 
 <use images/tree_inverted.png>
-Package pdftex.def Info: images/tree_inverted.png used on input line 673.
+Package pdftex.def Info: images/tree_inverted.png used on input line 67.
 (pdftex.def)             Requested size: 426.79134pt x 252.42802pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--684
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 685--686
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 [32]
-Underfull \hbox (badness 10000) in paragraph at lines 687--688
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 689--690
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
 [33 <./images/tree_inverted.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 694--695
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
@@ -1004,15 +1003,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 706--707
 File: images/Octree2.png Graphic file (type png)
 
 <use images/Octree2.png>
-Package pdftex.def Info: images/Octree2.png used on input line 716.
+Package pdftex.def Info: images/Octree2.png used on input line 110.
 (pdftex.def)             Requested size: 284.52756pt x 163.25137pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 723--724
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 [35 <./images/Octree2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 731--732
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
@@ -1020,9 +1019,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 731--732
 File: images/Bplustree.png Graphic file (type png)
 
 <use images/Bplustree.png>
-Package pdftex.def Info: images/Bplustree.png used on input line 738.
+Package pdftex.def Info: images/Bplustree.png used on input line 132.
 (pdftex.def)             Requested size: 284.52756pt x 130.96628pt.
- [36 <./images/Bplustree.png>]
+) [36 <./images/Bplustree.png>]
 Cap\'{\i }tulo 4.
 [37
 
@@ -1036,13 +1035,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6835 strings out of 493315
- 97402 string characters out of 6137904
- 270884 words of memory out of 5000000
+ 6844 strings out of 493315
+ 97504 string characters out of 6137904
+ 269884 words of memory out of 5000000
  10082 multiletter control sequences out of 15000+600000
  27946 words of font info for 78 fonts, out of 8000000 for 9000
  958 hyphenation exceptions out of 8191
- 42i,9n,41p,1277b,1664s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,9n,41p,1300b,1664s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texl
@@ -1075,7 +1074,7 @@ cm-super/sfrm1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm
 uper/sfti1000.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-sup
 er/sfti1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/courier/ucr
 r8a.pfb>
-Output written on tcc.pdf (38 pages, 1785665 bytes).
+Output written on tcc.pdf (38 pages, 1783351 bytes).
 PDF statistics:
  273 PDF objects out of 1000 (max. 8388607)
  180 compressed objects within 2 object streams
