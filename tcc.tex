@@ -83,63 +83,76 @@
 %
 %
 %
-\chapter{Introdução}	
 
-Em computação gráfica tradicional, objetos tridimensionais são criados usando representações de superfícies de alto nível, como malhas poligonais ou retalhos NURBS\footnote{Non-Uniform Rational B-Spline, na sigla em inglês, é um modelo matemático usado para gerar e representar curvas e superfícies, especialmente usada em computação gráfica.} Quando este paradigma de modelagem é usado, as propriedades das superfícies, como cor, rugosidade e reflexividade, são definidas apenas na superfície do modelo, e usadas pelos shaders\footnote{De modo bem simplista, {\it shaders} são instruções de software usadas nos processadores gráficos para a geração de imagens. Uma discussão mais extensa é apresentada na seção \ref{shaders}.}, que podem ser simples, como um modelo de reflexão difusa ou tão complexo quanto uma BRDF\footnote{{\bf BRDF}, bidirectional reflectance distribution function, na sigla em inglês, é uma função de quatro dimensões que define como a luz é refletida numa superfície opaca.} mais elaborada. Contudo, o que ocorre nestes casos é que o transporte de luz que é calculado pelo algoritmo é avaliado estritamente nos pontos da superfície do objeto. Logo, estes métodos não são capazes de avaliar as interações de luz que ocorrem no interior do objeto. \\
+\tableofcontents
 
-Comparada à renderização de superfícies, a renderização de volumes descreve uma gama de técnicas para gerar imagens a partir de dados escalares tridimensionais. Essas técnicas foram motivadas originalmente pela área de visualização científica, em que dados volumétricos são obtidos por medições ou simulações numéricas. Exemplos comuns são dados médicos do interior do corpo humano obtidos por tomografia computadorizada ou resonância magnética. Outros exemplos são dados de dinâmica dos fluidos computacional, dados geológicos e sísmicos, e dados matemáticos abstratos como a distribuição tridimensional da probabilidade de um número aleatório, superfícies implícitas, entre outros. \\
+\chapter{Introdução}
 
-Com a evolução de técnicas eficientes de renderização, dados volumétricos estão se tornando mais relevantes para aplicações em jogos. Modelos volumétricos são ideais para descrever objetos dispersos, como fluidos, gases, e fenômenos naturais, como nuvens, névoa, fumaça e fogo. \\
+Em computação gráfica, objetos tridimensionais são geralmente representados apenas por sua superfície, por meio de malhas poligonais ou retalhos \emph{NURBS}\footnote{\emph{Non-Uniform Rational B-Spline}, na sigla em inglês, é um modelo matemático usado para gerar e representar curvas e superfícies.}. Quando estes modelos de representação são utilizados, as propriedades visuais do objeto, como cor, rugosidade e reflexividade, são definidas apenas na superfície do modelo e usadas pelos \emph{shaders}\footnote{\emph{Shaders}, de modo bem simplista, são sub-programas executados, em geral, nos processadores gráficos para a geração de imagens. Uma discussão mais extensa é apresentada na Seção \ref{shaders}.}, que podem ser simples, como um modelo de reflexão difusa ou tão complexo quanto uma \emph{BRDF}\footnote{\emph{Bidirectional Reflectance Fistribution Function}, na sigla em inglês, é uma função de quatro dimensões que define como a luz é refletida em uma superfície opaca.}. O que ocorre nestes casos é o cálculo do transporte de luz estritamente nos pontos da superfície do modelo. Logo, estes métodos não são capazes de avaliar as interações de luz que ocorrem no interior do objeto. \\
 
-O desafio de renderizar volumes está principalmente na avaliação da interação entre a luz e e os elementos naturais, como as nuvens. A luz pode ser absorvida, espalhada, ou emitida por materiais gasosos, e que participam na propagação luminosa. Essa interação precisa ser avaliada em todas as posições do volume 3D preenchido com o gás, tornando a renderização volumétrica uma tarefa cara para processar. 
 
-\section{Definição do Problema}
+Comparada à renderização\footnote{\emph{Rendering}, processo de síntese de imagem a partir de cenas virtuais. Sem tradução direta, será utilizada uma adapatação para o português. } de superfícies, a renderização de volumes descreve uma gama de técnicas para gerar imagens a partir de dados escalares tridimensionais. Essas técnicas foram motivadas originalmente pela área de visualização científica, em que dados volumétricos são obtidos por medições ou simulações numéricas. Exemplos comuns são dados médicos do interior do corpo humano obtidos por tomografia computadorizada ou resonância magnética. Outros exemplos são dados de dinâmica dos fluidos computacional, dados geológicos, superfícies implícitas, entre outros. \\
 
-Como discutido na seção anterior, dados volumétricos são essenciais para várias aplicações em computação gráfica, como na produção de efeitos visuais e imagens médicas, incluindo simulação de fluidos, modelagem com superfícies implícitas e a própria renderização de volumes.\\
 
-Na maioria das aplicações, os dados volumétricos são representados por \emph{grids} 3D regulares e espacialmente uniformes, em parte porque tais representações são simples e convenientes. Grids serão especificados mais claramente na seção \ref{texturas3d}, mas trata-se basicamente de uma estrutura de três dimensões composta por elementos de volume - um exemplo uniforme é um cubo de lado igual a $10$, composto por pequenos cubos de lado $1$. Neste exemplo, os pequenos cubos são os elementos de volume que compõem o grid, o cubo maior. \\
+Com a evolução de técnicas eficientes de renderização, dados volumétricos estão se tornando mais relevantes para aplicações em jogos digitais. Estes modelos volumétricos são ideais para descrever objetos dispersos, como fluidos, gases, e fenômenos naturais, como nuvens, névoa, fumaça e fogo. \\
 
-\subsection{Abordagem básica à renderização de volumes}
+O desafio de renderizar volumes está principalmente na avaliação da interação entre a luz e e os elementos naturais, como as nuvens. A luz pode ser absorvida, espalhada, ou emitida por materiais gasosos, e que participam na propagação luminosa. Essa interação precisa ser avaliada em todas as posições do volume tridimensional preenchido com o gás, tornando a renderização volumétrica uma tarefa com um alto custo computacional. 
+
+%\section{Definição do Problema}
+
+Como discutido, dados volumétricos são essenciais para várias aplicações em computação gráfica, como na produção de efeitos visuais e imagens médicas, incluindo simulação de fluidos, modelagem com superfícies implícitas e a própria renderização de volumes. \\
+
+
+Na maioria das aplicações, os dados volumétricos são representados por imagens (ou \emph{grids}) tridimensionais regulares e espacialmente uniformes, em parte porque tais representações são computacionalmente simples. \emph{Grids} serão especificados mais detalhadamente na Seção \ref{texturas3d}.
+%, mas trata-se basicamente de uma estrutura de três dimensões composta por elementos de volume - um exemplo uniforme é um cubo de lado igual a $10$, composto por pequenos cubos de lado $1$. Neste exemplo, os pequenos cubos são os elementos de volume que compõem o grid, o cubo maior. 
+
+\subsection*{Abordagem básica à renderização de volumes}
 \label{approach}
 
-O problema da renderização de volumes, tal como tratado neste trabalho, pode ser dividido em diferentes etapas, brevemente descritas a seguir. \\
+O processo de renderização de volumes, tal como tratado neste trabalho, foi dividido nas seguintes etapas, brevemente descritas a seguir. \\
 
-\emph{Consulta aos dados}. Posições no espaço são escolhidas para serem amostradas no volume, isto é, os pontos escolhidos pela aplicação são buscados na estrutura que armazena o volume. \\
+\begin{itemize}
+\item \emph{Consulta aos dados}. Posições no espaço são escolhidas para serem amostradas no volume, isto é, os pontos escolhidos pela aplicação são buscados na estrutura que armazena o volume. 
 
-\emph{Interpolação}. Os pontos escolhidos na etapa anterior normalmente são diferentes dos pontos existentes no volume. Assim, um campo 3D contínuo precisa ser reconstruído a partir do grid discreto para que os valores nos pontos buscados possam ser obtidos. \\
+\item \emph{Interpolação}. Os pontos escolhidos na etapa anterior normalmente são diferentes dos pontos existentes no volume. Assim, um campo 3D contínuo precisa ser reconstruído a partir da imagem discreto para que os valores nos pontos buscados possam ser obtidos. 
 
-\emph{Shading e Iluminação}. O modelo óptico do problema é calculado, e as componentes de absorção e emissão de luz são avaliados. Com os resultados da interação da luz com o volume, a imagem pode ser gerada.\\
+\item \emph{Shading e Iluminação}. O modelo óptico do problema é calculado, e as componentes de absorção e emissão de luz são avaliados. Com os resultados da interação da luz com o volume, a imagem pode ser gerada.
+\end{itemize}
 
-As duas primeiras etapas, de consulta ao volume e cálculos de interpolação são processos estritamente locais em relação aos pontos amostrados. Dessa forma, em um software modular, é de se esperar que as implementações destas etapas sejam independentes da etapa de Shading e dos cálculos de Iluminação. Essa observação é importante, pois limitará o escopo deste trabalho.
+As duas primeiras etapas, de consulta ao volume e cálculos de interpolação são processos estritamente locais em relação aos pontos amostrados. Dessa forma, em um software modular, é de se esperar que as implementações destas etapas sejam independentes da etapa de \emph{shading} e dos cálculos de iluminação. Essa observação é importante, pois limitará o escopo deste trabalho.
 
-\subsection{Software-Alvo}
-O Blender é um pacote de software de computação gráfica 3D, gratuito e de código aberto, usado, por exemplo, na criação de animações e efeitos visuais, modelos tridimensionais impressos, aplicações 3D interativas e jogos digitais. Como outras aplicações semelhantes, ele suporta modelagem 3D, texturização, animação, simulação de fluidos e fumaça, simulação de partículas, renderização, entre outras funcionalidades. \\
+\subsection*{Software-Alvo}
+O Blender\footnote{http://www.blender.org} é um pacote de software de computação gráfica 3D, gratuito e de código aberto, utilizado principalmente para criação de animações e efeitos visuais, modelos tridimensionais impressos, aplicações 3D interativas e jogos digitais. Para tais aplicações, o Blender suporta modelagem 3D, texturização, animação, simulação de fluidos e fumaça, simulação de partículas, renderização, entre outras funcionalidades. \\
 
-Cycles é o nome dado à engine de renderização recentemente adicionado ao Blender. Trata-se de um renderizador realista (fisicamente plausível), com suporte a multi-threading e a aceleração por GPUs. Como o software existe há pouco tempo, há muitas funcionalidades desejáveis que ainda não foram implementadas, e uma delas é a renderização de volumes.
+\emph{Cycles} é o nome dado à engine de renderização recentemente adicionado ao Blender. Trata-se de um renderizador realista (fisicamente plausível), com suporte a \emph{multi-threading} e a aceleração por GPUs\footnote{\emph{Graphics Processor Unit}, na sigla em inglês.}. Como o software existe há pouco tempo, há muitas funcionalidades desejáveis que ainda não foram implementadas, e uma delas é a renderização de volumes.
 
-\subsection{Estrutura de Dados}
-OpenVDB é o nome da biblioteca de código aberto, em C++, que possui uma nova estrutura de dados e um conjunto de ferramentas para o armazenamento e manipulação de dados volumétricos esparsos e discretos, em coordenadas tridimensionais. O destaque desta estrutura de dados é o oferecimento de um espaço de índices limitado apenas pela capacidade de memória da máquina, com armazenamento adaptativo dos volumes, e a velocidade de acesso aleatório e sequencial praticamente constante, $O(1)$. Um estudo detalhado é apresentado no capítulo \ref{data_struct}.
+\subsection*{Estrutura de Dados}
+OpenVDB é o nome da biblioteca de código aberto, em C++, que possui uma nova estrutura de dados e um conjunto de ferramentas para o armazenamento e manipulação de dados volumétricos esparsos e discretos, em coordenadas tridimensionais. O destaque desta estrutura de dados é o oferecimento de um espaço de índices limitado apenas pela capacidade de memória da máquina, com armazenamento adaptativo dos volumes, e a velocidade de acesso aleatório e sequencial praticamente constante, $O(1)$. Um estudo detalhado sobre a OpenVDB é apresentado no Capítulo \ref{data_struct}.
 
-\subsection{Definição de escopo}
-O objetivo deste trabalho é implementar a texturização de volumes no renderizador Cycles do Blender, o que corresponde às duas primeiras etapas descritas na seção \ref{approach}, de consulta de dados a uma estrutura volumétrica e realização dos cálculos de interpolação. Como será descrito no capítulo \ref{tex_def}, essas etapas englobam o uso de uma textura tridimensional.\\
+\subsection*{Definição do problema}
+O objetivo deste trabalho é implementar a texturização de volumes no renderizador Cycles do Blender, o que corresponde as duas primeiras etapas descritas no início dessa Seção, ou seja, de \emph{consulta aos dados} a uma estrutura volumétrica e da realização dos cálculos de \emph{interpolação}. Como será descrito no Capítulo \ref{tex_def}, essas etapas englobam o uso de uma textura tridimensional.\\
 
 A proposta é utilizar a biblioteca OpenVDB para armazenamento do volume, e implementar as funcionalidades básicas de geração, consulta e escrita em arquivo dos volumes considerados.
 
 \section{Motivação}
-Há vários fatores que motivaram a realização deste trabalho. 
-\section{Projeto Pessoal}
-Com o intuito de melhor qualificar-me para atuar em desenvolvimento de aplicações gráficas, busquei me aproximar da comunidade de usuários do Blender e passei a participar de parte das discussões na lista de desenvolvedores. Com as discussões, entendi um pouco quais eram as necessidades mais relevantes do projeto, e uma estimativa do nível de dificuldade associado a cada um dos requisitos em aberto. 
+
+bla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla bla
+
+% descrever os aspectos tecnicos, porque implementar isso? resultado visual esperado? economia de memoria? processamento? versão existente?
+
+\subsection*{Projeto Pessoal}
+Com o intuito de melhor qualificar-me para atuar em desenvolvimento de aplicações gráficas, busquei me aproximar da comunidade de usuários do Blender e passei a participar de parte das discussões na lista de desenvolvedores. Com as discussões, entendi um pouco quais eram as necessidades mais relevantes do projeto, e uma estimativa do nível de dificuldade associado a cada um dos requisitos em aberto. \\
 
 Uma das funcionalidades em aberto naquela ocasião era a renderização de volumes. De posse de algumas referências, pesquisei o suficiente para entender o que seria necessário para implementar toda a renderização de volumes, mas como o escopo era amplo demais, um projeto menor seria mais realista, e com a ajuda de outros desenvolvedores, fixamos o escopo em texturas tridimensionais, uma parte da renderização volumétrica. 
 
-\subsubsection{Google Summer of Code}
-O Google Summer of Code é um programa que oferece a desenvolvedores que ainda estejam estudando uma bolsa para programar para vários projetos de código aberto. \\
+\subsection*{Google Summer of Code}
+O Google Summer of Code é um programa que oferece a desenvolvedores que ainda estejam estudando uma bolsa para contribuir em um dos vários projetos de código aberto. \\
 
-Como o Blender estava entre as instituições participantes do programa, escrevi a proposta deste projeto e a submeti. Após a seleção que ocorre com o Google e as instituições participantes, este foi um dos trabalhos escolhidos. Ele foi desenvolvido com o acompanhamento de um desenvolvedor da Blender Foundation e financiado pela bolsa do Google.
+Como o Blender estava entre as instituições participantes do programa, escrevi a proposta deste projeto e a submeti. Após a seleção realizada pelo Google e as instituições participantes, este projeto foi um dos trabalhos escolhidos. Ele foi desenvolvido com o acompanhamento de um desenvolvedor da Blender Foundation e financiado pela bolsa do Google.
 
-\subsubsection{}
+\section{Organizaç\~ao}
 
-
+No Capítulo \ref{cap:blender}, o software Blender é apresentado, juntamente com a descrição de alguns conceitos, como o mapeamento de textura, interpolação, e sistemas de coordenadas. Em seguida, no Capítulo \ref{data_struct}, a estrutura de dados utilizada para manipular os volumes de dados é descrita. No Capítulo \ref{resultados} os resultados obtidos são apresentados e por fim, no Capítulo \ref{conclusao}, encontram-se as discussões finais e conclusão deste trabalho.
 %
 %
 
@@ -590,7 +603,7 @@ No entanto, temos que os shaders escritos em OSL calculam uma descrição simbó
 %
 %
 
-\chapter{Estrutura de Dados}
+\chapter{OpenVDB}
 \label{data_struct}
 A estrutura de dados utilizada é a VDB, renomeada para OpenVDB\footnote{www.openvdb.org} na ocasião em que foi disponibilizada com código fonte aberto. OpenVDB é uma biblioteca que inclui uma estrutura de dados compacta e hierárquica e um conjunto de ferramentas para a manipulação eficiente de dados volumétricos discretizados esparsos, que podem variar com o tempo, em um grid tridimensional. \\
 
@@ -652,31 +665,22 @@ Vários detalhes da implementação são iguais aos da folha. Os fatores de rami
 \lstinputlisting[label=rootNode,caption=Definição do nó raiz.]{sourceCode/root.cpp}
 
 Todas as configurações de uma VDB possuem no máximo um nó raiz que, diferentemente dos outros nós, é esparso e pode ter seu tamanho alterado dinamicamente. Isso é facilitado por uma tabela hash-map que armazena os ponteiros para os nós filhos ou para os valores intermediários, se forem armazenados neste nível. Se uma entrada na tabela representar um valor intermediário (como no caso de \texttt{child=NULL}), um valor booleano indica o estado do valor intermediário (se está ativo ou inativo). É importante notar que por construção o \texttt{mRootMap} contém poucos valores devido aos domínios imensos representados pelos nós intermediários, como por exemplo, $4096^{3}$.
-A raiz possui um registro de classes de acesso denominada \texttt{Accessors}, que melhora consideravelmente o desempenho de acesso ao grid nos casos de consultas espacialmente coerentes ao reutilizar pointeiros de nós salvos no cache na ocasião de um acesso anterior e com isso consegue realizar a busca de baixo para cima, ao invés de percorrer a árvore de cima para baixo. \texttt{mBackground} é o valor que é retornado quando é feita uma tentativa de acesso a um local que não pertence a nenhum valor intermediário e a nenhum voxel.
+A raiz possui um registro de classes de acesso denominada \texttt{Accessors}, que melhora consideravelmente o desempenho de acesso ao grid nos casos de consultas espacialmente coerentes ao reutilizar pointeiros de nós salvos no cache na ocasião de um acesso anterior e com isso consegue realizar a busca de baixo para cima, ao invés de percorrer a árvore de cima para baixo. \texttt{mBackground} é o valor que é retornado quando é feita uma tentativa de acesso a um local que não pertence a nenhum valor intermediário e a nenhum voxel. Uma ilustração da estrutura é apresentada na Figura
+
+%figura aqui!! :-P
+\begin{figure}[!htb]
+\center
+\includegraphics[width=15cm]{tree_inverted}
+\caption{Ilustração unidimensional de uma VDB com um nó raiz, dois níveis de nós internos, e folhas. A raiz é dinâmica e esparsa, ao passo que os outros nós são densos e possuem fatores de ramificação que diminuem de cima para baixo, e que são restritos a potências de dois.}
+\label{vdbtree}
+\end{figure}
+
 
 \subsection{Algoritmos de Acesso à Estrutura}
 São três os tipos de acesso a uma estrutura de dados espacial: aleatório, sequencial e por estêncil. A implementação de cada uma destas formas de acesso será discutida em seguida.
 
 \subsubsection{Acesso aleatório}
 O tipo de acesso mais fundamental, e discutivelmente o de mais difícil implementação, é o acesso aleatório a voxels arbitrários. O que separa este tipo de acesso dos demais é que, no pior caso, cada acesso requer que árvore seja percorrida por inteira, de cima para baixo, começando na raiz e possivelmente terminando numa folha. Na prática, no entanto, o acesso aleatório pode ser melhorado se a ordem de busca na árvore for invertida. Deste modo, é mais fácil definir o acesso aleatório em função dos demais tipos de acesso: acesso aleatório é o tipo de acesso que não é sequencial e não é baseado em estêncis. Estes dois últimos tipos de acesso são facilmente definidos como acesso com um padrão fixo, definido pela organização dos dados na memória ou algum padrão de estêncil. \\
-
-\emph{Consulta aleatória} é o tipo mais comum de acesso aleatório e será o primeiro a ser apresentado. Começamos identificando as operações necessárias para percorrer a árvore, começando pela raiz. Como estas operações dependem da implementação do \texttt{mRootMap}, verificamos primeiro o \texttt{std::map} da raiz. Para acessar o voxel nas coordenadas de índice $(x, y, z)$, a chave \texttt{rootKey}, mostrada no código \ref{rootKey}, é calculada. Como é natural do C++, \& e \~\; denotam as operações lógicas E e NÃO aplicáveis aos bits. Após a compilação, isso se reduz a três operações E a nível de hardware, que mascaram os bits de ordem mais baixa, correspondentes ao espaço de índice dos nós-filhos. Os valores resultantes são as coordenadas da origem do nó-filho que contém $(x, y, z)$, e isso acaba por evitar colisões de hash. 
-
-\lstinputlisting[label=rootKey,caption={Cálculo da chave \texttt{RootKey}.}]{sourceCode/rootKey.cpp}
-
-Esta chave, garantida então de ser livre de colisões, é usada para realizar a consulta em \texttt{mRootMap} que armazena a \texttt{RootData} em ordem lexicográfica das três componentes da chave \texttt{rootKey}. Se nenhuma entrada é encontrada, o valor padrão (\texttt{mBackground}) é retornado, e se um valor intermediário é encontrado, esse valor de nível mais alto é retornado. Em qualquer caso, a busca termina. No entanto, se um nó-filho for encontrado, a busca continua até que um valor seja encontrado ou uma folha seja alcançada. A única modificação necessária para substituir o \texttt{std::map} com um hash-map. Para isso, combina-se a \texttt{rootKey} dada anteriormente com a função de hash mostrada no código \ref{hash}. \\
-
-\lstinputlisting[label=hash,caption={Função de hash.}]{sourceCode/rootHash.cpp}
-
-Neste código, as três constantes são números primo bastante grandes, \^\; é o operador ou-exclusivo (XOR) e {\it Log2N} é uma constante estática que estima o logaritmo de base dois do tamanho de \texttt{mRootMap}. \\
-
-\lstinputlisting[label=offset,caption={Cálculo do offset interno.}]{sourceCode/offset.cpp}
-
-Quando um nó interno é encontrado (no topo ou em níveis internos à árvore), o offset de acesso mostrado no Código \ref{offset} é calculado a partir das coordenadas globais do grid, onde $Log2YZ = Log2Y + Log2Z$. No momento da compilação, isso se reduz a apenas três operações lógicas E, cinco deslocamentos de bit, e duas somas. Em seguida, se o bit \texttt{internalOffset} da máscara \texttt{mChildMask} não estiver setado, então $(x, y, z)$ está dentro de uma área com valor constante, e este valor é retornado da \texttt{mInternalDAT} e a busca é encerrada. Caso contrário, o nó-filho é extraído de \texttt{mInternalDAT} e a busca continua até que um bit zero é encontrado na máscara \texttt{mChildMask} de um nó interno \texttt{InternalNode} ou uma folha \texttt{LeafNode} é alcançada. O offset de acesso direto para uma folha é ainda mais rápido de ser calculado, como mostrado no Código \ref{leafOffset}. Isso porque o código se reduz a três operações E bit a bit, dois deslocamentos à esquerda e duas somas.
-
-É importante notar que, com exceção das três multiplicações na função hash, todas as operações em bits são realizadas com uma única instrução, ao invés de multiplicações, divisões e módulos - consequência direta do uso de fatores de ramificação que são potências de dois. Além disso, todas as chaves e offsets são calculados a partir das mesmas coordenadas globais $(x, y, z)$, ou seja, os cálculos são independentes e não-recursivos, o que é uma consequência do fato de a profundidade da árvore e os fatores de ramificação serem conhecidos no momento da compilação. \\
-
-\lstinputlisting[label=leafOffset,caption={Cálculo do offset para a folha.}]{sourceCode/leafOffset.cpp}
 
 Como a VDB é balanceada em altura por construção com uma profundidade imutável durante a execução, todo caminho entre a raiz \texttt{RootNode} até qualquer uma das folhas \texttt{LeafNode} é igualmente longo e podemos concluir que que toda consulta aleatória leva o mesmo tempo de pior caso. Acesso aleatório a valores intermediários armazenados em níveis mais rasos da árvore é mais rápido já que a busca se encerra antes. \\
 
@@ -693,8 +697,6 @@ O desafio é implementar o acesso sequencial de modo que ele seja mais rápido q
 
 \subsubsection{Acesso por Estêncil}
 Acesso eficiente por estêncil em grids uniformes é um requisito fundamental para cálculos de diferença finita. Esses métodos aproximam operadores diferenciais com diferenças discretas de valores em um grid numa vizinhaça local denominada estêncil de suporte. Outras aplicações deste tipo de acesso são interpolação e aplicação de filtros com {\it kernels} de convolução de suporte local. Os tamanhos e formas destes estêncis pode variar bastante dependendo da técnica aplicada. Normalmente, estes métodos de acesso são combinados com acesso sequencial, originando os iteradores de estêncil, um conceito essencial para muitas simulações numéricas.
-
-
 
 \section{Comparação com Estruturas Semelhantes}
 
