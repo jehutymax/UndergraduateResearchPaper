@@ -162,7 +162,7 @@ A interface padrão do usuário prioriza a produção de animações 3D, porém 
 
 Os principais módulos do Blender são implementados em C, sendo que camadas mais altas usam C++, como a interface gráfica (GUI), que usa OpenGL para não depender dos servidores gráficos de cada plataforma. Os projetos criados no Blender são salvos em arquivos {\it *.blend}, que salvam metadados em cabeçalhos, também a fim de permitir a compatibilidade entre arquiteturas diferentes. Exemplos de metadados salvos são tamanhos de ponteiros, versão do software, e disposição de memória\footnote{Exemplos são {\it little endian} e {\it big endian}.}.
 
-Após o cabeçalho do arquivo, blocos de dados são salvos com informações como códigos identificadores dos objetos na cena, tamanho em memória dos objetos, ponteiros a locais de memória e índices das estruturas de dados que compõe a cena. Cada um destes blocos possuem os vetores de dados com os nomes e tipos de cada objeto, sendo que os tipos são específicos do software, como curvas, malhas, luzes, câmeras, entre outras possibilidades.  
+Após o cabeçalho do arquivo, blocos de dados são salvos com informações como códigos identificadores dos objetos na cena, tamanho em memória dos objetos e índices das estruturas de dados que compõe a cena. Cada um destes blocos possuem os vetores de dados com os nomes e tipos de cada objeto, como curvas, malhas, luzes, câmeras, entre outras possibilidades.  
 
 \subsection{Renderização no Blender}
 
@@ -249,7 +249,7 @@ Dada uma superfície paramétrica, podemos mapear um ponto do mapa de textura $T
  \end{array}
 \]
 
-E se tivermos que $ae \neq bd$, este mapeamento é invertível. 
+Neste conjunto de equações, $a$, $b$, $c$, $d$, $e$ e $f$ são coeficientes que definem o mapeamento linear. E se tivermos que $ae \neq bd$, este mapeamento é invertível. 
 
 %figura aqui!! :-P
 \begin{figure}[!htb]
