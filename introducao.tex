@@ -1,0 +1,65 @@
+Em computação gráfica, objetos tridimensionais são geralmente representados apenas por sua superfície, por meio de malhas poligonais ou retalhos \emph{NURBS}\footnote{\emph{Non-Uniform Rational B-Spline}, na sigla em inglês, é um modelo matemático usado para gerar e representar curvas e superfícies.}. Quando estes modelos de representação são utilizados, as propriedades visuais do objeto, como cor, rugosidade e reflexividade, são definidas apenas na superfície do modelo e usadas pelos \emph{shaders}\footnote{\emph{Shaders}, de modo bem simplista, são sub-programas executados, em geral, nos processadores gráficos para a geração de imagens. Uma discussão mais extensa é apresentada na Seção \ref{shaders}.}, que podem ser simples, como um modelo de reflexão difusa ou tão complexo quanto uma \emph{BRDF}\footnote{\emph{Bidirectional Reflectance Fistribution Function}, na sigla em inglês, é uma função de quatro dimensões que define como a luz é refletida em uma superfície opaca.}. O que ocorre nestes casos é o cálculo do transporte de luz estritamente nos pontos da superfície do modelo. Logo, estes métodos não são capazes de avaliar as interações de luz que ocorrem no interior do objeto. \\
+
+
+Comparada à renderização\footnote{\emph{Rendering}, processo de síntese de imagem a partir de cenas virtuais. Sem tradução direta, será utilizada uma adapatação para o português. } de superfícies, a renderização de volumes descreve uma gama de técnicas para gerar imagens a partir de dados escalares tridimensionais. Essas técnicas foram motivadas originalmente pela área de visualização científica, em que dados volumétricos são obtidos por medições ou simulações numéricas. Exemplos comuns são dados médicos do interior do corpo humano obtidos por tomografia computadorizada ou resonância magnética. Outros exemplos são dados de dinâmica dos fluidos computacional, dados geológicos, superfícies implícitas, entre outros. \\
+
+
+Com a evolução de técnicas eficientes de renderização, dados volumétricos estão se tornando mais relevantes para aplicações em jogos digitais. Estes modelos volumétricos são ideais para descrever objetos dispersos, como fluidos, gases, e fenômenos naturais, como nuvens, névoa, fumaça e fogo. \\
+
+O desafio de renderizar volumes está principalmente na avaliação da interação entre a luz e e os elementos naturais, como as nuvens. A luz pode ser absorvida, espalhada, ou emitida por materiais gasosos, e que participam na propagação luminosa. Essa interação precisa ser avaliada em todas as posições do volume tridimensional preenchido com o gás, tornando a renderização volumétrica uma tarefa com um alto custo computacional. 
+
+%\section{Definição do Problema}
+
+Como discutido, dados volumétricos são essenciais para várias aplicações em computação gráfica, como na produção de efeitos visuais e imagens médicas, incluindo simulação de fluidos, modelagem com superfícies implícitas e a própria renderização de volumes. \\
+
+
+Na maioria das aplicações, os dados volumétricos são representados por imagens (ou \emph{grids}) tridimensionais regulares e espacialmente uniformes, em parte porque tais representações são computacionalmente simples. \emph{Grids} serão especificados mais detalhadamente na Seção \ref{texturas3d}.
+%, mas trata-se basicamente de uma estrutura de três dimensões composta por elementos de volume - um exemplo uniforme é um cubo de lado igual a $10$, composto por pequenos cubos de lado $1$. Neste exemplo, os pequenos cubos são os elementos de volume que compõem o grid, o cubo maior. 
+
+\subsection*{Abordagem básica à renderização de volumes}
+\label{approach}
+
+O processo de renderização de volumes, tal como tratado neste trabalho, foi dividido nas seguintes etapas, brevemente descritas a seguir. \\
+
+\begin{itemize}
+\item \emph{Consulta aos dados}. Posições no espaço são escolhidas para serem amostradas no volume, isto é, os pontos escolhidos pela aplicação são buscados na estrutura que armazena o volume. 
+
+\item \emph{Interpolação}. Os pontos escolhidos na etapa anterior normalmente são diferentes dos pontos existentes no volume. Assim, um campo 3D contínuo precisa ser reconstruído a partir da imagem discreto para que os valores nos pontos buscados possam ser obtidos. 
+
+\item \emph{Shading e Iluminação}. O modelo óptico do problema é calculado, e as componentes de absorção e emissão de luz são avaliados. Com os resultados da interação da luz com o volume, a imagem pode ser gerada.
+\end{itemize}
+
+As duas primeiras etapas, de consulta ao volume e cálculos de interpolação são processos estritamente locais em relação aos pontos amostrados. Dessa forma, em um software modular, é de se esperar que as implementações destas etapas sejam independentes da etapa de \emph{shading} e dos cálculos de iluminação. Essa observação é importante, pois limitará o escopo deste trabalho.
+
+\subsection*{Software-Alvo}
+O Blender\footnote{http://www.blender.org} é um pacote de software de computação gráfica 3D, gratuito e de código aberto, utilizado principalmente para criação de animações e efeitos visuais, modelos tridimensionais impressos, aplicações 3D interativas e jogos digitais. Para tais aplicações, o Blender suporta modelagem 3D, texturização, animação, simulação de fluidos e fumaça, simulação de partículas, renderização, entre outras funcionalidades. \\
+
+\emph{Cycles} é o nome dado à engine de renderização recentemente adicionado ao Blender. Trata-se de um renderizador realista (fisicamente plausível), com suporte a \emph{multi-threading} e a aceleração por GPUs\footnote{\emph{Graphics Processor Unit}, na sigla em inglês.}. Como o software existe há pouco tempo, há muitas funcionalidades desejáveis que ainda não foram implementadas, e uma delas é a renderização de volumes.
+
+\subsection*{Estrutura de Dados}
+OpenVDB é o nome da biblioteca de código aberto, em C++, que possui uma nova estrutura de dados e um conjunto de ferramentas para o armazenamento e manipulação de dados volumétricos esparsos e discretos, em coordenadas tridimensionais. O destaque desta estrutura de dados é o oferecimento de um espaço de índices limitado apenas pela capacidade de memória da máquina, com armazenamento adaptativo dos volumes, e a velocidade de acesso aleatório e sequencial praticamente constante, $O(1)$. Um estudo detalhado sobre a OpenVDB é apresentado no Capítulo \ref{data_struct}.
+
+\subsection*{Definição do problema}
+O objetivo deste trabalho é implementar a texturização de volumes no renderizador Cycles do Blender, o que corresponde as duas primeiras etapas descritas no início dessa Seção, ou seja, de \emph{consulta aos dados} a uma estrutura volumétrica e da realização dos cálculos de \emph{interpolação}. Como será descrito no Capítulo \ref{tex_def}, essas etapas englobam o uso de uma textura tridimensional.\\
+
+A proposta é utilizar a biblioteca OpenVDB para armazenamento do volume, e implementar as funcionalidades básicas de geração, consulta e escrita em arquivo dos volumes considerados.
+
+\section{Motivação}
+
+bla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla bla
+
+% descrever os aspectos tecnicos, porque implementar isso? resultado visual esperado? economia de memoria? processamento? versão existente?
+
+\subsection*{Projeto Pessoal}
+Com o intuito de melhor qualificar-me para atuar em desenvolvimento de aplicações gráficas, busquei me aproximar da comunidade de usuários do Blender e passei a participar de parte das discussões na lista de desenvolvedores. Com as discussões, entendi um pouco quais eram as necessidades mais relevantes do projeto, e uma estimativa do nível de dificuldade associado a cada um dos requisitos em aberto. \\
+
+Uma das funcionalidades em aberto naquela ocasião era a renderização de volumes. De posse de algumas referências, pesquisei o suficiente para entender o que seria necessário para implementar toda a renderização de volumes, mas como o escopo era amplo demais, um projeto menor seria mais realista, e com a ajuda de outros desenvolvedores, fixamos o escopo em texturas tridimensionais, uma parte da renderização volumétrica. 
+
+\subsection*{Google Summer of Code}
+O Google Summer of Code é um programa que oferece a desenvolvedores que ainda estejam estudando uma bolsa para contribuir em um dos vários projetos de código aberto. \\
+
+Como o Blender estava entre as instituições participantes do programa, escrevi a proposta deste projeto e a submeti. Após a seleção realizada pelo Google e as instituições participantes, este projeto foi um dos trabalhos escolhidos. Ele foi desenvolvido com o acompanhamento de um desenvolvedor da Blender Foundation e financiado pela bolsa do Google.
+
+\section{Organizaç\~ao}
+
+No Capítulo \ref{cap:blender}, o software Blender é apresentado, juntamente com a descrição de alguns conceitos, como o mapeamento de textura, interpolação, e sistemas de coordenadas. Em seguida, no Capítulo \ref{data_struct}, a estrutura de dados utilizada para manipular os volumes de dados é descrita. No Capítulo \ref{resultados} os resultados obtidos são apresentados e por fim, no Capítulo \ref{conclusao}, encontram-se as discussões finais e conclusão deste trabalho.
