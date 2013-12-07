@@ -169,7 +169,7 @@ Após o cabeçalho do arquivo, blocos de dados são salvos com informações com
 Como o Blender é estruturado de maneira bastante modular, a renderização de uma cena criada no software pode ser feita por {\it engines} diferentes, a escolha do usuário. Em uma instalação convencional, o software oferece duas engines diferentes, mas há suporte para renderizadores de terceiros, com diferentes níveis de integração. \\
 
 As duas engines fornecidas são a {\it Blender Internal Render}, às vezes chamada apenas de {\it Blender Render} e o {\it Cycles}.
-Elas serão discutidas com maiores detalhes a seguir. Na figura \ref{renderers}, é mostrado onde, na interface do Blender, a opção por uma engine ou outra pode ser feita. Uma terceira engine, a {\it Blender Game Engine}, também é fornecida, mas engloba muito mais que apenas a geração de imagens, e é usada para a criação de games ou de aplicações interativas, gerando um arquivo executável como resultado. \\
+Elas serão discutidas com maiores detalhes a seguir. Na Figura \ref{renderers}, é mostrado onde, na interface do Blender, a opção por uma engine ou outra pode ser feita. Uma terceira engine, a {\it Blender Game Engine}, também é fornecida, mas engloba muito mais que apenas a geração de imagens, e é usada para a criação de games ou de aplicações interativas, gerando um arquivo executável como resultado. \\
 
 %figura aqui!! :-P
 \begin{figure}[!htb]
@@ -187,7 +187,7 @@ A primeira geração de renderizador incluído no Blender, bastante estável, é
 
 \subsubsection{Cycles Render}
 
-É uma engine mais moderna, fisicamente fiel, que modela efeitos cáusticos de maneira realista. Tem suporte a configuração de comportamento através de nós e permite que o usuário crie seus próprios shaders em OSL, linguagem apresentada em \ref{osl}. Um exemplo de uma rede de nós para configurar seu comportamento é mostrado na figura \ref{nodes}. \\
+É uma engine mais moderna, fisicamente fiel, que modela efeitos cáusticos de maneira realista. Tem suporte a configuração de comportamento através de nós e permite que o usuário crie seus próprios shaders em OSL, linguagem apresentada em \ref{osl}. Um exemplo de uma rede de nós para configurar seu comportamento é mostrado na Figura \ref{nodes}. \\
 
 %figura aqui!! :-P
 \begin{figure}[!htb]
@@ -218,16 +218,35 @@ As texturas são introduzidas nas imagens com o uso de {\it mapeamentos de textu
 
 De modo geral, mapas de texturas podem ser funções de uma ou mais variáveis. A fim de exemplificar seu funcionamento, mostraremos o caso das funções de duas variáveis.
 
+Um \emph{mapa de textura} associa um {\it texel} a cada ponto no objeto geométrico. Se o objeto for representado por coordenadas homôgeneas, as funções serão dadas por:
+\[
+	\begin{array}{l}
+	x = x(s, t), \\
+	y = y(s, t), \\
+	z = z(s, t), \\
+	w = w(s, t).
+	\end{array}
+\]
+
+Embora estas funções existam conceitualmente, encontrá-las pode ser difícil. Além disso, o problema mais usual é o inverso: dado o ponto $(x,y,z)$ ou $(x, y, z, w)$ no objeto, desejamos encontrar as coordenadas de textura correspondentes, isto é, as funções inversas 
+\[
+\begin{array}{l}
+s = s(x, y, z, w), \\
+t = t(x, y, z, w).
+\end{array}
+\]
+
 Em computação gráfica, a maioria das superfícies são representadas parametricamente. Um ponto ${\bf p}$ na superfície é uma função de dois parâmetros $u$ e $v$. Para cada par de valores, geramos o ponto
 
 \[
 {\bf p}(u,v) = \left[ \begin{array}{c} x(u,v) \\ y(u,v) \\ z(u,v) \end{array} \right].
-\]
+\]    
 
 Dada uma superfície paramétrica, podemos mapear um ponto do mapa de textura $T(s,t)$ para um ponto ${\bf p}(u,v)$ na superfície usando um mapa linear da forma
-\[ u = as + bt + c, 
-\]
-\[ v = ds + et + f.
+\[ \begin{array}{l}
+ u = as + bt + c, \\
+ v = ds + et + f.
+ \end{array}
 \]
 
 E se tivermos que $ae \neq bd$, este mapeamento é invertível. 
@@ -258,7 +277,7 @@ A renderização volumétrica (chamaremos de renderização volumétrica o proce
 \[ \Phi : \mathbb{R}^{3} \rightarrow \mathbb{R},
 \]
 que é uma função do espaço 3D para um valor de apenas um componente.
-Na prática, no entanto, um campo volumétrico é dado por um grid discretizado porque trata-se do resultado de uma simulação ou de uma medição. A figura \ref{grid_ex} mostra um conjunto de dados volumétricos representado em um grid discreto.
+Na prática, no entanto, um campo volumétrico é dado por um grid discretizado porque trata-se do resultado de uma simulação ou de uma medição. A Figura \ref{grid_ex} mostra um conjunto de dados volumétricos representado em um grid discreto.
 
 %figura aqui!! :-P
 \begin{figure}[!htb]
@@ -316,7 +335,7 @@ Um sinal cuja transformada de Fourier é zero fora do intervalo de frequências 
 
 A $f(t)$ apresentada é um exemplo de convolução, e descreve a convolução do sinal amostrado de entrada $f_{i}$ com um filtro {\it sinc}. Na realidade, porém, o filtro sinc possui alcance ilimitado, isto é, ele oscila em torno de zero sobre todo o domínio. Como consequência, a convolução precisa ser calculada para todas as amostras de entrada $f_{i}$, o que toma muito tempo. É por isso que na prática aplica-se filtros de reconstrução com suporte finito.
 
-Um exemplo é o filtro {\it caixa}, que leva à interpolação do vizinho mais próximo quando a largura da caixa é igual à distância de amostragem (isto é, o valor da função reconstruída é dado pelo valor do ponto amostral mais próximo). Outro exemplo é o filtro {\it triangular}, que leva a uma reconstrução linear quando a largura de um lado for igual à distância de amostragem. A figura \ref{filters} mostra três tipos diferentes de filtros de reconstrução que podem ser usados. \\
+Um exemplo é o filtro {\it caixa}, que leva à interpolação do vizinho mais próximo quando a largura da caixa é igual à distância de amostragem (isto é, o valor da função reconstruída é dado pelo valor do ponto amostral mais próximo). Outro exemplo é o filtro {\it triangular}, que leva a uma reconstrução linear quando a largura de um lado for igual à distância de amostragem. A Figura \ref{filters} mostra três tipos diferentes de filtros de reconstrução que podem ser usados. \\
 
 %figura aqui!! :-P
 \begin{figure}[!htb]
@@ -326,7 +345,7 @@ Um exemplo é o filtro {\it caixa}, que leva à interpolação do vizinho mais p
 \label{filters}
 \end{figure}
 
-E embora tenhamos discutido funções de apenas uma variável, podemos extender a discussão para $n$ dimensões usando uma abordagem de produto tensorial. A idéia é basicamente fazer a reconstrução de cada dimensão, mas de forma combinada. Para o nosso caso, em que precisamos de três dimensões, um filtro de reconstrução usando produto tensorial é dado por $h(x,y,z) = h_{x}(x)\;h_{y}(y)\;h_{z}(z)$, onde $h_{x}(\cdotp)$, $h_{y}(\cdotp)$ e $h_{z}(\cdotp)$ são filtros de um único parâmetro ao longo dos eixos $x$, $y$ e $z$. E uma das vantagens do uso de um grid uniforme é que eles dão suporte a este tipo de reconstrução de forma direta. Como mostrado na figura \ref{produtoTensorial}, a abordagem de produto tensorial separa as interpolações ao longo de cada dimensão e permite o cálculo do valor reconstruído através de uma sequência de interpolações lineares.
+E embora tenhamos discutido funções de apenas uma variável, podemos extender a discussão para $n$ dimensões usando uma abordagem de produto tensorial. A idéia é basicamente fazer a reconstrução de cada dimensão, mas de forma combinada. Para o nosso caso, em que precisamos de três dimensões, um filtro de reconstrução usando produto tensorial é dado por $h(x,y,z) = h_{x}(x)\;h_{y}(y)\;h_{z}(z)$, onde $h_{x}(\cdotp)$, $h_{y}(\cdotp)$ e $h_{z}(\cdotp)$ são filtros de um único parâmetro ao longo dos eixos $x$, $y$ e $z$. E uma das vantagens do uso de um grid uniforme é que eles dão suporte a este tipo de reconstrução de forma direta. Como mostrado na Figura \ref{produtoTensorial}, a abordagem de produto tensorial separa as interpolações ao longo de cada dimensão e permite o cálculo do valor reconstruído através de uma sequência de interpolações lineares.
 
 %figura aqui!! :-P
 \begin{figure}[!htb]
@@ -610,7 +629,7 @@ Um componente fundamental da estrutura de dados é o conjunto de máscaras de bi
 
 \lstinputlisting[label=leafNode,caption=Definição de um nó folha.]{sourceCode/leafNode.cpp}
 
-Como pode ser visto no Código \ref{leafNode}, os tamanhos são estabelecidos em momento de compilação, e o tamanho do nó é computado como $1 << \sum_{w} sLog2w$, onde $<<$ denota um deslocamento de bits à esquerda. As folhas armazenam os valores dos voxels em uma tabela chamada de {\it Direct Access Table}\footnote{Pode-se assumir que esta tabela é um vetor com custo de acesso aleátorio de $O(1)$ para o pior caso.}, denotada no código por \texttt{mLeafDAT}, e a topologia do voxel ativo é mantido na máscara de bits denotada no código por \texttt{mValueMask}. É importante notar que embora a máscara de bits tenha um tamanho fixo igual ao da estrutura \texttt{LeafNode}, o tamanho do vetor de armazena os valores dos dados é dinâmico, mantido em \texttt{mLeafDAT.values}. A quantidade variável de buffers de dados, e seus tamanhos, bem como outras informações a respeito da \texttt{LeafNode} é armazenada de forma compacta na varíavel de 64 bits \texttt{mFlags}, mostrado na figura \ref{mFlags}.
+Como pode ser visto no Código \ref{leafNode}, os tamanhos são estabelecidos em momento de compilação, e o tamanho do nó é computado como $1 << \sum_{w} sLog2w$, onde $<<$ denota um deslocamento de bits à esquerda. As folhas armazenam os valores dos voxels em uma tabela chamada de {\it Direct Access Table}\footnote{Pode-se assumir que esta tabela é um vetor com custo de acesso aleátorio de $O(1)$ para o pior caso.}, denotada no código por \texttt{mLeafDAT}, e a topologia do voxel ativo é mantido na máscara de bits denotada no código por \texttt{mValueMask}. É importante notar que embora a máscara de bits tenha um tamanho fixo igual ao da estrutura \texttt{LeafNode}, o tamanho do vetor de armazena os valores dos dados é dinâmico, mantido em \texttt{mLeafDAT.values}. A quantidade variável de buffers de dados, e seus tamanhos, bem como outras informações a respeito da \texttt{LeafNode} é armazenada de forma compacta na varíavel de 64 bits \texttt{mFlags}, mostrado na Figura \ref{mFlags}.
 
 %figura aqui!! :-P
 \begin{figure}[!htb]
@@ -718,6 +737,11 @@ A VDB é basicamente uma variação da árvore B+ com características de Octree
 \caption{Diagrama de uma árvore B+. Os números de 1 a 7 são chaves, e os dados armazenados na árvore estão identificados de $d_{1}$ a $d_{7}$.}
 \label{bplustree}
 \end{figure}
+
+
+\chapter{Resultados}
+
+\chapter{Conclusão}
 
 
 \iffalse

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1386434052 "tcc.tex" "tcc.pdf" "tcc" 1386434055
+["pdflatex"] 1386437056 "tcc.tex" "tcc.pdf" "tcc" 1386437059
   "/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel-portuges/portuges.ldf" 1367878976 6605 2bd2937f1ce929b4a1367cc2d320364e ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def" 1368743226 42950 b2c89311c96d7b70c24e1365a2fa51ee ""
@@ -70,7 +70,7 @@
   "images/objectSpace.png" 1386255222 47789 fe8eab7b6a25083687ab8bdca24f5023 ""
   "images/produtoTensorial.png" 1385984957 51142 6ccf5332cfa89549dd55f242ba5265b1 ""
   "images/recon_filters.png" 1385983159 48276 c0eafc81d2a9a0a0115c9f15133109a7 ""
-  "images/tex_mapping.jpg" 1385835858 40620 142a16ffa0a5caf0d0b01c231adee0e8 ""
+  "images/tex_mapping.png" 1386436754 64746 7f01c1ecfa871eb523f319f06d83c14f ""
   "images/tree_structure.png" 1386340722 81093 3ac91f9bd8fe8879177cf08421dc84f1 ""
   "images/worldSpace.png" 1386254525 29344 46495e4511cecd3c8f56db97de84a7ad ""
   "sourceCode/cubic.cpp" 1386249920 1087 1260b60b87277647489c6ebc583ae274 ""
@@ -88,8 +88,8 @@
   "sourceCode/rootKey.cpp" 1386176450 131 14531ab80657b3a4f4701a1b058ad3f4 ""
   "sourceCode/vdb_coordinates.cpp" 1385986521 155 a7a5680cee33cc2c868a5ec4f071d70a ""
   "sourceCode/wrap_enum.cpp" 1386252558 551 c4ce4c9950714768287198084ca0820c ""
-  "tcc.aux" 1386434054 11145 bb7e6204c5fec8605a519628184f9737 ""
-  "tcc.tex" 1386434052 78721 73bd670728231f3a380e1060d0520e54 ""
+  "tcc.aux" 1386437058 11452 5147592b35c1362c09e772d6bb0a2b46 ""
+  "tcc.tex" 1386437056 79429 a6cb2b3cbf84969cd19565223be7271b ""
   (generated)
   "tcc.aux"
   "tcc.log"
