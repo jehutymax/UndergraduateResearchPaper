@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  7 DEC 2013 17:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  8 DEC 2013 13:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -469,18 +469,18 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 ) (./tcc.aux)
 \openout1 = `tcc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
  (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count117
@@ -546,9 +546,19 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-(./tcc.toc
+(./capa.tex <images/LogoUFSCar.jpg, id=1, 585.387pt x 426.6339pt>
+File: images/LogoUFSCar.jpg Graphic file (type jpg)
+
+<use images/LogoUFSCar.jpg>
+Package pdftex.def Info: images/LogoUFSCar.jpg used on input line 1.
+(pdftex.def)             Requested size: 67.92995pt x 49.50778pt.
+) [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+ <./images/LogoUFSCar.jpg>] (./tcc.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 3.
- (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 3.
@@ -560,16 +570,58 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 3.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-))
+)
+Overfull \hbox (0.94273pt too wide) detected at line 20
+ []\T1/cmr/m/n/12 xxiv
+ []
+
+
+Overfull \hbox (0.94273pt too wide) detected at line 23
+ []\T1/cmr/m/n/12 xxvi
+ []
+
+
+Overfull \hbox (4.20581pt too wide) detected at line 24
+ []\T1/cmr/m/n/12 xxvii
+ []
+
+
+Overfull \hbox (7.46889pt too wide) detected at line 25
+ []\T1/cmr/m/n/12 xxviii
+ []
+
+
+Overfull \hbox (3.87952pt too wide) detected at line 30
+ []\T1/cmr/m/n/12 xxxv
+ []
+
+
+Overfull \hbox (13.66875pt too wide) detected at line 34
+ []\T1/cmr/m/n/12 xxxviii
+ []
+
+
+Overfull \hbox (13.66875pt too wide) detected at line 35
+ []\T1/cmr/m/n/12 xxxviii
+ []
+
+
+Overfull \hbox (7.1426pt too wide) detected at line 36
+ []\T1/cmr/m/n/12 xxxix
+ []
+
+
+Overfull \hbox (7.1426pt too wide) detected at line 37
+ []\T1/cmr/m/n/12 xxxix
+ []
+
+)
 \tf@toc=\write3
 \openout3 = `tcc.toc'.
 
- [1
+ [2
 
-
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Cap\'{\i }tulo 1.
-(./introducao.tex
+] (./introducao.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
@@ -584,7 +636,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-[2
+[3
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 13--14
@@ -600,40 +652,38 @@ LaTeX Font Info:    Try loading font information for OMS+cmr on input line 25.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 25.
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-[3]
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
-[4]
+
 Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 
-LaTeX Warning: Reference `cap:blender' on page 5 undefined on input line 65.
+LaTeX Warning: Reference `cap:blender' on page vi undefined on input line 65.
 
 
-LaTeX Warning: Reference `resultados' on page 5 undefined on input line 65.
+LaTeX Warning: Reference `resultados' on page vi undefined on input line 65.
 
 
-LaTeX Warning: Reference `conclusao' on page 5 undefined on input line 65.
+LaTeX Warning: Reference `conclusao' on page vi undefined on input line 65.
 
-) [5]
-Cap\'{\i }tulo 2.
-(./blender.tex
+) [6] (./blender.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -648,7 +698,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-<images/blender_gui.png, id=32, 1445.4pt x 903.375pt>
+<images/blender_gui.png, id=40, 1445.4pt x 903.375pt>
 File: images/blender_gui.png Graphic file (type png)
 
 <use images/blender_gui.png>
@@ -659,7 +709,7 @@ Overfull \hbox (28.45276pt too wide) in paragraph at lines 12--13
  [] 
  []
 
-[6
+[7
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 23--24
@@ -671,8 +721,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
-[7 <./images/blender_gui.png>]
-<images/blender_render_option.png, id=40, 322.20375pt x 145.54375pt>
+[8 <./images/blender_gui.png>]
+<images/blender_render_option.png, id=49, 322.20375pt x 145.54375pt>
 File: images/blender_render_option.png Graphic file (type png)
 
 <use images/blender_render_option.png>
@@ -684,219 +734,216 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-<images/Cycles_nodes.png, id=41, 492.33937pt x 277.035pt>
+[9 <./images/blender_render_option.png>]
+<images/Cycles_nodes.png, id=54, 492.33937pt x 277.035pt>
 File: images/Cycles_nodes.png Graphic file (type png)
 
 <use images/Cycles_nodes.png>
 Package pdftex.def Info: images/Cycles_nodes.png used on input line 49.
 (pdftex.def)             Requested size: 426.79134pt x 240.16037pt.
- [8 <./images/blender_render_option.png>] [9 <./images/Cycles_nodes.png>]
-<images/tex_mapping.png, id=51, 345.79187pt x 328.22626pt>
+ [10 <./images/Cycles_nodes.png>] [11]
+<images/tex_mapping.png, id=63, 345.79187pt x 328.22626pt>
 File: images/tex_mapping.png Graphic file (type png)
 
 <use images/tex_mapping.png>
 Package pdftex.def Info: images/tex_mapping.png used on input line 111.
 (pdftex.def)             Requested size: 312.9803pt x 297.0887pt.
- [10]
+ [12 <./images/tex_mapping.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
-[11 <./images/tex_mapping.png>]
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 123.
-
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (6.0pt too wide) in paragraph at lines 125--125
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <12> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 123.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 126--126
 [][][][][][][] 
  []
 
-(./sourceCode/wrap_enum.cpp)
-<images/grid_example.png, id=61, 582.175pt x 286.06876pt>
+(./sourceCode/wrap_enum.cpp) [13]
+<images/grid_example.png, id=78, 582.175pt x 286.06876pt>
 File: images/grid_example.png Graphic file (type png)
 
 <use images/grid_example.png>
-Package pdftex.def Info: images/grid_example.png used on input line 139.
+Package pdftex.def Info: images/grid_example.png used on input line 141.
 (pdftex.def)             Requested size: 312.9803pt x 153.79387pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--147
+Underfull \hbox (badness 10000) in paragraph at lines 146--149
 
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+[14 <./images/grid_example.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
-[13 <./images/grid_example.png>]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 154--154
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 157--157
 [][][][][][][] 
  []
 
 (./sourceCode/vdb_coordinates.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--169
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-<images/recon_filters.png, id=76, 604.2575pt x 226.8475pt>
+<images/recon_filters.png, id=90, 604.2575pt x 226.8475pt>
 File: images/recon_filters.png Graphic file (type png)
 
 <use images/recon_filters.png>
-Package pdftex.def Info: images/recon_filters.png used on input line 197.
+Package pdftex.def Info: images/recon_filters.png used on input line 200.
 (pdftex.def)             Requested size: 426.79134pt x 160.22517pt.
- [15]
-<images/produtoTensorial.png, id=80, 605.26125pt x 231.86626pt>
+
+<images/produtoTensorial.png, id=91, 605.26125pt x 231.86626pt>
 File: images/produtoTensorial.png Graphic file (type png)
 
 <use images/produtoTensorial.png>
-Package pdftex.def Info: images/produtoTensorial.png used on input line 207.
+Package pdftex.def Info: images/produtoTensorial.png used on input line 210.
 (pdftex.def)             Requested size: 426.79134pt x 163.49756pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
  []
 
-[16 <./images/recon_filters.png> <./images/produtoTensorial.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 229--229
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+[18 <./images/recon_filters.png> <./images/produtoTensorial.png>]
+Overfull \hbox (15.871pt too wide) in paragraph at lines 223--224
+[]\T1/cmr/bx/it/12 Interpolação do vi-zi-nho mais pró-ximo\T1/cmr/bx/n/12 . Em 
+in-glês, in-ter-po-la-ção \T1/cmr/bx/it/12 Nearest-Neighbor\T1/cmr/bx/n/12 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
+
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 233--233
 [][][][][][][] 
  []
 
 (./sourceCode/nearestNeighbor.cpp)
-<images/nearestNeighbor.png, id=84, 352.31625pt x 279.0425pt>
+<images/nearestNeighbor.png, id=98, 352.31625pt x 279.0425pt>
 File: images/nearestNeighbor.png Graphic file (type png)
 
 <use images/nearestNeighbor.png>
-Package pdftex.def Info: images/nearestNeighbor.png used on input line 236.
+Package pdftex.def Info: images/nearestNeighbor.png used on input line 239.
 (pdftex.def)             Requested size: 256.0748pt x 202.81795pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--243
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--243
-
- []
-
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 245--245
+Overfull \hbox (6.0pt too wide) in paragraph at lines 246--246
 [][][][][][][] 
  []
 
-(./sourceCode/nearestNeighbor3d.cpp [17]) [18 <./images/nearestNeighbor.png>]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 258--258
+(./sourceCode/nearestNeighbor3d.cpp) [19] [20 <./images/nearestNeighbor.png>]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 261--261
 [][][][][][][] 
  []
 
-(./sourceCode/linear1d.cpp) <images/linear.png, id=92, 457.71pt x 361.35pt>
+(./sourceCode/linear1d.cpp) <images/linear.png, id=107, 457.71pt x 361.35pt>
 File: images/linear.png Graphic file (type png)
 
 <use images/linear.png>
-Package pdftex.def Info: images/linear.png used on input line 263.
+Package pdftex.def Info: images/linear.png used on input line 267.
 (pdftex.def)             Requested size: 256.0748pt x 202.17267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 270--270
+Overfull \hbox (6.0pt too wide) in paragraph at lines 276--276
 [][][][][][][] 
  []
 
-(./sourceCode/linear3d.cpp [19 <./images/linear.png>]) [20]
-
-LaTeX Warning: Command \' invalid in math mode on input line 345.
-
-Missing character: There is no ú in font cmr8!
-<images/cubic.png, id=100, 418.56375pt x 325.215pt>
+(./sourceCode/linear3d.cpp) [21 <./images/linear.png>] [22] [23]
+<images/cubic.png, id=120, 418.56375pt x 325.215pt>
 File: images/cubic.png Graphic file (type png)
  <use images/cubic.png>
-Package pdftex.def Info: images/cubic.png used on input line 352.
+Package pdftex.def Info: images/cubic.png used on input line 360.
 (pdftex.def)             Requested size: 256.0748pt x 198.96146pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 357--357
+Overfull \hbox (6.0pt too wide) in paragraph at lines 366--366
 [][][][][][][] 
  []
 
-(./sourceCode/cubic.cpp [21] [22 <./images/cubic.png>])
-<images/objectSpace.png, id=110, 386.44376pt x 275.0275pt>
+(./sourceCode/cubic.cpp) [24 <./images/cubic.png>]
+<images/objectSpace.png, id=124, 386.44376pt x 275.0275pt>
 File: images/objectSpace.png Graphic file (type png)
 
 <use images/objectSpace.png>
-Package pdftex.def Info: images/objectSpace.png used on input line 369.
+Package pdftex.def Info: images/objectSpace.png used on input line 379.
 (pdftex.def)             Requested size: 199.16928pt x 141.74776pt.
- [23 <./images/objectSpace.png>]
-<images/worldSpace.png, id=114, 260.975pt x 229.85875pt>
+ [25]
+<images/worldSpace.png, id=129, 260.975pt x 229.85875pt>
 File: images/worldSpace.png Graphic file (type png)
 
 <use images/worldSpace.png>
-Package pdftex.def Info: images/worldSpace.png used on input line 381.
+Package pdftex.def Info: images/worldSpace.png used on input line 391.
 (pdftex.def)             Requested size: 199.16928pt x 175.42398pt.
- [24 <./images/worldSpace.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 423--424
+ [26 <./images/objectSpace.png> <./images/worldSpace.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 441--444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--434
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
 
  []
 
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 435--436
-
- []
-
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 442--442
+[28]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 452--452
 [][][][][][][] 
  []
 
-(./sourceCode/osl_structure.cpp)) [26]
-Cap\'{\i }tulo 3.
-(./openvdb.tex
+(./sourceCode/osl_structure.cpp)) [29] (./openvdb.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
@@ -906,7 +953,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-[27
+[30
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 16--17
@@ -918,29 +965,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-
+[31]
 Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[28]
+
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-<images/tree_structure.png, id=133, 718.685pt x 474.77374pt>
+<images/tree_structure.png, id=152, 718.685pt x 474.77374pt>
 File: images/tree_structure.png Graphic file (type png)
 
 <use images/tree_structure.png>
 Package pdftex.def Info: images/tree_structure.png used on input line 30.
 (pdftex.def)             Requested size: 455.24408pt x 300.74629pt.
- [29 <./images/tree_structure.png>]
+ [32 <./images/tree_structure.png>]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 37--37
 [][][][][][][] 
  []
 
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 37.
 (./sourceCode/leafNode.cpp)
-<images/mFlags.png, id=137, 621.32124pt x 179.67125pt>
+<images/mFlags.png, id=156, 621.32124pt x 179.67125pt>
 File: images/mFlags.png Graphic file (type png)
  <use images/mFlags.png>
 Package pdftex.def Info: images/mFlags.png used on input line 44.
@@ -950,7 +999,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
-[30 <./images/mFlags.png>]
+[33]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 53--53
 [][][][][][][] 
  []
@@ -960,13 +1009,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-
+[34 <./images/mFlags.png>]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 59--59
 [][][][][][][] 
  []
 
-(./sourceCode/root.cpp [31])
-<images/tree_inverted.png, id=147, 515.9275pt x 305.14pt>
+(./sourceCode/root.cpp)
+<images/tree_inverted.png, id=165, 515.9275pt x 305.14pt>
 File: images/tree_inverted.png Graphic file (type png)
 
 <use images/tree_inverted.png>
@@ -977,12 +1026,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
-[32]
+[36 <./images/tree_inverted.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
@@ -992,95 +1041,104 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
-[33 <./images/tree_inverted.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-[34] <images/Octree2.png, id=158, 803.0pt x 460.72125pt>
+<images/Octree2.png, id=177, 803.0pt x 460.72125pt>
 File: images/Octree2.png Graphic file (type png)
-
-<use images/Octree2.png>
+ <use images/Octree2.png>
 Package pdftex.def Info: images/Octree2.png used on input line 110.
 (pdftex.def)             Requested size: 284.52756pt x 163.25137pt.
 
+[38]
 Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
-[35 <./images/Octree2.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
-<images/Bplustree.png, id=163, 623.18977pt x 286.85631pt>
+[39 <./images/Octree2.png>]
+<images/Bplustree.png, id=185, 623.18977pt x 286.85631pt>
 File: images/Bplustree.png Graphic file (type png)
 
 <use images/Bplustree.png>
 Package pdftex.def Info: images/Bplustree.png used on input line 132.
 (pdftex.def)             Requested size: 284.52756pt x 130.96628pt.
-) [36 <./images/Bplustree.png>]
-Cap\'{\i }tulo 4.
-[37
+) [40 <./images/Bplustree.png>] [41
 
-]
-Cap\'{\i }tulo 5.
-[38
+] [42
 
 ] (./tcc.aux)
 
 LaTeX Warning: There were undefined references.
 
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 24 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 6879 strings out of 493315
- 98082 string characters out of 6137904
- 270227 words of memory out of 5000000
- 10114 multiletter control sequences out of 15000+600000
- 27946 words of font info for 78 fonts, out of 8000000 for 9000
+ 6910 strings out of 493315
+ 98446 string characters out of 6137904
+ 307227 words of memory out of 5000000
+ 10128 multiletter control sequences out of 15000+600000
+ 34262 words of font info for 90 fonts, out of 8000000 for 9000
  958 hyphenation exceptions out of 8191
- 42i,9n,41p,1300b,1664s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
-exlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
-live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2
-013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/201
-3/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2013/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2013/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2013/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2013/texmf-dist/f
-onts/type1/public/cm-super/sfbi1440.pfb></usr/local/texlive/2013/texmf-dist/fon
-ts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2013/texmf-dist/fonts
-/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
-ype1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
-/public/cm-super/sfbx2488.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/p
-ublic/cm-super/sfrm0700.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm0800.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publi
-c/cm-super/sfrm1000.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
-cm-super/sfrm1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm
--super/sfsl1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-s
-uper/sfti1000.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-sup
-er/sfti1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/courier/ucr
-r8a.pfb>
-Output written on tcc.pdf (38 pages, 1784754 bytes).
+ 42i,9n,41p,1312b,1219s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm
+-super-t1.enc}{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}<
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/public/cm-super/sfbi1728.pfb></usr/local/texlive/2013/texm
+f-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2013/texmf-dist
+/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2013/texmf-dist/f
+onts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2013/texmf-dist/fon
+ts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2013/texmf-dist/fonts
+/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
+/public/cm-super/sfrm1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/p
+ublic/cm-super/sfsl1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pub
+lic/cm-super/sfti1000.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publi
+c/cm-super/sfti1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
+cm-super/sfxc1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm
+-super/sfxc1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-s
+uper/sfxc1728.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/courier/u
+crb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pf
+b>
+Output written on tcc.pdf (42 pages, 2139073 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 180 compressed objects within 2 object streams
+ 319 PDF objects out of 1000 (max. 8388607)
+ 212 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

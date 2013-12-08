@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1386446083 "tcc.tex" "tcc.pdf" "tcc" 1386446086
+["pdflatex"] 1386517793 "tcc.tex" "tcc.pdf" "tcc" 1386517796
   "/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel-portuges/portuges.ldf" 1367878976 6605 2bd2937f1ce929b4a1367cc2d320364e ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def" 1368743226 42950 b2c89311c96d7b70c24e1365a2fa51ee ""
@@ -59,9 +59,11 @@
   "/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1pcr.fd" 1137110629 798 d5895e9edc628f2be019beb2c0ec66df ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/tools/calc.sty" 1254151720 10075 18f0ccff816231e9905cd2b3a482a622 ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/tools/xspace.sty" 1312409015 4405 b7f0681f78908bf1aa3cd73228e9fd38 ""
-  "blender.tex" 1386440048 41773 d893438557ba502e1c267b563cf71c9a ""
+  "blender.tex" 1386469449 42100 1a9b38bfa78d61fd919f2604c5a44612 ""
+  "capa.tex" 1386517790 716 2297bed823367212e95101ecc8b144eb ""
   "images/Bplustree.png" 1386267560 86861 7921834e639c8e08273e3c974a6529fe ""
   "images/Cycles_nodes.png" 1385996642 54020 f7107cf30ade1e9f037d7096a09e028c ""
+  "images/LogoUFSCar.jpg" 1386516884 230124 e02c0b62498fc04264477ab08c10fe03 ""
   "images/Octree2.png" 1386262869 54417 2357d07bad06b7e1626f34574d2496a1 ""
   "images/blender_gui.png" 1385993508 867314 17406fe2007e892c551211fde7fad844 ""
   "images/blender_render_option.png" 1385993584 44708 d5b55deb9e716418cb22a3255d2c3596 ""
@@ -78,7 +80,7 @@
   "images/tree_structure.png" 1386340722 81093 3ac91f9bd8fe8879177cf08421dc84f1 ""
   "images/worldSpace.png" 1386254525 29344 46495e4511cecd3c8f56db97de84a7ad ""
   "introducao.tex" 1386440204 10000 b49fec97982b9d6efa2c61153365f690 ""
-  "openvdb.tex" 1386446077 22292 7df900f38f6a15f6fb90220749998eb7 ""
+  "openvdb.tex" 1386446748 22343 e53efe1983138412496972d082cd6b08 ""
   "sourceCode/cubic.cpp" 1386249920 1087 1260b60b87277647489c6ebc583ae274 ""
   "sourceCode/internalNode.cpp" 1386171178 488 7a4af9d5789cd43a3274532064d65092 ""
   "sourceCode/leafNode.cpp" 1386167816 441 061ee38d87df59465f1bf6ca6516b61d ""
@@ -90,9 +92,9 @@
   "sourceCode/root.cpp" 1386173544 290 484df2107d591a8e120c23b9bc03c81e ""
   "sourceCode/vdb_coordinates.cpp" 1385986521 155 a7a5680cee33cc2c868a5ec4f071d70a ""
   "sourceCode/wrap_enum.cpp" 1386252558 551 c4ce4c9950714768287198084ca0820c ""
-  "tcc.aux" 1386446086 10780 891543893c6f843f8e43d9a32baf27cd ""
-  "tcc.tex" 1386446072 4048 b65c67bf88037e2fccdef652f440b3a9 ""
-  "tcc.toc" 1386446086 2665 f375860edf1d360607145453ffa52dea ""
+  "tcc.aux" 1386517796 10805 c11b55c53cfcfe3b86e08baeb984290f ""
+  "tcc.tex" 1386517512 4480 6e3d7c7726a35244bab6d3c78935d10c ""
+  "tcc.toc" 1386517796 2679 a61443f41855f170fa07d644fe679982 ""
   (generated)
   "tcc.aux"
   "tcc.toc"
