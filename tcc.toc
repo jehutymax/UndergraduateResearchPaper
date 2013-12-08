@@ -31,8 +31,8 @@
 \contentsline {subsubsection}{Acesso aleat\IeC {\'o}rio}{32}
 \contentsline {subsubsection}{Acesso sequencial}{34}
 \contentsline {subsubsection}{Acesso por Est\IeC {\^e}ncil}{34}
-\contentsline {section}{\numberline {3.2}Compara\IeC {\c c}\IeC {\~a}o com Estruturas Semelhantes}{34}
-\contentsline {subsection}{\numberline {3.2.1}Octrees}{34}
+\contentsline {section}{\numberline {3.2}Compara\IeC {\c c}\IeC {\~a}o com Estruturas Semelhantes}{35}
+\contentsline {subsection}{\numberline {3.2.1}Octrees}{35}
 \contentsline {subsection}{\numberline {3.2.2}\IeC {\'A}rvores B}{35}
 \contentsline {subsection}{\numberline {3.2.3}\IeC {\'A}rvores B+}{36}
 \contentsline {chapter}{\numberline {4}Resultados}{37}
