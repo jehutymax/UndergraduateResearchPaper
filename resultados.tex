@@ -38,28 +38,12 @@ O volume utilizado para exemplificar o funcionamento da biblioteca no Blender é
 \end{figure}
 
 
-No Blender, o arquivo de exemplo, \texttt{smoke.vdb}, é carregado através de um nó implementado em Open Shading Language, exibido na Figura \ref{vdb_node}. E na Figura \ref{vdb_blender_interface}, a interface do Blender com a pré-visualização do mesmo volume mostrado na Figura \ref{fig:vdb_view} é exibido. As cores de exibição, que estão diferentes entre as representações, é facilmente configurável no Blender, se desejado.
-\iffalse
-	Opening file: /Users/rafael/Documents/vdb_files/smoke.vdb
-VDB file loaded. Volume details: 
+No Blender, o arquivo de exemplo, \texttt{smoke.vdb}, é carregado através de um nó implementado em Open Shading Language, exibido na Figura \ref{vdb_node}. E na Figura \ref{vdb_blender_interface}, a interface do Blender com a pré-visualização do mesmo volume mostrado na Figura \ref{fig:vdb_view} é exibido. As cores de exibição, que estão diferentes entre as representações, é facilmente configurável no Blender, se desejado. No Código \ref{log} é mostrada a mensagem escrita em {\it log}, com detalhes do volume carregado. Estes detalhes são obtidos a partir de \emph{metadados} salvos no arquivo e a partir de análise rápida do próprio volume. Na mensagem, a sigla \emph{bbox} refere-se ao \emph{bounding box} do volume, isto é, o menor paralelepípedo alinhado com os eixos do sistema de coordenadas que contém todo o volume. Analogamente, o termo \emph{roi} refere-se à região de interesse, na sigla em inglês. O número de \voxels e o consumo de memória em {\it bytes} também é apresentado. \\
 
-creator: Houdini/SOP_OpenVDB_Write
-Grid name: density
-Grid value type: float
- class: fog volume
- file_bbox_max: [111, 223, 112]
- file_bbox_min: [1, 2, 1]
- file_mem_bytes: 6.984.656
- 				10.793.640
- file_voxel_count: 1049275
- is_local_space: false
- is_saved_as_half_float: true
- name: density
- roiMax: [112, 224, 113]
- roiMin: [0, 0, 0]
- value_type: float
- vector_type: invariant
-\fi
+Na Figura \ref{fig:vdb_trans}, são apresentados exemplos de aplicação de \emph{wrapping}, com operações de espelhamento em relação aos eixos y (Figura \ref{fig:vdb_trans2}) e z (Figura \ref{fig:vdb_trans3}). E finalmente, na Figura \ref{planes}, um pequeno número de planos é posicionada na cena, a uma pequena distância uns dos outros, e a textura 3D é então avaliada em cada fatia. A medida que aumentarmos o número de planos, melhor será a impressão de visualizarmos um volume.
+
+\lstinputlisting[label=log,caption=Mensagem exibida em log quando um arquivo é carregado com sucesso.]{sourceCode/log.cpp}
+
 %figura aqui!! :-P
 \begin{figure}[!htb]
 \center
@@ -75,3 +59,37 @@ Grid value type: float
 \caption{Interface do Blender com a pré-visualização de uma fatia do volume.}
 \label{vdb_blender_interface}
 \end{figure}
+
+\begin{figure}[!htb]
+        \centering
+        \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\textwidth]{transf_geometry}
+                \caption{Geometria que recebe a textura.}
+                \label{fig:vdb_trans1}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\textwidth]{transf_upsideDown}
+                \caption{Espelhamento em torno do eixo Y.}
+                \label{fig:vdb_trans2}
+        \end{subfigure}
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line
+        \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\textwidth]{transf_Mirror}
+                \caption{Espelhamento em torno do eixo Z.}
+                \label{fig:vdb_trans3}
+        \end{subfigure}
+        \caption{A mesma fatia de volume exibida na Figura \ref{vdb_blender_interface}, com a aplicação de transformações de espelhamento.}\label{fig:vdb_trans}
+\end{figure}
+
+
+%figura aqui!! :-P
+\begin{figure}[!htb]
+\center
+\includegraphics[width=5cm]{multiplePlanes}
+\caption{Uma série de planos são posicionados próximos uns aos outros, e o volume é avaliado em cada fatia.}
+\label{planes}
+\end{figure}
+
