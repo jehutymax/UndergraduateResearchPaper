@@ -1,44 +1,43 @@
 \select@language {portuges}
-\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{4}{chapter.1}
-\contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o}{6}{section.1.1}
-\contentsline {section}{\numberline {1.2}Organiza\IeC {\c c}\~ao}{7}{section.1.2}
-\contentsline {chapter}{\numberline {2}Blender}{8}{chapter.2}
-\contentsline {section}{\numberline {2.1}Software}{8}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Renderiza\IeC {\c c}\IeC {\~a}o no Blender}{9}{subsection.2.1.1}
-\contentsline {subsubsection}{Blender Internal Render}{10}{section*.10}
-\contentsline {subsubsection}{Cycles Render}{10}{section*.11}
-\contentsline {section}{\numberline {2.2}Texturas}{11}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Defini\IeC {\c c}\IeC {\~a}o}{11}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Mapeamento de Textura}{12}{subsection.2.2.2}
-\contentsline {subsubsection}{Coordenadas de Textura}{13}{section*.14}
-\contentsline {subsection}{\numberline {2.2.3}Estrat\IeC {\'e}gias de \emph {Wrapping}}{13}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Texturas Tridimensionais}{14}{subsection.2.2.4}
-\contentsline {subsubsection}{Voxels}{15}{section*.17}
-\contentsline {subsubsection}{Fonte dos dados de uma textura volum\IeC {\'e}trica}{16}{section*.19}
-\contentsline {subsubsection}{Reconstru\IeC {\c c}\IeC {\~a}o}{16}{section*.20}
-\contentsline {subsubsection}{Filtros e T\IeC {\'e}cnicas de Interpola\IeC {\c c}\IeC {\~a}o}{18}{section*.23}
-\contentsline {section}{\numberline {2.3}Sistemas de Coordenadas}{24}{section.2.3}
-\contentsline {subsubsection}{Espa\IeC {\c c}o do objeto}{24}{section*.32}
-\contentsline {subsubsection}{Espa\IeC {\c c}o da cena}{25}{section*.34}
-\contentsline {subsection}{\numberline {2.3.1}Nota\IeC {\c c}\IeC {\~a}o Homog\IeC {\^e}nea}{26}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}\emph {Shaders}}{27}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}\emph {Open Shading Language}}{28}{subsection.2.4.1}
-\contentsline {chapter}{\numberline {3}OpenVDB}{29}{chapter.3}
-\contentsline {section}{\numberline {3.1}Defini\IeC {\c c}\IeC {\~a}o}{29}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}A Estrutura de Dados VDB}{29}{subsection.3.1.1}
-\contentsline {subsubsection}{Detalhes de implementa\IeC {\c c}\IeC {\~a}o}{30}{section*.37}
-\contentsline {subsection}{\numberline {3.1.2}Algoritmos de Acesso \IeC {\`a} Estrutura}{34}{subsection.3.1.2}
-\contentsline {subsubsection}{Acesso aleat\IeC {\'o}rio}{34}{section*.41}
-\contentsline {subsubsection}{Acesso sequencial}{36}{section*.42}
-\contentsline {subsubsection}{Acesso por Est\IeC {\^e}ncil}{36}{section*.43}
-\contentsline {section}{\numberline {3.2}Compara\IeC {\c c}\IeC {\~a}o com Estruturas Semelhantes}{37}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Octrees}{37}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}\IeC {\'A}rvores B}{37}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}\IeC {\'A}rvores B+}{38}{subsection.3.2.3}
-\contentsline {chapter}{\numberline {4}Resultados}{39}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{43}{chapter.5}
-\contentsline {section}{\numberline {5.1}Desafios}{43}{section.5.1}
-\contentsline {section}{\numberline {5.2}An\IeC {\'a}lise dos Resultados}{45}{section.5.2}
-\contentsline {section}{\numberline {5.3}Trabalhos Futuros}{45}{section.5.3}
-\contentsline {section}{\numberline {5.4}Coment\IeC {\'a}rios Finais}{46}{section.5.4}
-\contentsline {chapter}{Bibliografia}{47}{chapter*.56}
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o}{5}{section.1.1}
+\contentsline {section}{\numberline {1.2}Organiza\IeC {\c c}\~ao}{6}{section.1.2}
+\contentsline {chapter}{\numberline {2}Blender}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Software}{7}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Renderiza\IeC {\c c}\IeC {\~a}o no Blender}{8}{subsection.2.1.1}
+\contentsline {subsubsection}{Blender Internal Render}{9}{section*.10}
+\contentsline {subsubsection}{Cycles Render}{9}{section*.11}
+\contentsline {section}{\numberline {2.2}Texturas}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Defini\IeC {\c c}\IeC {\~a}o}{10}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Mapeamento de Textura}{11}{subsection.2.2.2}
+\contentsline {subsubsection}{Coordenadas de Textura}{11}{section*.14}
+\contentsline {subsection}{\numberline {2.2.3}Estrat\IeC {\'e}gias de \emph {Wrapping}}{12}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Texturas Tridimensionais}{13}{subsection.2.2.4}
+\contentsline {subsubsection}{Voxels}{14}{section*.17}
+\contentsline {subsubsection}{Fonte dos dados de uma textura volum\IeC {\'e}trica}{14}{section*.19}
+\contentsline {subsubsection}{Reconstru\IeC {\c c}\IeC {\~a}o}{15}{section*.20}
+\contentsline {subsubsection}{Filtros e T\IeC {\'e}cnicas de Interpola\IeC {\c c}\IeC {\~a}o}{16}{section*.23}
+\contentsline {section}{\numberline {2.3}Sistemas de Coordenadas}{22}{section.2.3}
+\contentsline {subsubsection}{Espa\IeC {\c c}o do objeto}{22}{section*.32}
+\contentsline {subsubsection}{Espa\IeC {\c c}o da cena}{22}{section*.34}
+\contentsline {subsection}{\numberline {2.3.1}Nota\IeC {\c c}\IeC {\~a}o Homog\IeC {\^e}nea}{24}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}\emph {Shaders}}{25}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}\emph {Open Shading Language}}{25}{subsection.2.4.1}
+\contentsline {chapter}{\numberline {3}OpenVDB}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}Defini\IeC {\c c}\IeC {\~a}o}{27}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}A Estrutura de Dados VDB}{27}{subsection.3.1.1}
+\contentsline {subsubsection}{Detalhes de implementa\IeC {\c c}\IeC {\~a}o}{28}{section*.37}
+\contentsline {subsection}{\numberline {3.1.2}Algoritmos de Acesso \IeC {\`a} Estrutura}{32}{subsection.3.1.2}
+\contentsline {subsubsection}{Acesso aleat\IeC {\'o}rio}{33}{section*.44}
+\contentsline {subsubsection}{Acesso sequencial}{33}{section*.45}
+\contentsline {subsubsection}{Acesso por Est\IeC {\^e}ncil}{34}{section*.46}
+\contentsline {section}{\numberline {3.2}Compara\IeC {\c c}\IeC {\~a}o com Estruturas Semelhantes}{34}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Octrees}{34}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}\IeC {\'A}rvores B}{35}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}\IeC {\'A}rvores B+}{35}{subsection.3.2.3}
+\contentsline {chapter}{\numberline {4}Resultados}{37}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{41}{chapter.5}
+\contentsline {section}{\numberline {5.1}Desafios}{41}{section.5.1}
+\contentsline {section}{\numberline {5.2}Trabalhos Futuros}{42}{section.5.2}
+\contentsline {section}{\numberline {5.3}Coment\IeC {\'a}rios Finais}{43}{section.5.3}
+\contentsline {chapter}{Bibliografia}{44}{chapter*.60}

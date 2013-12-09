@@ -93,3 +93,35 @@ Na Figura \ref{fig:vdb_trans}, são apresentados exemplos de aplicação de \emp
 \label{planes}
 \end{figure}
 
+\section*{Análise dos Resultados}
+
+Os resultados encontrados são satisfatórios no sentido de que foi implementado o que foi proposto. Contudo, sua aplicabilidade ainda é limitada, pois depende da implementação do módulo de \emph{shading} para que os volumes em VDB possam ser renderizados de forma apropriada.\\
+
+Ainda assim, a representação de volumes no Blender é agora mais eficiente, e suporta volumes de ordem de grandeza maior que a estrutura anterior, em uma máquina com o mesmo tamanho de memória disponível. Um exemplo é apresentado na Tabela \ref{consumo} para o volume usado neste trabalho, o volume representando uma densidade de fumaça no espaço.
+
+\begin{table}[!ht]
+    \centering
+        \begin{tabular}{|c|c|c|}
+\hline
+
+\multicolumn{3}{|c|}{\bf{Consumo de memória para representação do volume}} \\
+\hline \hline
+Estrutura de Dados & Consumo de Memória em {\it bytes} & Valor Relativo\\
+
+\hline
+ 
+Vetores 3D (Estrutura existente) & $10.793.640$ &  $1.545$  \\
+
+\hline
+ 
+OpenVDB & $6.984.656$ & $1$ \\
+
+\hline
+ 
+
+%\hline
+\end{tabular}
+    \caption{Comparação entre o uso de memória da implementação anterior com o uso da estrutura VDB.}
+    \label{consumo}
+\end{table}
+

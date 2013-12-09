@@ -22,39 +22,6 @@ Os arquivos de volume {\it .vdb} definem seus próprios espaços, em que o volum
 
 O desafio aqui, na realidade, estava no conceito do problema, pois a diferença entre espaços é natural. A solução foi adotar o objeto em que a textura está sendo avaliada como referência, e mapear, usando uma transformação linear, as coordenadas da textura para as coordenadas do mundo correspondentes. A transformação foi composta usando as coordenadas do objeto, e construindo a matriz $4 \times 4$ para a transformada afim.
 
-
-\section{Análise dos Resultados}
-
-Os resultados encontrados são satisfatórios no sentido de que foi implementado o que foi proposto. Contudo, sua aplicabilidade ainda é limitada, pois depende da implementação do módulo de \emph{shading} para que os volumes em VDB possam ser renderizados de forma apropriada.\\
-
-Ainda assim, a representação de volumes no Blender é agora mais eficiente, e suporta volumes ordens de grandeza maior que a estrutura anterior, em uma máquina com o mesmo tamanho de memória disponível. Um exemplo é apresentado na Tabela \ref{consumo} para o volume usado neste trabalho, o volume representando uma densidade de fumaça no espaço.
-
-\begin{table}[!h]
-	\centering
-		\begin{tabular}{|c|c|c|}
-\hline
-
-\multicolumn{3}{|c|}{\bf{Consumo de memória para representação do volume}} \\
-\hline \hline
-Estrutura de Dados & Consumo de Memória em {\it bytes} & Valor Relativo\\
-
-\hline
- 
-Vetores 3D (Estrutura existente) & $10.793.640$ &  $1.545$  \\
-
-\hline
- 
-OpenVDB & $6.984.656$ & $1$ \\
-
-\hline
- 
-
-%\hline
-\end{tabular}
-	\caption{Comparação entre o uso de memória da implementação anterior com o uso da estrutura VDB.}
-	\label{consumo}
-\end{table}
-
 \section{Trabalhos Futuros}
 
 Muito embora o trabalho essencial tenha sido executado - agora existe suporte para abrir e visualizar volumes VDB no Blender, não houve tempo hábil para a conclusão de funcionalidades desejáveis, sendo que as principais são listadas a seguir.
@@ -71,7 +38,7 @@ O processo de geração de imagens é de alta complexidade computacional por nat
 
 \section{Comentários Finais}
 
-Um dos aspectos mais interessantes de lidar com um problema de mundo real de uma aplicação deste gênero é a realização de que assuntos e disciplinas aparentemente sem relação alguma entre si convergem para permitir a solução de um problema. O uso de métodos de \emph{Cálculo Numérico} para a implementação de técnicas estudadas em \emph{Análise de Sinais e Sistemas}, por exemplo, teria sido uma aplicação de interesse na ocasião em que estes tópicos foram estudados pela primeira vez durante o curso de graduação, apesar de que possivelmente trata-se de uma aplicação exageradamente específica ao problema tratado aqui. \\
+Um dos aspectos mais interessantes de lidar com um problema de mundo real de uma aplicação deste gênero é a realização de que assuntos e disciplinas aparentemente sem relação alguma entre si convergem para permitir a solução de um problema. O uso de métodos de \emph{Cálculo Numérico} para a implementação de técnicas estudadas em \emph{Análise de Sinais e Sistemas}, por exemplo, teria sido uma aplicação de interesse na ocasião em que estes tópicos foram estudados pela primeira vez durante o curso de graduação. \\
 
 Um outro ponto importante é a aplicação direta de conceitos e práticas sugeridas em cursos como o de \emph{Engenharia de Software}, como a configuração de software e as dificuldades em manter um conjunto de alterações em desenvolvimento isoladas da distribuição principal, mas mantendo a sincronização das alterações feitas à distribuição principal para que o software em desenvolvimento não fique obsoleto. \\
 

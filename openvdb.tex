@@ -34,7 +34,9 @@ Um componente fundamental da estrutura de dados é o conjunto de máscaras de \b
 
 {\emph Folhas}. Estes nós são os blocos do \grid de nível mais baixo na estrutura, e por construção, todos estão na mesma profundidade da árvore. As folhas dividem o espaço de índices em subdomínios disjuntos com $2^{log_{2}(w)}$ \voxels em cada eixo, onde $2^{log_{2}(w)} = 1, 2, 3, ...$ e $w$ é qualquer entre $x$, $y$ ou $z$. Uma configuração típica, e recomendada, é estabelecer $2^{log_{2}(w)} = 3$, o que corresponde a um bloco $8 \times 8 \times 8$. As dimensões das folhas (e dos nós internos, que discutiremos a seguir) são restritas a potências de dois, pois isso permite as operações \bit a \bit com mais velocidade durante as buscas pela árvore.
 
+\begin{figure}[!htb]
 \lstinputlisting[label=leafNode,caption=Definição de um nó folha.]{sourceCode/leafNode.cpp}
+\end{figure}
 
 Como pode ser visto no Código \ref{leafNode}, os tamanhos são estabelecidos em momento de compilação, e o tamanho do nó é computado como $1 << \sum_{w} sLog_{2}(w)$, onde $<<$ denota um deslocamento de \bits à esquerda. As folhas armazenam os valores dos \voxels em uma tabela chamada de {\it Direct Access Table}\footnote{Pode-se assumir que esta tabela é um vetor com custo de acesso aleátorio de $O(1)$ para o pior caso.}, denotada no código por \texttt{mLeafDAT}, e a topologia do \voxel ativo é mantido na máscara de \bits denotada no código por \texttt{mValueMask}. É importante notar que embora a máscara de \bits tenha um tamanho fixo igual ao da estrutura \texttt{LeafNode}, o tamanho do vetor que armazena os valores dos dados é dinâmico, mantido em \texttt{mLeafDAT.values}. A quantidade variável de \buffers de dados, e seus tamanhos, bem como outras informações a respeito da \texttt{LeafNode} é armazenada de forma compacta na varíavel de 64 \bits \texttt{mFlags}, mostrado na Figura \ref{mFlags}.
 
@@ -50,13 +52,17 @@ Os primeiros dois \bits codificam um dos quatro estados possíveis: 0 \buffers, 
 
 \emph{Nós internos}. São os nós existentes em todos os níveis intermediários da árvore entre a raiz e as folhas, e basicamente definem a profundidade e o formato da árvore B+ modificada.  
 
+\begin{figure}[!htb]
 \lstinputlisting[label=internalNode,caption=Definição de um nó intermediário.]{sourceCode/internalNode.cpp}
+\end{figure}
 
 Vários detalhes da implementação são iguais aos da folha. Os fatores de ramificação são configuráveis através dos parâmetros de \texttt{template}, $Log_{2}(w)$, e são limitados a potências de dois para buscas eficientes na árvore. Mas diferentemente das folhas, os nós internos armazenam tanto valores quanto informações de topologia, isto é, ponteiros para outros nós, internos ou folhas. A implementação é feita com o uso de \texttt{union} na tabela de acesso direto \texttt{mInternalDAT}. A topologia correspondente é armazenada de forma compacta na máscara de \bits \texttt{mChildMask}, e \texttt{mValueMask} é usada para indicar se o valor intermediário está ativo ou não. Como os fatores de ramificação $Log_{2}(w)$ são fixados na compilação, os tamanhos de \texttt{mInternalDAT}, \texttt{mChildMask} e \texttt{mValueMask} também são. Outra observação importante é que nós internos em níveis diferentes da árvore podem ter fatores de ramificação diferentes. \\
 
 \emph{Nó raiz}. Este é o nó no nível mais alto da árvore, onde as operações sobre a árvore normalmente começam. 
 
+\begin{figure}[!htb]
 \lstinputlisting[label=rootNode,caption=Definição do nó raiz.]{sourceCode/root.cpp}
+\end{figure}
 
 Todas as configurações de uma VDB possuem no máximo um nó raiz que, diferentemente dos outros nós, é esparso e pode ter seu tamanho alterado dinamicamente. Isso é facilitado por uma tabela hash-map que armazena os ponteiros para os nós filhos ou para os valores intermediários, se forem armazenados neste nível. Se uma entrada na tabela representar um valor intermediário (como no caso de \texttt{child=NULL}), um valor booleano indica o estado do valor intermediário (se está ativo ou inativo). É importante notar que por construção o \texttt{mRootMap} contém poucos valores devido aos domínios imensos representados pelos nós intermediários, como por exemplo, $4096^{3}$.
 A raiz possui um registro de classes de acesso denominada \texttt{Accessors}, que melhora consideravelmente o desempenho de acesso ao \grid nos casos de consultas espacialmente coerentes ao reutilizar ponteiros de nós salvos no cache na ocasião de um acesso anterior e com isso consegue realizar a busca de baixo para cima, ao invés de percorrer a árvore de cima para baixo. \texttt{mBackground} é o valor que é retornado quando é feita uma tentativa de acesso a um local que não pertence a nenhum valor intermediário e a nenhum \voxel. Uma ilustração da estrutura é apresentada na Figura \ref{vdbtree}.
@@ -108,7 +114,7 @@ Contudo, uma limitação da VDB é que, apesar de ser uma estrutura de dados hie
 \begin{figure}[!htb]
 \center
 \includegraphics[width=10cm]{Octree2}
-\caption{Diagrama de uma octree, estrutura em que cada nó interno possui exatamente oito nós-filho. Fonte: Wikipedia \cite{OCTREE}.}
+\caption{Diagrama de uma octree, estrutura em que cada nó interno possui exatamente oito nós-filho.}
 \label{octree}
 \end{figure}
 
@@ -130,7 +136,7 @@ A VDB é basicamente uma variação da árvore B+ com características de Octree
 \begin{figure}[!htb]
 \center
 \includegraphics[width=10cm]{Bplustree}
-\caption{Diagrama de uma árvore B+. Os números de 1 a 7 são chaves, e os dados armazenados na árvore estão identificados de $d_{1}$ a $d_{7}$. Fonte: Wikipedia \cite{BPTREE}.}
+\caption{Diagrama de uma árvore B+. Os números de 1 a 7 são chaves, e os dados armazenados na árvore estão identificados de $d_{1}$ a $d_{7}$.}
 \label{bplustree}
 \end{figure}
 
