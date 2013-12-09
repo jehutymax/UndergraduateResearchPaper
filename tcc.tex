@@ -112,9 +112,9 @@ Volumes no Blender}
 
 \begin{document}
 
-\frontmatter
 %
-\input{capa} 
+%\input{capa} 
+%\thispagestyle{empty}
 
 \tableofcontents
 
@@ -132,12 +132,16 @@ Volumes no Blender}
 \input{openvdb.tex}
 
 \chapter{Resultados}
+\label{resultados}
 
-%\input{resultados.tex}
+\input{resultados.tex}
 
 \chapter{Conclusão}
+\label{conclusao}
 
-%\input{conclusao.tex}
+\input{conclusao.tex}
+
+\include{references}
 
 \iffalse
 1. introdução (4)

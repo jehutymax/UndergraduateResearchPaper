@@ -40,13 +40,14 @@ O Blender\footnote{http://www.blender.org} é um pacote de software de computaç
 OpenVDB é o nome da biblioteca de código aberto, em C++, que possui uma nova estrutura de dados e um conjunto de ferramentas para o armazenamento e manipulação de dados volumétricos esparsos e discretos, em coordenadas tridimensionais. O destaque desta estrutura de dados é o oferecimento de um espaço de índices limitado apenas pela capacidade de memória da máquina, com armazenamento adaptativo dos volumes, e a velocidade de acesso aleatório e sequencial praticamente constante, $O(1)$. Um estudo detalhado sobre a OpenVDB é apresentado no Capítulo \ref{data_struct}.
 
 \subsection*{Definição do problema}
+\label{def_problem}
 O objetivo deste trabalho é implementar a texturização de volumes no renderizador Cycles do Blender, o que corresponde as duas primeiras etapas descritas no início dessa Seção, ou seja, de \emph{consulta aos dados} a uma estrutura volumétrica e da realização dos cálculos de \emph{interpolação}. Como será descrito no Capítulo \ref{tex_def}, essas etapas englobam o uso de uma textura tridimensional.\\
 
 A proposta é utilizar a biblioteca OpenVDB para armazenamento do volume, e implementar as funcionalidades básicas de geração, consulta e escrita em arquivo dos volumes considerados.
 
 \section{Motivação}
 
-bla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla bla
+A implementação de renderização de volumes é importante pelo número de aplicações, e efeitos como os fenômenos naturais (nuvem, névoa, entre outros) são difíceis de gerar com outras técnicas. E, no caso do Blender, cujo uso principal é na criação de animações, os volumes tendem a ser muito grandes, o que atualmente torna o processo de geração das imagens proibitivamente lento. Neste contexto, o uso de uma biblioteca que tenha sido extensivamente otimizada com este uso em mente foi a proposta com a maior adesão de usuários interessados. E embora existam outras bibliotecas que resolvem o mesmo problema, como a Field3D\footnote{http://opensource.imageworks.com/?p=field3d}, os resultados mais convincentes foram os apresentados pela OpenVDB.
 
 % descrever os aspectos tecnicos, porque implementar isso? resultado visual esperado? economia de memoria? processamento? versão existente?
 
