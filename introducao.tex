@@ -24,9 +24,9 @@ O processo de renderização de volumes, tal como tratado neste trabalho, foi di
 \begin{itemize}
 \item \emph{Consulta aos dados}. Posições no espaço são escolhidas para serem amostradas no volume, isto é, os pontos escolhidos pela aplicação são buscados na estrutura que armazena o volume. 
 
-\item \emph{Interpolação}. Os pontos escolhidos na etapa anterior normalmente são diferentes dos pontos existentes no volume. Assim, um campo 3D contínuo precisa ser reconstruído a partir da imagem discreto para que os valores nos pontos buscados possam ser obtidos. 
+\item \emph{Interpolação}. Os pontos escolhidos na etapa anterior normalmente são diferentes dos pontos existentes no volume. Assim, um campo 3D contínuo precisa ser reconstruído a partir da imagem discreta para que os valores nos pontos buscados possam ser obtidos. 
 
-\item \emph{Shading e Iluminação}. O modelo óptico do problema é calculado, e as componentes de absorção e emissão de luz são avaliados. Com os resultados da interação da luz com o volume, a imagem pode ser gerada.
+\item \emph{Shading e Iluminação}. O modelo óptico do problema é calculado, e as componentes de absorção e emissão de luz são avaliadas. Com os resultados da interação da luz com o volume, a imagem pode ser gerada.
 \end{itemize}
 
 As duas primeiras etapas, de consulta ao volume e cálculos de interpolação são processos estritamente locais em relação aos pontos amostrados. Dessa forma, em um software modular, é de se esperar que as implementações destas etapas sejam independentes da etapa de \emph{shading} e dos cálculos de iluminação. Essa observação é importante, pois limitará o escopo deste trabalho.
@@ -41,7 +41,7 @@ OpenVDB é o nome da biblioteca de código aberto, em C++, que possui uma nova e
 
 \subsection*{Definição do problema}
 \label{def_problem}
-O objetivo deste trabalho é implementar a texturização de volumes no renderizador Cycles do Blender, o que corresponde as duas primeiras etapas descritas no início dessa Seção, ou seja, de \emph{consulta aos dados} a uma estrutura volumétrica e da realização dos cálculos de \emph{interpolação}. Como será descrito no Capítulo \ref{tex_def}, essas etapas englobam o uso de uma textura tridimensional.\\
+O objetivo deste trabalho é implementar a texturização de volumes no renderizador Cycles do Blender, o que corresponde as duas primeiras etapas descritas no início dessa Seção, ou seja, de \emph{consulta aos dados} de uma estrutura volumétrica e da realização dos cálculos de \emph{interpolação}. Como será descrito no Capítulo \ref{tex_def}, essas etapas englobam o uso de uma textura tridimensional.\\
 
 A proposta é utilizar a biblioteca OpenVDB para armazenamento do volume, e implementar as funcionalidades básicas de geração, consulta e escrita em arquivo dos volumes considerados.
 
@@ -63,4 +63,4 @@ Como o Blender estava entre as instituições participantes do programa, escrevi
 
 \section{Organizaç\~ao}
 
-No Capítulo \ref{cap:blender}, o software Blender é apresentado, juntamente com a descrição de alguns conceitos, como o mapeamento de textura, interpolação, e sistemas de coordenadas. Em seguida, no Capítulo \ref{data_struct}, a estrutura de dados utilizada para manipular os volumes de dados é descrita. No Capítulo \ref{resultados} os resultados obtidos são apresentados e por fim, no Capítulo \ref{conclusao}, encontram-se as discussões finais e conclusão deste trabalho.
+No Capítulo \ref{blender}, o software Blender é apresentado, juntamente com a descrição de alguns conceitos, como o mapeamento de textura, interpolação, e sistemas de coordenadas. Em seguida, no Capítulo \ref{data_struct}, a estrutura de dados utilizada para manipular os volumes de dados é descrita. No Capítulo \ref{resultados} os resultados obtidos são apresentados e por fim, no Capítulo \ref{conclusao}, encontram-se as discussões finais e conclusão deste trabalho.

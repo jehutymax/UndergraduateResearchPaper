@@ -96,7 +96,7 @@ Em computação gráfica, a maioria das superfícies são representadas parametr
 {\bf p}(u,v) = \left[ \begin{array}{c} x(u,v) \\ y(u,v) \\ z(u,v) \end{array} \right].
 \]    
 
-Dada uma superfície paramétrica, podemos mapear um ponto do mapa de textura $T(s,t)$ para um ponto ${\bf p}(u,v)$ na superfície usando um mapa linear da forma
+Dada uma superfície paramétrica, podemos mapear um ponto do mapa de textura $T(s,t)$ para um ponto ${\bf P}(u,v)$ na superfície usando um mapa linear da forma
 \[ \begin{array}{l}
  u = as + bt + c, \\
  v = ds + et + f.
@@ -281,7 +281,7 @@ A implementação do caso tridimensional é apresentada no Código \ref{linear3d
 
 O próximo passo, depois da interpolação linear, é a interpolação cúbica, que usa quatro valores vizinhos para a interpolação:
 \[
- I_{c} (x, p_{i-1}, p_{i}, p_{i+1}, p_{i+2}).
+ I_{c} (x, P_{i-1}, P_{i}, P_{i+1}, P_{i+2}).
 \]  
 
 Para derivar a fórmula da interpolação cúbica, consideramos a forma básica de um polinômio de terceira ordem e sua derivada:
@@ -294,10 +294,10 @@ f'(x) = 3ax^2 + 2bx + c.
 Os pontos que desejamos interpolar estão no intervalo $[0, 1]$, e os quatro pontos que funcionam como entrada para a função de interpolação são
 \[
 \begin{array}{rcl}
-p_{i-1} & = & -1, \\
-p_{i} & = & 0, \\
-p_{i+1} & = & 1, \\
-p_{i+2} & = & 2.
+P_{i-1} & = & -1, \\
+P_{i} & = & 0, \\
+P_{i+1} & = & 1, \\
+P_{i+2} & = & 2.
 \end{array} 
 \]
 
@@ -325,20 +325,20 @@ d & = & f(0).
 Sabemos os valores de $f(0)$ e de $f(1)$, mas os valores das derivadas não são dados diretamente à função. Porém, como temos $f(-1)$ e $f(2)$, podemos calculá-las:
 \[
 \begin{array}{rcl}
-f(0) & = & p_{i}, \\
-f(1) & = & p_{i+1}, \\
-f'(0) & = & \frac{p_{i+1} - p_{i-1}}{2}, \\
-f'(1) & = & \frac{p_{i+2} - p_{i}}{2}.
+f(0) & = & P_{i}, \\
+f(1) & = & P_{i+1}, \\
+f'(0) & = & \frac{P_{i+1} - P_{i-1}}{2}, \\
+f'(1) & = & \frac{P_{i+2} - P_{i}}{2}.
 \end{array} 
 \]
 
 Combinando os dois últimos conjuntos de equações, encontramos os valores de $a$, $b$, $c$ e $d$ em sua forma simples e fechada:
 \[
 \begin{array}{rcl}
-a & = & -\frac{1}{2}p_{i-1} +\frac{3}{2}p_{i} +\frac{3}{2}p_{i+1} +\frac{1}{2}p_{i+2}, \\
-b & = & p_{i-1} +\frac{5}{2}p_{i} + 2p_{i+1} -\frac{1}{2}p_{i+2}, \\
-c & = & -\frac{1}{2}p_{i-1} + \frac{1}{2}p_{i+1}, \\
-d & = & p_{i},
+a & = & -\frac{1}{2}P_{i-1} +\frac{3}{2}P_{i} +\frac{3}{2}P_{i+1} +\frac{1}{2}P_{i+2}, \\
+b & = & P_{i-1} +\frac{5}{2}P_{i} + 2P_{i+1} -\frac{1}{2}P_{i+2}, \\
+c & = & -\frac{1}{2}P_{i-1} + \frac{1}{2}P_{i+1}, \\
+d & = & P_{i},
 \end{array} 
 \]
 
@@ -346,8 +346,8 @@ o que nos leva à solução do problema original,
 
 
 \begin{align*}
- I_{c} (x, p_{i-1}, p_{i}, p_{i+1}, p_{i+2}) = \left( -\frac{1}{2}p_{i-1} +\frac{3}{2}p_{i} +\frac{3}{2}p_{i+1} +\frac{1}{2}p_{i+2} \right)x^3 &+ \\
- \left( p_{i-1} +\frac{5}{2}p_{i} + 2p_{i+1} -\frac{1}{2}p_{i+2} \right)x^2 &+ \\ \left( -\frac{1}{2}p_{i-1} + \frac{1}{2}p_{i+1} \right)x &+ \\ p_{i}.
+ I_{c} (x, P_{i-1}, P_{i}, P_{i+1}, P_{i+2}) = \left( -\frac{1}{2}P_{i-1} +\frac{3}{2}P_{i} +\frac{3}{2}P_{i+1} +\frac{1}{2}P_{i+2} \right)x^3 &+ \\
+ \left( P_{i-1} +\frac{5}{2}P_{i} + 2P_{i+1} -\frac{1}{2}P_{i+2} \right)x^2 &+ \\ \left( -\frac{1}{2}P_{i-1} + \frac{1}{2}P_{i+1} \right)x &+ \\ P_{i}.
  \end{align*}
 
 A interpolação cúbica usa dois valores abaixo e dois acima do ponto consultado, então a técnica tem um suporte $S = 4$, como é possível visualizar na Figura \ref{cubicInterp}. Em três dimensões, o custo total é dado por $4^3 = 64$ consultas para o cálculo de um único valor. No Código \ref{cubic}, a implementação é dada para uma, duas e três dimensões. A implementação de uma dimensão maior sempre usa a função definida para uma dimensão menor.
@@ -422,7 +422,7 @@ As matrizes específicas das transformações de rotação, escala e cisalhament
 
 A combinação de uma transformação linear seguida de uma translação é denominada {\it transformada afim}.
 
-Verificamos com facilidade que um vetor ${\bf v} = (v_{x},v_{y},v_{z},0)$ não é afetado pela transformação ${\bf Tv}$ porque seu último elemento é 0. Se ao ponto $p= (p_{x},p_{y},p_{z},1)$ aplicarmos a transformada ${\bf T}p$, o resultado que obtemos é $p= (p_{x} + t_{x},p_{y} + t_{y},p_{z} + t_{z},1)$, ou seja, o ponto $p$ transladado por $t$.
+Verificamos com facilidade que um vetor ${\bf v} = (v_{x},v_{y},v_{z},0)$ não é afetado pela transformação ${\bf Tv}$ porque seu último elemento é 0. Se ao ponto $P= (P_{x},P_{y},P_{z},1)$ aplicarmos a transformada ${\bf T}P$, o resultado que obtemos é $P = (P_{x} + t_{x},P_{y} + t_{y},P_{z} + t_{z},1)$, ou seja, o ponto $P$ transladado por $t$.
 
 Como é de se esperar, multiplicações entre matrizes e multiplicações entre matrizes e vetores são calculadas normalmente, sem alterar o que foi discutido.
 
