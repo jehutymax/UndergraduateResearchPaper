@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  9 DEC 2013 10:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  9 DEC 2013 10:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1331,7 +1331,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
-<images/Bplustree.png, id=641, 623.18977pt x 286.85631pt>
+<images/Bplustree.png, id=644, 623.18977pt x 286.85631pt>
 File: images/Bplustree.png Graphic file (type png)
 
 <use images/Bplustree.png>
@@ -1347,28 +1347,28 @@ Cap\'{\i }tulo 4.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 136.
 (./resultados.tex
-<images/2drendering_approach.png, id=651, 470.75874pt x 158.5925pt>
+<images/2drendering_approach.png, id=657, 470.75874pt x 158.5925pt>
 File: images/2drendering_approach.png Graphic file (type png)
 
 <use images/2drendering_approach.png>
 Package pdftex.def Info: images/2drendering_approach.png used on input line 9.
 (pdftex.def)             Requested size: 369.88582pt x 124.61151pt.
 
-<images/vdb_view1.png, id=655, 1017.8025pt x 939.51pt>
+<images/vdb_view1.png, id=661, 1017.8025pt x 939.51pt>
 File: images/vdb_view1.png Graphic file (type png)
 
 <use images/vdb_view1.png>
 Package pdftex.def Info: images/vdb_view1.png used on input line 19.
 (pdftex.def)             Requested size: 136.5746pt x 126.06857pt.
 
-<images/vdb_view2.png, id=656, 1017.8025pt x 939.51pt>
+<images/vdb_view2.png, id=662, 1017.8025pt x 939.51pt>
 File: images/vdb_view2.png Graphic file (type png)
 
 <use images/vdb_view2.png>
 Package pdftex.def Info: images/vdb_view2.png used on input line 26.
 (pdftex.def)             Requested size: 136.5746pt x 126.06857pt.
 
-<images/vdb_view3.png, id=657, 1017.8025pt x 939.51pt>
+<images/vdb_view3.png, id=663, 1017.8025pt x 939.51pt>
 File: images/vdb_view3.png Graphic file (type png)
 
 <use images/vdb_view3.png>
@@ -1390,14 +1390,14 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 45--45
 [][][][][][][] 
  []
 
-(./sourceCode/log.cpp) <images/vdb_node.png, id=674, 686.565pt x 154.5775pt>
+(./sourceCode/log.cpp) <images/vdb_node.png, id=680, 686.565pt x 154.5775pt>
 File: images/vdb_node.png Graphic file (type png)
 
 <use images/vdb_node.png>
 Package pdftex.def Info: images/vdb_node.png used on input line 50.
 (pdftex.def)             Requested size: 341.43306pt x 76.87106pt.
 
-<images/vdb_blender_interface.png, id=675, 1445.4pt x 903.375pt>
+<images/vdb_blender_interface.png, id=681, 1445.4pt x 903.375pt>
 File: images/vdb_blender_interface.png Graphic file (type png)
 
 <use images/vdb_blender_interface.png>
@@ -1405,28 +1405,28 @@ Package pdftex.def Info: images/vdb_blender_interface.png used on input line 58
 .
 (pdftex.def)             Requested size: 341.43306pt x 213.3959pt.
 
-<images/transf_geometry.png, id=676, 691.58376pt x 510.90875pt>
+<images/transf_geometry.png, id=682, 691.58376pt x 510.90875pt>
 File: images/transf_geometry.png Graphic file (type png)
 
 <use images/transf_geometry.png>
 Package pdftex.def Info: images/transf_geometry.png used on input line 66.
 (pdftex.def)             Requested size: 136.5746pt x 100.89362pt.
 
-<images/transf_upsideDown.png, id=677, 698.61pt x 512.91624pt>
+<images/transf_upsideDown.png, id=683, 698.61pt x 512.91624pt>
 File: images/transf_upsideDown.png Graphic file (type png)
 
 <use images/transf_upsideDown.png>
 Package pdftex.def Info: images/transf_upsideDown.png used on input line 73.
 (pdftex.def)             Requested size: 136.5746pt x 100.27261pt.
 
-<images/transf_Mirror.png, id=678, 695.59875pt x 509.905pt>
+<images/transf_Mirror.png, id=684, 695.59875pt x 509.905pt>
 File: images/transf_Mirror.png Graphic file (type png)
 
 <use images/transf_Mirror.png>
 Package pdftex.def Info: images/transf_Mirror.png used on input line 80.
 (pdftex.def)             Requested size: 136.5746pt x 100.11186pt.
 
-<images/multiplePlanes.png, id=681, 292.09125pt x 400.49625pt>
+<images/multiplePlanes.png, id=687, 292.09125pt x 400.49625pt>
 File: images/multiplePlanes.png Graphic file (type png)
 
 <use images/multiplePlanes.png>
@@ -1592,10 +1592,10 @@ i1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfxc1
 200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfxc144
 0.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfxc1728.
 pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on tcc.pdf (47 pages, 4181558 bytes).
+Output written on tcc.pdf (47 pages, 4181708 bytes).
 PDF statistics:
- 947 PDF objects out of 1000 (max. 8388607)
- 817 compressed objects within 9 object streams
+ 951 PDF objects out of 1000 (max. 8388607)
+ 819 compressed objects within 9 object streams
  330 named destinations out of 1000 (max. 500000)
  381 words of extra memory for PDF output out of 10000 (max. 10000000)
 

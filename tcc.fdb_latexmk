@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1386592904 "tcc.tex" "tcc.pdf" "tcc" 1386592909
+["pdflatex"] 1386593715 "tcc.tex" "tcc.pdf" "tcc" 1386593720
   "/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel-portuges/portuges.ldf" 1367878976 6605 2bd2937f1ce929b4a1367cc2d320364e ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def" 1368743226 42950 b2c89311c96d7b70c24e1365a2fa51ee ""
@@ -97,10 +97,10 @@
   "images/vdb_view3.png" 1386533003 262663 2264113112d42b83d1929bc4df228910 ""
   "images/worldSpace.png" 1386254525 29344 46495e4511cecd3c8f56db97de84a7ad ""
   "introducao.tex" 1386555738 10155 677f842a023a79d18c013e6b6a9d1de7 ""
-  "openvdb.tex" 1386556548 22371 bfa5ed3fadfa494390512f731e615d61 ""
-  "references.aux" 1386592909 1023 09285a604ad21923a6da446d3e977b03 ""
-  "references.tex" 1386592807 3094 189357e7971b965cc1806e770541bb7b ""
-  "resultados.tex" 1386592441 6261 b8ba9ef29536faff5e4ad2a4261c7f9b ""
+  "openvdb.tex" 1386593702 22435 082aa3dbc7633c17b8058c5dabf24dff ""
+  "references.aux" 1386593719 1023 7208c4bd052d5d09ffb595d6340812ab ""
+  "references.tex" 1386593705 3117 9ac8d40298fec5fdc40d19e4d95ef462 ""
+  "resultados.tex" 1386593109 6267 f24e35bb79f09d96997187dbdcbfd50b ""
   "sourceCode/cubic.cpp" 1386249920 1087 1260b60b87277647489c6ebc583ae274 ""
   "sourceCode/internalNode.cpp" 1386171178 488 7a4af9d5789cd43a3274532064d65092 ""
   "sourceCode/leafNode.cpp" 1386167816 441 061ee38d87df59465f1bf6ca6516b61d ""
@@ -113,10 +113,10 @@
   "sourceCode/root.cpp" 1386173544 290 484df2107d591a8e120c23b9bc03c81e ""
   "sourceCode/vdb_coordinates.cpp" 1385986521 155 a7a5680cee33cc2c868a5ec4f071d70a ""
   "sourceCode/wrap_enum.cpp" 1386252558 551 c4ce4c9950714768287198084ca0820c ""
-  "tcc.aux" 1386592909 21221 7e095e15c41628c7d9b01025baf9ad75 ""
-  "tcc.out" 1386592909 1945 4d65ddcdb3dfd22c3c6c8ce37ecf139d ""
+  "tcc.aux" 1386593719 21440 995fc0add1ea66e6355cc6ef77ad0d40 ""
+  "tcc.out" 1386593719 1945 4d65ddcdb3dfd22c3c6c8ce37ecf139d ""
   "tcc.tex" 1386591270 4586 278bd4a7be88ed1e48fc7231c21b1bff ""
-  "tcc.toc" 1386592909 3607 77b8715b440d552964258fb5a0c9096b ""
+  "tcc.toc" 1386593719 3607 77b8715b440d552964258fb5a0c9096b ""
   (generated)
   "tcc.out"
   "tcc.aux"
