@@ -1,0 +1,100 @@
+% Apresentação do trabalho de graduação
+
+\documentclass{beamer}
+\usepackage[brazil]{babel}
+%\usetheme{Warsaw} % tema do slide, o azul e preto no fundo
+%\usetheme{Berlin}
+%\usetheme{EastLansing}
+%\usetheme{Luebeck}
+\usetheme{Copenhagen}
+%\usetheme{Szeged}
+%\usetheme{Singapore} %gostei
+%\usetheme{AnnArbor}%nenhuma  cor fica legal
+%\usetheme{CambridgeUS}%bom modelo
+%\usetheme{Boadilla}%Muito bom
+%\usetheme{Madrid}%excelente tema
+%\usetheme{Boxes}
+%\usetheme{Warsaw} % tema do slide, o azul e preto no fundo
+%\usecolortheme{seahorse}
+%\usecolortheme{beaver}
+%\usecolortheme{albatross}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}%bom esquema de cor
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}%ótimo com Cambridge
+%\usecolortheme{rose}
+\usecolortheme{seagull}
+%\usecolortheme{sidebartab}
+%\usecolortheme{structure}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{latexsym}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc} % esse serve pra digitar com acento normal
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\useoutertheme[subsection=false,shadow=default]{miniframes}
+\useinnertheme{default}
+\setbeamertemplate{footline}{}
+%\beamertemplatenavegationsymbolsempty{}
+
+%\setlength{\parindent}{-10cm} 
+
+\title[Defesa]{Implementação de Suporte a Texturas 3D para Renderização de
+Volumes no Blender}
+\author[Rafael Campos]{Rafael Cerqueira de Campos \\ Orientador: Prof. Dr. Mario Augusto de Souza Liziér}
+\institute[DC - UFSCAR]{Graduação em Engenharia de Computação - UFSCar}
+\date{\today}
+\thispagestyle{empty}
+\subject{alguma coisa}
+
+%%Define o caminho das figuras, válido somente para o comando \includegraphics
+\graphicspath{{images/}}
+
+\begin{document}
+
+
+%Primeira página da apresentação
+\frame{\titlepage}
+
+\AtBeginSubsection[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Sum\'ario
+\begin{frame}[allowframebreaks]
+\tableofcontents
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%% Primeiro Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introdu\c{c}\~ao}
+
+\begin{frame}
+
+\frametitle{Introdu\c{c}\~ao:}
+
+\begin{itemize}
+
+%\item Objetivo: Resolver o Problema de Minimiza\c{c}\~ao com Restri\c{c}\~oes Lineares;
+\item \'E frequente nas aplica\c{c}\~oes problemas em que as derivadas n\~ao est\~ao dispon\'iveis;
+\item H\'a in\'umeras aplica\c{c}\~oes cujas restri\c{c}\~oes s\~ao apenas lineares;
+\item Subproblema em m\'etodos voltados para problemas gerais;
+%\item Em Otimiza\c{c}\~ao com derivadas temos v\'arios m\'etodos espec\'ificos para resolver problemas com Restri\c{c}\~oes apenas lineares;
+%\item Problemas de Otimiza\c{c}\~ao em que as derivadas n\~ao podem ser calculadas tem aparecido com certa frequ\^encia;
+\item Estudar e propor m\'etodos sem derivadas para resolv\^e-los;
+\item Focamos nosso trabalho no M\'etodo de Busca Padr\~ao aplicado ao problema com restri\c{c}\~oes lineares;
+\item Propomos novas estrat\'egias de busca e um novo Padr\~ao buscando melhorar o desempenho do m\'etodo.
+
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+\end{document}
