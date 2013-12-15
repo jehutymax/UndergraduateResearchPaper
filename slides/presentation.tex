@@ -40,6 +40,50 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 
+
+\usepackage{listings}
+\usepackage{courier}
+\usepackage{graphics}
+\usepackage{color} 
+\usepackage{subcaption}
+
+
+
+% ---------------------
+% Definição da listagem de código-fonte
+% ---------------------
+\lstset{
+         basicstyle=\footnotesize\ttfamily, % Standardschrift
+         %numbers=left,               % Ort der Zeilennummern
+         numberstyle=\tiny,          % Stil der Zeilennummern
+         %stepnumber=2,               % Abstand zwischen den Zeilennummern
+         numbersep=5pt,              % Abstand der Nummern zum Text
+         tabsize=2,                  % Groesse von Tabs
+         extendedchars=true,         %
+         breaklines=true,            % Zeilen werden Umgebrochen
+         keywordstyle=\color{red},
+    		frame=b,         
+         keywordstyle=[1]\textbf,    % Stil der Keywords
+ %        keywordstyle=[2]\textbf,    %
+ %        keywordstyle=[3]\textbf,    %
+ %        keywordstyle=[4]\textbf,   \sqrt{\sqrt{}} %
+         stringstyle=\color{white}\ttfamily, % Farbe der String
+         showspaces=false,           % Leerzeichen anzeigen ?
+         showtabs=false,             % Tabs anzeigen ?
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         %backgroundcolor=\color{lightgray},
+         showstringspaces=false      % Leerzeichen in Strings anzeigen ?        
+ }
+ \lstloadlanguages{
+         C++
+ }
+
+\renewcommand\lstlistingname{Código}
+\renewcommand\lstlistlistingname{Códigos}
+
 \useoutertheme[subsection=false,shadow=default]{miniframes}
 \useinnertheme{default}
 \setbeamertemplate{footline}{}
@@ -89,8 +133,14 @@ Volumes no Blender}
 
 \begin{frame}
 
-\frametitle{Motivação}
+\frametitle{Software: Blender}
 
+\begin{figure}[!htb]
+\center
+\includegraphics[width=10cm]{blender_gui}
+\caption{Interface do Blender, ao abrir a aplicação.}
+\label{blender_gui}
+\end{figure}
 
 
 \end{frame}
@@ -100,29 +150,293 @@ Volumes no Blender}
 
 \begin{frame}
 
-\frametitle{Motivação}
+\frametitle{Renderização no Blender}
+\begin{itemize}
+\item Blender Internal Render
+
+\item Cycles Render
+
+\item Blender Game Engine
+\end{itemize}
 
 
+\end{frame}
+
+\subsection{Cycles}
+\begin{frame}
+
+\frametitle{Cycles}
+\begin{itemize}
+\item \emph{Node-based}	
+
+\item Fisicamente plausível
+
+\item Comportamento configurável por {\it scripts}
+\end{itemize}
+
+
+\end{frame}
+
+%%%%%%%%
+
+\begin{frame}
+
+\frametitle{Cycles: Configuração por nós}
+
+\begin{figure}[!htb]
+\center
+\includegraphics[width=9cm]{Cycles_nodes}
+\caption{Rede de nós configurando o uso de uma sequência de imagens como textura para uma superfície.}
+\label{nodes}
+\end{figure}
+
+\end{frame}
+%%%%%%%%
+
+%%%%%%%%
+\begin{frame}
+
+\frametitle{Cycles: Configuração por nós}
+
+\begin{figure}[!htb]
+\center
+\includegraphics[width=10cm]{film_lookNodeNetwork}
+\caption{Rede de nós para emular a aparência de impressão sobre filme.}
+\label{nodes}
+\end{figure}
+
+\end{frame}
+%%%%%%%%
+
+\subsection{Open Shading Language}
+\begin{frame}
+\frametitle{Open Shading Language}
+\begin{itemize}
+\item \texttt{oslc} \\ Compilador de arquivos OSL para \emph{bytecode}.
+
+\item \texttt{liboslc} \\ Implementação, com a classe \texttt{OSLCompiler}, para embarcar o compilador em aplicações.
+
+\item \texttt{liboslquery} \\ Implementação da classe \texttt{OSLQuery} para consulta a {\it shaders} compilados.
+
+\item \texttt{oslinfo}
+
+\item \texttt{liboslexec} \\ Compilação {\it JIT} com LLVM para transformar o \emph{bytecode} do {\it shaders} em instruções x86.
+
+\end{itemize}
+\end{frame}
+
+%%%%%%%%
+\subsection{Texturas Tridimensionais}
+\begin{frame}
+
+\frametitle{Texturas Tridimensionais}
+
+\begin{figure}[!htb]
+\center
+\includegraphics[width=7cm]{grid_example}
+\caption{Exemplos de \emph{grids} uniformes: bidimensional com células de razão de aspecto 1, à esquerda, e tridimensional com células cubóides, à direita.}
+\label{grid_ex}
+\end{figure}
+
+\end{frame}
+%%%%%%%%
+
+\begin{frame}
+
+\frametitle{Texturas Tridimensionais}
+
+\lstinputlisting[label=vdb_coords,caption={Consulta ao valor de ponto flutuante no voxel de coordenadas (1, 2, 3)}]{../sourceCode/vdb_coordinates.cpp}
+
+\end{frame}
+%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{OpenVDB}
+\begin{frame}
+
+\frametitle{OpenVDB: Motivação}
+
+\begin{figure}[!htb]
+\center
+\includegraphics[width=10cm]{puss}
+\label{grid_ex}
+\end{figure}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+%%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Detalhes}
+\begin{frame}
+
+\frametitle{Características}
+
+\begin{itemize}
+\item Dinâmico
+\item Uso eficiente de memória
+\item Topologia genérica
+\item Acesso rápido aleatório e sequencial
+\item Virtualmente infinito
+\item Resolução Adaptativa
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+%%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\frametitle{Terminologia}
+
+\begin{itemize}
+\item \emph{Voxel}
+\begin{itemize}
+\item Menor unidade de volume endereçável na estrutura de dados
+\item Na árvore, é localizado nas folhas
+\end{itemize}
+\item Valor Intermediário
+\begin{itemize}
+\item Valor constante aplicável a uma região do domínio
+\item Na árvore, está nos nós intermediários, entre raiz e folhas
+\end{itemize}
+\item Estado Ativo
+\begin{itemize}
+\item Todos os valores (\emph{voxels} e valores intermediários) possuem um estado binário
+\item Significado é dado pela aplicação
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+%%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+
+\frametitle{Exemplo de um volume: modelo e representação de dados}
+
+\begin{figure}[!htb]
+\center
+\includegraphics[width=10cm]{dragon}  
+\label{vdbtree}
+\end{figure}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{OpenVDB}
 
 \begin{frame}
 
-\frametitle{Motivação}
+\frametitle{Acesso aos Dados}
 
+\begin{itemize}
+\item Acesso Sequencial
+\begin{itemize}
+\item Fundamental para simulações
+\item Acessa os elementos pela disposição física na memória
+\item Operações de E/S com compressão específica para o formato
+\end{itemize}
+\item Acesso Aleatório
+\begin{itemize}
+\item Acesso por coordenadas: \texttt{getValue(x,y,z)}
+\item Coerência espacial
+\end{itemize}
+\item Acesso por Estêncil
+\begin{itemize}
+\item Fundamental para diferenciação finita, filtragem e interpolação
+\item Normalmente combinada com acesso sequencial ou aleatório
+\end{itemize}
+\end{itemize}
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Estrutura de Dados}
+\begin{frame}
+
+\frametitle{Estrutura de Dados}
+
+\begin{figure}[!htb]
+\center
+\includegraphics[width=10cm]{tree_structure}  
+\label{vdbtree}
+\end{figure}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\frametitle{Estrutura de Dados}
+
+\begin{figure}[!htb]
+\center
+\includegraphics[width=10cm]{tree_inverted}  
+\label{vdbtree}
+\end{figure}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\frametitle{Dados Esparsos e Eficiência de Acesso}
+
+\begin{itemize}
+\item Eficiência no uso de memória
+\begin{itemize}
+\item Árvore hierárquica e esparsa
+\item Memória alocada no momento de inserção
+\item Operações de E/S com compressão específica para o formato
+\end{itemize}
+\item Eficiência Computacional
+\begin{itemize}
+\item Algoritmos hierárquicos
+\item Cálculos esparsos
+\item Metaprogramação com \texttt{templates} C++
+\item Suporte a paralelismo, operações {\it bit} a {\it bit} e \emph{SIMD}
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Resultados}
 
 \begin{frame}
 
-\frametitle{Motivação}
+\frametitle{Resultados}
+
+\begin{figure}[!htb]
+\center
+\includegraphics[width=6cm]{example_vector}  
+\end{figure}
+
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\textwidth]{vdb_view1}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\textwidth]{vdb_view2}
+        \end{subfigure}
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\textwidth]{vdb_view3}
+        \end{subfigure}
+\end{figure}
+
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
@@ -132,7 +446,7 @@ Volumes no Blender}
 
 \begin{frame}
 
-\frametitle{Motivação}
+\frametitle{Conclusão}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	

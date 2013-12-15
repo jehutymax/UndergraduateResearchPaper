@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  15 DEC 2013 12:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  15 DEC 2013 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -977,31 +977,102 @@ Now handling font encoding PD1 ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count154
+\lst@gtempboxa=\box53
+\lst@token=\toks42
+\lst@length=\count155
+\lst@currlwidth=\dimen186
+\lst@column=\count156
+\lst@pos=\count157
+\lst@lostspace=\dimen187
+\lst@width=\dimen188
+\lst@newlines=\count158
+\lst@lineno=\count159
+\lst@maxwidth=\dimen189
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count160
+\lst@skipnumbers=\count161
+\lst@framebox=\box54
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen190
+\captionmargin@=\dimen191
+\captionwidth=\dimen192
+\caption@tempdima=\dimen193
+\caption@indent=\dimen194
+\caption@parindent=\dimen195
+\caption@hangindent=\dimen196
+)
+\c@ContinuedFloat=\count162
+Package caption Info: beamer document class.
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+Package caption Info: listings package is loaded.
+)
+\c@subfigure=\count163
+\c@subtable=\count164
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/beamer/themes/outer/beamerouterth
 ememiniframes.sty
 Package: beamerouterthememiniframes 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 52.
+(hyperref)                removing `\\' on input line 96.
 
-(./presentation.aux)
+(./presentation.aux
+
+LaTeX Warning: Label `nodes' multiply defined.
+
+
+LaTeX Warning: Label `grid_ex' multiply defined.
+
+
+LaTeX Warning: Label `vdbtree' multiply defined.
+
+
+LaTeX Warning: Label `vdbtree' multiply defined.
+
+)
 \openout1 = `presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1039,17 +1110,17 @@ LaTeX Font Info:    ... okay on input line 61.
 
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count154
-\scratchdimen=\dimen186
-\scratchbox=\box53
-\nofMPsegments=\count155
-\nofMParguments=\count156
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count157
-\MPscratchDim=\dimen187
-\MPnumerator=\count158
-\makeMPintoPDFobject=\count159
-\everyMPtoPDFconversion=\toks43
+\scratchcounter=\count165
+\scratchdimen=\dimen197
+\scratchbox=\box55
+\nofMPsegments=\count166
+\nofMParguments=\count167
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count168
+\MPscratchDim=\dimen198
+\MPnumerator=\count169
+\makeMPintoPDFobject=\count170
+\everyMPtoPDFconversion=\toks44
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1066,8 +1137,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 61.
+\AtBeginShipoutBox=\box56
+Package hyperref Info: Link coloring OFF on input line 105.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1075,58 +1146,58 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count160
+\c@section@level=\count171
 )
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
-LaTeX Info: Redefining \nameref on input line 61.
+LaTeX Info: Redefining \ref on input line 105.
+LaTeX Info: Redefining \pageref on input line 105.
+LaTeX Info: Redefining \nameref on input line 105.
 
 (./presentation.out) (./presentation.out)
 \@outlinefile=\write5
 \openout5 = `presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 61.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 105.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 61.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 105.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 61.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 105.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 105.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 61.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 105.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 61.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 61.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 105.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 105.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 61.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 105.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 61.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 61.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 105.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 105.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 61.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 105.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 61.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 61.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 105.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 105.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 61.
+(Font)                  OT1/cmtt/m/n --> OT1/pcr/m/n on input line 105.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 61.
+(Font)                  OT1/cmtt/m/n --> OT1/pcr/m/n on input line 105.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 61.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 105.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 61.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 105.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 61.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 105.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 61.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 105.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 61.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 105.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 61.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 105.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 61.
+(Font)                  OT1/pcr/m/n --> OT1/pcr/bx/n on input line 105.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -1152,31 +1223,185 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 61.
+LaTeX Info: Redefining \includegraphics on input line 105.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 61.
+LaTeX Info: Redefining \selectfont on input line 105.
+\c@lstlisting=\count172
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
  (./presentation.nav) [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./pres
 entation.toc)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 73.
+(Font)              size <5> substituted on input line 117.
 
 [2
 
 ] [3
 
-] [4
+] <images/blender_gui.png, id=230, 1445.4pt x 903.375pt>
+File: images/blender_gui.png Graphic file (type png)
 
-] [5
+<use images/blender_gui.png>
+Package pdftex.def Info: images/blender_gui.png used on input line 146.
+(pdftex.def)             Requested size: 284.52756pt x 177.83221pt.
+ [4
+
+ <./images/blender_gui.png>] [5
 
 ] [6
 
-] [7
+]
+<images/Cycles_nodes.png, id=363, 492.33937pt x 277.035pt>
+File: images/Cycles_nodes.png Graphic file (type png)
 
-] [8
+<use images/Cycles_nodes.png>
+Package pdftex.def Info: images/Cycles_nodes.png used on input line 193.
+(pdftex.def)             Requested size: 256.0748pt x 144.09706pt.
+ [7
+
+ <./images/Cycles_nodes.png>]
+<images/film_lookNodeNetwork.jpg, id=412, 1276.77pt x 725.71124pt>
+File: images/film_lookNodeNetwork.jpg Graphic file (type jpg)
+
+<use images/film_lookNodeNetwork.jpg>
+Package pdftex.def Info: images/film_lookNodeNetwork.jpg used on input line 208
+.
+(pdftex.def)             Requested size: 284.52756pt x 161.71663pt.
+pdfTeX warning (ext4): destination with the same identifier (name{nodes}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.208 \end{frame}
+                  [8
+
+ <./images/film_lookNodeNetwork.jpg>]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 226.
+
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [9
+
+]
+<images/grid_example.png, id=501, 582.175pt x 286.06876pt>
+File: images/grid_example.png Graphic file (type png)
+
+<use images/grid_example.png>
+Package pdftex.def Info: images/grid_example.png used on input line 241.
+(pdftex.def)             Requested size: 199.16928pt x 97.86446pt.
+ [10
+
+ <./images/grid_example.png>]
+(../sourceCode/vdb_coordinates.cpp) [11
+
+]
+<images/puss.png, id=591, 746.79pt x 477.785pt>
+File: images/puss.png Graphic file (type png)
+ <use images/puss.png>
+Package pdftex.def Info: images/puss.png used on input line 268.
+(pdftex.def)             Requested size: 284.52756pt x 182.03406pt.
+pdfTeX warning (ext4): destination with the same identifier (name{grid_ex}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.268 \end{frame}
+                  [12
+
+ <./images/puss.png>] [13
+
+] [14
+
+]
+<images/dragon.png, id=725, 752.8125pt x 275.0275pt>
+File: images/dragon.png Graphic file (type png)
+ <use images/dragon.png>
+Package pdftex.def Info: images/dragon.png used on input line 327.
+(pdftex.def)             Requested size: 284.52756pt x 103.94919pt.
+
+[15
+
+ <./images/dragon.png>] [16
+
+]
+<images/tree_structure.png, id=814, 718.685pt x 474.77374pt>
+File: images/tree_structure.png Graphic file (type png)
+
+<use images/tree_structure.png>
+Package pdftex.def Info: images/tree_structure.png used on input line 369.
+(pdftex.def)             Requested size: 284.52756pt x 187.96461pt.
+pdfTeX warning (ext4): destination with the same identifier (name{vdbtree}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.369 \end{frame}
+                  [17
+
+ <./images/tree_structure.png>]
+<images/tree_inverted.png, id=858, 515.9275pt x 305.14pt>
+File: images/tree_inverted.png Graphic file (type png)
+
+<use images/tree_inverted.png>
+Package pdftex.def Info: images/tree_inverted.png used on input line 383.
+(pdftex.def)             Requested size: 284.52756pt x 168.2838pt.
+pdfTeX warning (ext4): destination with the same identifier (name{vdbtree}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.383 \end{frame}
+                  [18
+
+ <./images/tree_inverted.png>] [19
+
+]
+<images/example_vector.jpg, id=948, 823.075pt x 357.335pt>
+File: images/example_vector.jpg Graphic file (type jpg)
+
+<use images/example_vector.jpg>
+Package pdftex.def Info: images/example_vector.jpg used on input line 441.
+(pdftex.def)             Requested size: 170.71652pt x 74.11563pt.
+
+<images/vdb_view1.png, id=949, 1017.8025pt x 939.51pt>
+File: images/vdb_view1.png Graphic file (type png)
+
+<use images/vdb_view1.png>
+Package pdftex.def Info: images/vdb_view1.png used on input line 441.
+(pdftex.def)             Requested size: 92.1879pt x 85.08267pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 441.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 441.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 441.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+<images/vdb_view2.png, id=950, 1017.8025pt x 939.51pt>
+File: images/vdb_view2.png Graphic file (type png)
+
+<use images/vdb_view2.png>
+Package pdftex.def Info: images/vdb_view2.png used on input line 441.
+(pdftex.def)             Requested size: 92.1879pt x 85.08267pt.
+
+<images/vdb_view3.png, id=951, 1017.8025pt x 939.51pt>
+File: images/vdb_view3.png Graphic file (type png)
+
+<use images/vdb_view3.png>
+Package pdftex.def Info: images/vdb_view3.png used on input line 441.
+(pdftex.def)             Requested size: 92.1879pt x 85.08267pt.
+ [20
+
+ <./images/example_vector.jpg> <./images/vdb_view1.png> <./images/vdb_view2.png
+> <./images/vdb_view3.png>] [21
 
 ]
 \tf@nav=\write6
@@ -1188,35 +1413,42 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
- (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 454.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 454.
+
+(./presentation.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 454.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 454.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 20E4E30651C1F18CF99BC7EBA30FBA4F;304.
+(rerunfilecheck)             Checksum: 5E8D8D717E2E3DFAAB9475EA6C96460B;631.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 454.
  ) 
 Here is how much of TeX's memory you used:
- 16319 strings out of 493315
- 304929 string characters out of 6137904
- 387194 words of memory out of 5000000
- 19345 multiletter control sequences out of 15000+600000
- 5452 words of font info for 20 fonts, out of 8000000 for 9000
+ 19351 strings out of 493315
+ 352338 string characters out of 6137904
+ 470736 words of memory out of 5000000
+ 22260 multiletter control sequences out of 15000+600000
+ 13088 words of font info for 50 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,19n,60p,437b,745s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on presentation.pdf (8 pages, 51678 bytes).
+ 49i,19n,60p,437b,1085s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/tex
+live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on presentation.pdf (21 pages, 6282438 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 292 compressed objects within 3 object streams
- 22 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1076 PDF objects out of 1200 (max. 8388607)
+ 991 compressed objects within 10 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 221 words of extra memory for PDF output out of 10000 (max. 10000000)
 
