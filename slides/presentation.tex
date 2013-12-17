@@ -63,9 +63,9 @@
          breaklines=true,            % Zeilen werden Umgebrochen
          keywordstyle=\color{red},
     		frame=b,         
-         keywordstyle=[1]\textbf,    % Stil der Keywords
+  %       keywordstyle=[1]\textbf,    % Stil der Keywords
  %        keywordstyle=[2]\textbf,    %
- %        keywordstyle=[3]\textbf,    %
+  %       keywordstyle=[3]\textbf,    %
  %        keywordstyle=[4]\textbf,   \sqrt{\sqrt{}} %
          stringstyle=\color{white}\ttfamily, % Farbe der String
          showspaces=false,           % Leerzeichen anzeigen ?
@@ -123,7 +123,11 @@ Volumes no Blender}
 \begin{frame}
 
 \frametitle{Motivação}
-
+\begin{itemize}
+\item Funcionalidade
+\item Aplicação
+\item Escolha de biblioteca
+\end{itemize}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
@@ -139,7 +143,6 @@ Volumes no Blender}
 \center
 \includegraphics[width=10cm]{blender_gui}
 \caption{Interface do Blender, ao abrir a aplicação.}
-\label{blender_gui}
 \end{figure}
 
 
@@ -167,7 +170,7 @@ Volumes no Blender}
 
 \frametitle{Cycles}
 \begin{itemize}
-\item \emph{Node-based}	
+\item Baseado em nós
 
 \item Fisicamente plausível
 
@@ -187,7 +190,6 @@ Volumes no Blender}
 \center
 \includegraphics[width=9cm]{Cycles_nodes}
 \caption{Rede de nós configurando o uso de uma sequência de imagens como textura para uma superfície.}
-\label{nodes}
 \end{figure}
 
 \end{frame}
@@ -202,7 +204,6 @@ Volumes no Blender}
 \center
 \includegraphics[width=10cm]{film_lookNodeNetwork}
 \caption{Rede de nós para emular a aparência de impressão sobre filme.}
-\label{nodes}
 \end{figure}
 
 \end{frame}
@@ -235,7 +236,6 @@ Volumes no Blender}
 \center
 \includegraphics[width=7cm]{grid_example}
 \caption{Exemplos de \emph{grids} uniformes: bidimensional com células de razão de aspecto 1, à esquerda, e tridimensional com células cubóides, à direita.}
-\label{grid_ex}
 \end{figure}
 
 \end{frame}
@@ -245,7 +245,7 @@ Volumes no Blender}
 
 \frametitle{Texturas Tridimensionais}
 
-\lstinputlisting[label=vdb_coords,caption={Consulta ao valor de ponto flutuante no voxel de coordenadas (1, 2, 3)}]{../sourceCode/vdb_coordinates.cpp}
+\lstinputlisting[caption={Consulta ao valor de ponto flutuante no voxel de coordenadas (1, 2, 3)}]{../sourceCode/vdb_coordinates.cpp}
 
 \end{frame}
 %%%%%%%%
@@ -262,7 +262,6 @@ Volumes no Blender}
 \begin{figure}[!htb]
 \center
 \includegraphics[width=10cm]{puss}
-\label{grid_ex}
 \end{figure}
 
 \end{frame}
@@ -321,7 +320,6 @@ Volumes no Blender}
 \begin{figure}[!htb]
 \center
 \includegraphics[width=10cm]{dragon}  
-\label{vdbtree}
 \end{figure}
 
 \end{frame}
@@ -363,7 +361,6 @@ Volumes no Blender}
 \begin{figure}[!htb]
 \center
 \includegraphics[width=10cm]{tree_structure}  
-\label{vdbtree}
 \end{figure}
 
 \end{frame}
@@ -377,7 +374,6 @@ Volumes no Blender}
 \begin{figure}[!htb]
 \center
 \includegraphics[width=10cm]{tree_inverted}  
-\label{vdbtree}
 \end{figure}
 
 \end{frame}
@@ -440,15 +436,163 @@ Volumes no Blender}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+\begin{frame}
 
+\frametitle{Tarefas concluídas}
+
+\begin{itemize}
+\item Incorporação do código-fonte da biblioteca OpenVDB à solução do Blender
+	\begin{itemize}
+		\item Problemas de integração
+		\item Processo manual
+		\item Quebras de compatibilidade e \emph{namespaces}
+	\end{itemize}
+\item Transformações e Sistemas de Coordenadas
+\begin{itemize}
+		\item Diferentes espaços: objeto, mundo, volume
+\end{itemize}
+\item Implementação de técnicas de \emph{wrapping}
+	\begin{itemize}
+		\item Espelho, por eixo
+		\item Truncamento
+		\item Periódico
+	\end{itemize}
+\item Interface para avaliação de volumes por {\it scripts} \emph{OSL}
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%
 %%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Conclusão}
 
 \begin{frame}
 
-\frametitle{Conclusão}
+\frametitle{Rede de nós para uso de {\it scripts OSL}}
+
+\begin{figure}[!htb]
+\center
+\includegraphics[width=10cm]{vdb_node}
+\end{figure}
+
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%
+
+\begin{frame}
+
+\frametitle{Exemplo de uso com OSL}
+
+\lstinputlisting[caption={Chamada em OSL para uso da renderização de volumes VDB}]{../sourceCode/tex3d.cpp}
+
+\end{frame}
+%%%%%%%%
+
+
+\begin{frame}
+
+\frametitle{Interface com fatia do volume renderizado}
+
+%figura aqui!! :-P
+\begin{figure}[!htb]
+\center
+\includegraphics[width=10cm]{vdb_blender_interface}
+\end{figure}
+\end{frame}
+%%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\frametitle{Exemplos de \emph{wrapping}: espelhamento em torno de eixos}
+
+\begin{figure}[!htb]
+        \centering
+        \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\textwidth]{transf_geometry}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\textwidth]{transf_upsideDown}  
+        \end{subfigure}
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line
+        \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\textwidth]{transf_Mirror}
+        \end{subfigure}    
+\end{figure}
+\end{frame}
+
+%%
+\begin{frame}
+
+\frametitle{Uso de memória}
+\begin{table}[!ht]
+    \centering
+    \scalebox{0.8}[1]{
+        \begin{tabular}{|c|c|c|}
+\hline
+
+\multicolumn{3}{|c|}{\bf{Consumo de memória para representação do volume}} \\
+\hline \hline
+Estrutura de Dados & Consumo de Memória em {\it bytes} & Valor Relativo\\
+
+\hline
+ 
+Vetores 3D (Estrutura existente) & $10.793.640$ &  $1.545$  \\
+
+\hline
+ 
+OpenVDB & $6.984.656$ & $1$ \\
+
+\hline
+ 
+
+%\hline
+\end{tabular}}
+    \caption{Comparação entre o uso de memória da implementação anterior com o uso da estrutura VDB.}
+\end{table}
+\end{frame}
+%%
+
+
+\section{Conclusão}
+\frametitle{Conclusão}
+\begin{frame}
+\begin{itemize}
+\item Dificuldades e desafios
+\begin{itemize}
+\item Configuração de código-fonte
+\item Vazamentos de memória
+\item Transformações e sistemas de coordenadas
+\item Sistemas de controle de versionamento  
+\end{itemize}
+\item Experiência
+\end{itemize}
+
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Trabalhos Futuros}
+\begin{frame}
+
+\frametitle{Trabalhos Futuros}
+
+\begin{itemize}
+\item Suporte à execução paralela
+\item Criação de interface de usuário
+\item Permitir que volumes do Blender sejam exportados em {\it VDB}
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%	
+
+\begin{frame}
+
+\centerline{\Huge{Obrigado!}}
+\end{frame}
 
 \end{document}

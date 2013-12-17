@@ -10,4 +10,5 @@
 \beamer@subsectionintoc {3}{1}{Detalhes}{13}{0}{3}
 \beamer@subsectionintoc {3}{2}{Estrutura de Dados}{17}{0}{3}
 \beamer@sectionintoc {4}{Resultados}{20}{0}{4}
-\beamer@sectionintoc {5}{Conclus\IeC {\~a}o}{21}{0}{5}
+\beamer@sectionintoc {5}{Conclus\IeC {\~a}o}{27}{0}{5}
+\beamer@subsectionintoc {5}{1}{Trabalhos Futuros}{28}{0}{5}
