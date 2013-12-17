@@ -39,14 +39,13 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-
+\usepackage{multicol}
 
 \usepackage{listings}
 \usepackage{courier}
 \usepackage{graphics}
 \usepackage{color} 
 \usepackage{subcaption}
-
 
 
 % ---------------------
@@ -119,22 +118,127 @@ Volumes no Blender}
 
 %%%%%%% Primeiro Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Motivação}
+\subsection{}
 
 \begin{frame}
 
 \frametitle{Motivação}
 \begin{itemize}
+\item Projeto
 \item Funcionalidade
 \item Aplicação
 \item Escolha de biblioteca
 \end{itemize}
 
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
+
+%%
+\begin{frame}
+
+\begin{multicols}{2}
+\frametitle{Projeto}
+\begin{itemize}
+\item Projeto pessoal
+\item Google Summer of Code
+\begin{itemize}
+    \item Blender Foundation
+    \item Proposta de Trabalho
+\end{itemize}
+
+\item Metodologia de Desenvolvimento
+\begin{itemize}
+\item Ambiente: CMake + Clang; Subversion
+\item Discussões abertas
+\item Relatórios, Reuniões e Documentação
+\end{itemize}
+\end{itemize}
+\begin{center}
+\includegraphics[width=5cm]{gsoc}
+\end{center}
+\end{multicols}
+
+
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+%%
+\begin{frame}
+
+\begin{figure}[t]
+\center
+\includegraphics[width=10cm]{independenceDay}
+\caption*{\tiny © 1996 Twentieth Century Fox and Centropolis Entertainment. All 
+rights reserved.}
+\end{figure}
+
+\frametitle{Funcionalidade}
+\begin{itemize}
+\item Nuvens, névoa, fogo, tempestades de areia...
+\item Simulação x Modelagem
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
+%%
+
+
+%%
+\begin{frame}
+
+\begin{figure}[t]
+\center
+\includegraphics[width=9cm]{cyclesHeader}
+\caption*{\tiny Fonte: http://cgcookie.com/blender/2013/03/11/creating-mist-blender-cycles-z-depth/}
+\end{figure}
+
+\frametitle{Aplicação}
+Cycles
+\begin{itemize}
+\item Traçador de raios
+\item Sem suporte a renderização de volumes
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%
+\begin{frame}
+
+\frametitle{Escolha de biblioteca}
+Considerações
+\begin{itemize}
+\item Aplicação: animação x jogos
+\item Representação de volumes
+\item Aceitação e adoção
+\end{itemize}
+
+\begin{figure}[b]
+        \centering
+        \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\textwidth]{field3d}
+                \caption*{Field3D}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\textwidth]{openvdbLogo}  
+        \end{subfigure}
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line
+        \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\textwidth]{gigavoxelsLogo}
+        \end{subfigure}    
+\end{figure}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 %%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Blender}
-
+\subsection{}
 \begin{frame}
 
 \frametitle{Software: Blender}
@@ -142,37 +246,65 @@ Volumes no Blender}
 \begin{figure}[!htb]
 \center
 \includegraphics[width=10cm]{blender_gui}
-\caption{Interface do Blender, ao abrir a aplicação.}
 \end{figure}
 
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 %%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Renderização no Blender}
-
 \begin{frame}
 
 \frametitle{Renderização no Blender}
 \begin{itemize}
 \item Blender Internal Render
-
+    \begin{itemize}
+        \item Amplamente testado
+        \item Suporta renderização de volumes
+        \item Fraco desempenho em simulação cáustica: vidros, metais
+        \item Comportamento não é realista
+    \end{itemize}
 \item Cycles Render
-
+    \begin{itemize}
+        \item Algoritmo traçador de raios
+        \item Simulação cáustica é consequência do funcionamento
+        \item Fisicamente plausível
+    \end{itemize}
 \item Blender Game Engine
+\begin{itemize}
+    \item Usado exclusivamente para jogos
+    \item O resultado é um executável
+ \end{itemize}
 \end{itemize}
-
 
 \end{frame}
 
-\subsection{Cycles}
+\begin{frame}
+
+\frametitle{Comparação entre \emph{engines}}
+
+\begin{figure}[!htb]
+        \centering
+        \begin{subfigure}{0.5\textwidth}
+                \includegraphics[width=\textwidth]{blenderInternalRender}
+                \caption*{Blender Internal}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}{0.5\textwidth}
+                \includegraphics[width=\textwidth]{cyclesRender} 
+                \caption*{Cycles} 
+        \end{subfigure}
+        \caption*{\tiny Fonte: http://www.blendernation.com/2012/06/16/bi-vs-cycles-vs-yafray-an-artists-observation/ }
+\end{figure}
+
+\end{frame}
+
+
 \begin{frame}
 
 \frametitle{Cycles}
 \begin{itemize}
 \item Baseado em nós
-
-\item Fisicamente plausível
 
 \item Comportamento configurável por {\it scripts}
 \end{itemize}
@@ -209,25 +341,19 @@ Volumes no Blender}
 \end{frame}
 %%%%%%%%
 
-\subsection{Open Shading Language}
+\subsection{}
 \begin{frame}
 \frametitle{Open Shading Language}
 \begin{itemize}
-\item \texttt{oslc} \\ Compilador de arquivos OSL para \emph{bytecode}.
-
-\item \texttt{liboslc} \\ Implementação, com a classe \texttt{OSLCompiler}, para embarcar o compilador em aplicações.
-
-\item \texttt{liboslquery} \\ Implementação da classe \texttt{OSLQuery} para consulta a {\it shaders} compilados.
-
-\item \texttt{oslinfo}
-
-\item \texttt{liboslexec} \\ Compilação {\it JIT} com LLVM para transformar o \emph{bytecode} do {\it shaders} em instruções x86.
-
+\item Especificação de uma linguagem
+\item \texttt{oslc} \\ Compilador de arquivos OSL para \emph{bytecode}
+\item \texttt{liboslexec} \\ Compilação {\it JIT} com LLVM para transformar o \emph{bytecode} do {\it shaders} em instruções x86
+\item Biblioteca de shaders
 \end{itemize}
 \end{frame}
 
+
 %%%%%%%%
-\subsection{Texturas Tridimensionais}
 \begin{frame}
 
 \frametitle{Texturas Tridimensionais}
@@ -235,7 +361,7 @@ Volumes no Blender}
 \begin{figure}[!htb]
 \center
 \includegraphics[width=7cm]{grid_example}
-\caption{Exemplos de \emph{grids} uniformes: bidimensional com células de razão de aspecto 1, à esquerda, e tridimensional com células cubóides, à direita.}
+\caption*{\tiny Fonte: Wrenninge, Magnus (2013-01-31). Production Volume Rendering: Design and Implementation (Page 47). A K Peters/CRC Press. Kindle Edition.}
 \end{figure}
 
 \end{frame}
@@ -250,11 +376,24 @@ Volumes no Blender}
 \end{frame}
 %%%%%%%%
 
+\begin{frame}
+
+\frametitle{Volumes Esparsos}
+
+\begin{figure}[!htb]
+\center
+\includegraphics[width=7cm]{sparse}  
+\caption*{\tiny Fonte: Wrenninge, Magnus (2013-01-31). Production Volume Rendering: Design and Implementation (Page 52). A K Peters/CRC Press. Kindle Edition.}
+\end{figure}
+
+\end{frame}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{OpenVDB}
+\subsection{}
 \begin{frame}
 
 \frametitle{OpenVDB: Motivação}
@@ -262,13 +401,13 @@ Volumes no Blender}
 \begin{figure}[!htb]
 \center
 \includegraphics[width=10cm]{puss}
+\caption*{\tiny Fonte: Museth, K. 2013. VDB: High-resolution sparse volumes with dynamic topology. ACM Trans. Graph. 32, 3, Article 27 (June 2013). Page 2.}
 \end{figure}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 
 %%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Detalhes}
 \begin{frame}
 
 \frametitle{Características}
@@ -320,6 +459,7 @@ Volumes no Blender}
 \begin{figure}[!htb]
 \center
 \includegraphics[width=10cm]{dragon}  
+\caption*{\tiny Fonte: Museth, K. 2013. VDB: High-resolution sparse volumes with dynamic topology. ACM Trans. Graph. 32, 3, Article 27 (June 2013). Page 6.}
 \end{figure}
 
 \end{frame}
@@ -353,7 +493,7 @@ Volumes no Blender}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Estrutura de Dados}
+\subsection{}
 \begin{frame}
 
 \frametitle{Estrutura de Dados}
@@ -406,6 +546,7 @@ Volumes no Blender}
 
 %%%%%%% n-th Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Resultados}
+\subsection{}
 
 \begin{frame}
 
@@ -560,6 +701,7 @@ OpenVDB & $6.984.656$ & $1$ \\
 
 
 \section{Conclusão}
+\subsection{}
 \frametitle{Conclusão}
 \begin{frame}
 \begin{itemize}
@@ -576,15 +718,14 @@ OpenVDB & $6.984.656$ & $1$ \\
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Trabalhos Futuros}
 \begin{frame}
 
 \frametitle{Trabalhos Futuros}
 
 \begin{itemize}
-\item Suporte à execução paralela
-\item Criação de interface de usuário
-\item Permitir que volumes do Blender sejam exportados em {\it VDB}
+\item Suporte à execução paralela \\ A biblioteca OpenVDB suporta {\it multi-threading}
+\item Criação de interface de usuário \\ Criação de um nó específico para este tipo de volume
+\item Permitir que volumes do Blender sejam exportados em {\it VDB} \\ Especialmente para exportar volumes gerados pelo simulador de fumaça do Blender
 \end{itemize}
 
 \end{frame}
