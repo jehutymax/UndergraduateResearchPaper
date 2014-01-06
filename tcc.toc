@@ -31,7 +31,7 @@
 \contentsline {subsubsection}{Acesso aleat\IeC {\'o}rio}{32}{section*.44}
 \contentsline {subsubsection}{Acesso sequencial}{33}{section*.45}
 \contentsline {subsubsection}{Acesso por Est\IeC {\^e}ncil}{34}{section*.46}
-\contentsline {section}{\numberline {3.2}Compara\IeC {\c c}\IeC {\~a}o com Estruturas Semelhantes}{34}{section.3.2}
+\contentsline {section}{\numberline {3.2}Compara\IeC {\c c}\IeC {\~a}o da VDB com Estruturas Semelhantes}{34}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Octrees}{34}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}\IeC {\'A}rvores B}{35}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}\IeC {\'A}rvores B+}{35}{subsection.3.2.3}

@@ -170,7 +170,7 @@ Aplicações de visualização normalmente dependem de um \emph{grid} uniforme, 
 Como um conjunto volumétrico de dados é representado de forma discreta, existe o problema de reconstruirmos uma função escalar em todos os pontos do domínio 3D.
 O problema de uma reconstrução fiel é estudado em processamento de sinais. \\
 
-Pelo teorema de amostragem de Nyquist-Shannon da teoria da informação, temos que a frequência do sinal de entrada precisa ser maior que o dobro da frequência máxima que ocorre no sinal de entrada para que o sinal original possa ser reconstruído a partir do sinal amostrado. Caso contrário, o sinal apresentará problemas de serrilhamento (\emph{aliasing}), isto é, o sinal contínuo será reconstruído com erros a partir do sinal discreto. \\
+Pelo teorema de amostragem de Nyquist-Shannon da teoria da informação, temos que uma função pode ser reconstruída a partir de um número de amostras se o limite de banda é inferior à metade da taxa de amostragem (amostras por segundo). Caso contrário, o sinal apresentará problemas de serrilhamento (\emph{aliasing}), isto é, o sinal contínuo será reconstruído com erros a partir do sinal discreto. \\
 
 Em notação matemática, a amostragem apropriada pode ser descrita da seguinte forma: para um sinal de entrada periódico e contínuo representado pela função $f(t)$, determinamos primeiro sua frequência máxima $v_{f}$. Frequência máxima significa que a transformada de Fourier de $f(t)$ é zero fora do intervalo de frequências $[-v_{f}, v_{f}]$. Com isso, temos a frequência crítica de amostragem (também chamada de frequência Nyquist) $v_{N} = 2v_{f}$. Para uma amostragem apropriada, mais que $2v_{f}$ amostras precisam ser tomadas por unidade de distância. Para uma amostragem uniforme numa frequência $v_{s}$, os pontos amostrais podem ser descritos por $f_{i} = f(i/v_{s})$, com $i$ inteiros. \\
 
@@ -222,7 +222,7 @@ Para o caso de texturas tridimensionais, desejamos consultar o valor de um {\it 
 
 \emph{Interpolação do vizinho mais próximo}. Em inglês, interpolação \emph{Nearest-Neighbor}. Trata-se da forma mais simples de interpolação, e pode-se dizer até que, de tão simples, não se qualifica como uma técnica de interpolação. Ao invés de considerar valores de {\it voxels} vizinhos, este método considera apenas o valor do centro do {\it voxel} que estiver mais próximo do ponto solicitado. Como consequência, a imagem resultante mostra claramente as fronteiras de cada {\it voxel}. 
 
-Dada uma função discretamente amostrada {\bf d} e uma posição $x$, a interpolação do vizinho mais próximo em uma dimensão pode ser escrita como
+Dada uma função amostrada {\bf d} e uma posição $x$, a interpolação do vizinho mais próximo em uma dimensão pode ser escrita como
 \[
 I_{n}(x, {\bf d}) = {\bf d}_{\floor*{x+0.5}}.
 \]
@@ -398,7 +398,7 @@ Espaço da cena, também chamado de espaço do mundo, ou ainda de sistema de coo
 Um ponto descreve um local no espaço, ao passo que um vetor descreve uma direção e não possui localização. Usando matrizes $3 \times 3$ (ou, eventualmente, $2 \times 2$ para duas dimensões), é possível aplicar transformações lineares como rotações, escala e cisalhamento às coordenadas. Contudo, translações não são possíveis com o uso destas matrizes. Essa característica não afeta operações com vetores, mas a translação é uma operação importante para pontos.
 
 
-A notação homogênea é útil para transformar tanto vetores quanto pontos, e nos permite aplicar translações apenas aos pontos. As matrizes $3 \times 3$ são aumentadas para $4 \times 4$ e pontos tridimensionais e vetores passam a ter um elemento a mais. Assim, um vetor homogêneo é representado por ${\bf p} = (p_{x}, p_{y}, p_{z}, p_{w})$. Nestas condições, $p_{w} = 1$ para pontos e $p_{w} = 0$ para vetores. Quando lidamos com projeções, outros valores podem ser usados para $p_{w}$. Dessa forma, quando $p_{w} \neq 0$ e $p_{w} \neq 1$, precisamos homogeneizar o vetor, e fazemos $(\frac{p_{x}}{p_{w}}, \frac{p_{y}}{p_{w}}, \frac{p_{z}}{p_{w}}, 1)$ a fim de obter o ponto que de fato desejamos. No caso mais simples, a matriz $M$ é tal como mostrada abaixo.
+A notação homogênea é útil para transformar tanto vetores quanto pontos, e nos permite aplicar translações apenas aos pontos. As matrizes $3 \times 3$ são aumentadas para $4 \times 4$ e pontos tridimensionais e vetores passam a ter um elemento a mais. Assim, um vetor homogêneo é representado por ${\bf p} = (p_{x}, p_{y}, p_{z}, p_{w})$. Nestas condições, $p_{w} = 1$ para pontos e $p_{w} = 0$ para vetores. Quando lidamos com projeções, outros valores podem ser usados para $p_{w}$. Dessa forma, quando $p_{w} \neq 0$ e $p_{w} \neq 1$, precisamos homogeneizar o vetor, e fazemos $(\frac{p_{x}}{p_{w}}, \frac{p_{y}}{p_{w}}, \frac{p_{z}}{p_{w}}, 1)$ a fim de obter o ponto que de fato desejamos. No caso mais simples, a matriz $M$ é dada por:
 
 \[ M_{4 \times 4} = \left(
 \begin{array}{cccc}
@@ -406,10 +406,10 @@ m_{00} & m_{01} & m_{02} & 0 \\
 m_{10} & m_{11} & m_{12} & 0 \\
 m_{20} & m_{21} & m_{22} & 0 \\
 0 & 0 & 0 & 1 
-\end{array} \right)
+\end{array} \right) .
 \]
 
-As matrizes específicas das transformações de rotação, escala e cisalhamento podem substituir a matriz $M$ apresentada, e estas operações afetarão pontos e vetores, como esperado. Uma translação, contudo, usa os elementos adicionais da matriz aumentada para obter o resultado necessário. Uma matriz de translação, $T$, que translada um ponto por um vetor $t$, é mostrada abaixo.
+As matrizes específicas das transformações de rotação, escala e cisalhamento podem substituir a matriz $M$ apresentada, e estas operações afetarão pontos e vetores, como esperado. Uma translação, contudo, usa os elementos adicionais da matriz aumentada para obter o resultado necessário. Uma matriz de translação, $T$, que translada um ponto por um vetor $t$, é dada por:
 
 \[ T = \left(
 \begin{array}{cccc}
@@ -417,7 +417,7 @@ As matrizes específicas das transformações de rotação, escala e cisalhament
 0 & 1 & 0 & {\it t_{y}} \\
 0 & 0 & 1 & {\it t_{z}} \\
 0 & 0 & 0 & 1 
-\end{array} \right)
+\end{array} \right).
 \]
 
 A combinação de uma transformação linear seguida de uma translação é denominada {\it transformada afim}.
