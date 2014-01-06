@@ -1,5 +1,5 @@
 
-Neste capítulo, os desafios encontrados ao longo do planejamento e implementação deste trabalho serão mencionados, com uma breve explanação. Os resultados obtidos até este momento serão avaliados, e dada a relativa curta duração do projeto para um único desenvolvedor, as funcionalidades que são de interesse e que não foram implementadas ainda serão discutidas no contexto de trabalhos futuros. Finalmente, alguns comentários pessoais acerca do curso de graduação são oferecidos na última seção deste trabalho.
+Neste capítulo, os desafios encontrados ao longo do planejamento e da implementação deste trabalho são mencionados, com uma breve explanação. Os resultados obtidos até este momento são avaliados e, dada a relativa curta duração do projeto para um único desenvolvedor, as funcionalidades que são de interesse e que não foram implementadas ainda são discutidas no contexto de trabalhos futuros. Finalmente, alguns comentários pessoais acerca do curso de graduação são oferecidos na última seção deste trabalho.
 
 \section{Desafios}
 
@@ -7,18 +7,18 @@ Neste capítulo, os desafios encontrados ao longo do planejamento e implementaç
 
 Trabalhar com software multi-plataforma de código aberto oferece alguns desafios inerentes à natureza da metodologia de desenvolvimento necessária. Primeiramente, o código-fonte precisa ser disponibilizado a todos que tiverem interesse em acessá-lo, e isso é essencialmente um problema fechado com os sistemas de versionamento mais modernos, como o \texttt{git}\footnote{http://git-scm.com}. Mas o processo deixa de ser trivial a partir deste ponto: compilar o software, qualquer que seja ele, a partir do código fonte, exige esforço considerável, por vários motivos: obter todas as dependências que o software usa é uma exigência, mas garantir que as versões necessárias são as mesmas que o desenvolvedor instalou é, por si só, um grande desafio, com fatores complicadores como a necessidade de manter múltiplas versões de uma biblioteca para satisfazer pacotes de softwares diferentes, sem que haja interferência entre elas. Neste mesmo cenário, existe ainda a distinção entre o uso de bibliotecas compiladas estática ou dinamicamente, afetando o processo de {\it linking} com mensagens de erro de difícil compreensão. Além disso, variáveis como versão de sistema operacional, de compilador e até mesmo de dispositivos de hardware, como versão de OpenGL suportada pela placa gráfica do desenvolvedor afetam o processo de compilação a partir do código-fonte.\\
 
-Neste trabalho, compilar a biblioteca OpenVDB para uso com o Blender apresentou vários destes desafios, e a solução encontrada foi compilar a biblioteca como parte da solução do Blender, de modo que compartilhassem todas as características de compilação, já que existem dependências em comum, e como resultado, diferenças nas variáveis de compilação deixaram de existir. 
+Neste trabalho, compilar a biblioteca OpenVDB para uso com o Blender apresentou vários destes desafios e a solução encontrada foi compilar a biblioteca como parte da solução do Blender, de modo que compartilhassem todas as características de compilação, já que existem dependências em comum, e como resultado, diferenças nas variáveis de compilação deixaram de existir. 
 
 
 \subsection*{Identificação de Vazamentos de Memória}
-O uso de ponteiros em C e C++ não é exatamente trivial. E quando lida-se com arquivos em disco, o custo das operações de E/S normalmente são os fatores de maior impacto no desempenho da aplicação. Logo, ficou claro desde o início que o arquivo em que o volume estava armazenado deveria permanecer aberto, em memória, durante todo o processo de geração de imagens. Para isso, utilizou-se um ponteiro comum para uma estrutura criada que continha o arquivo. De posse do ponteiro, acessava-se o arquivo em memória.\\
+O uso de ponteiros em C e C++ não é trivial e, quando lida-se com arquivos em disco, o custo das operações de E/S normalmente é o fator de maior impacto no desempenho da aplicação. Logo, ficou claro desde o início que o arquivo em que o volume estava armazenado deveria permanecer aberto, em memória, durante todo o processo de geração de imagens. Para isso, utilizou-se um ponteiro comum para uma estrutura criada que continha o arquivo. De posse do ponteiro, acessava-se o arquivo em memória.\\
 
 A solução adotada funcionava inicialmente para pequenos casos de testes, mas causava o encerramento da aplicação após vários testes seguidos. Casos de teste maiores não eram concluídos. Os ponteiros saíam de escopo após cada sessão de geração de imagem, sem que fossem desalocados de forma apropriada. Após várias execuções, a quantidade de memória perdida era grande demais para manter a aplicação aberta.\\
 
 A solução, sugerida por outros desenvolvedores, foi a adoção de \emph{smart pointers}, ponteiros com alocação dinâmica de memória que garantem que a memória utilizada será desalocada quando o contador de referências ativas atingir zero. Como o funcionamento destes é ligeiramente diferente, a substituição não foi imediata, mas com os devidos ajustes no código, os vazamentos de memória cessaram.
 
 \subsection*{Transformações, Espaços e Sistemas de Coordenadas}
-Os arquivos de volume {\it .vdb} definem seus próprios espaços, em que o volume armazenado está contido, e a relação entre seu sistema de coordenadas com aquele da cena utilizada no Blender não é clara. Além disso, as dimensões da imagem volumétrica pode ser ou muito maior ou muito menor que as dimensões da cena que a utilizará. Como consequência, ao importar um volume VDB em uma cena, a visualização nem sempre era possível, ou apenas um fragmento da textura ficava visível. \\
+Os arquivos de volume {\it .vdb} definem seus próprios espaços, em que o volume armazenado está contido, e a relação entre seu sistema de coordenadas com aquele da cena utilizada no Blender não é clara. Além disso, as dimensões da imagem volumétrica podem ser ou muito maiores ou muito menores que as dimensões da cena que a utilizará. Como consequência, ao importar um volume VDB em uma cena, a visualização nem sempre era possível, ou apenas um fragmento da textura ficava visível. \\
 
 O desafio aqui, na realidade, estava no conceito do problema, pois a diferença entre espaços é natural. A solução foi adotar o objeto em que a textura está sendo avaliada como referência, e mapear, usando uma transformação linear, as coordenadas da textura para as coordenadas do mundo correspondentes. A transformação foi composta usando as coordenadas do objeto, e construindo a matriz $4 \times 4$ para a transformada afim.
 
@@ -32,7 +32,7 @@ O processo de geração de imagens é de alta complexidade computacional por nat
 
 \item \emph{Criação de interface de usuário}. A interface usada atualmente entre o Blender e a estrutura de dados é um {\it shader} escrito em \emph{Open Shading Language}. A criação de um nó específico para este fim - importar volumes VDB previamente salvos - facilitaria o processo. Este nó ficaria acessível a partir de um dos menus no software.
 
-\item \emph{Permitir que volumes do Blender sejam exportados em VDB}. O Blender possui um simulador de fumaça bastante sofisticado, e há interesse em salvar estes volumes, que atualmente são gerados e salvos como volumes densos, no formato VDB. Um conversor entre as duas representações precisa ser implementado para este fim.
+\item \emph{Permitir que volumes do Blender sejam exportados em VDB}. Blender possui um simulador de fumaça bastante sofisticado, e há interesse em salvar estes volumes, que atualmente são gerados e salvos como volumes densos, no formato VDB. Um conversor entre as duas representações precisa ser implementado para este fim.
 
 \end{itemize}
 
@@ -42,6 +42,6 @@ Um dos aspectos mais interessantes de lidar com um problema de mundo real de uma
 
 Um outro ponto importante é a aplicação direta de conceitos e práticas sugeridas em cursos como o de \emph{Engenharia de Software}, como a configuração de software e as dificuldades em manter um conjunto de alterações em desenvolvimento isoladas da distribuição principal, mas mantendo a sincronização das alterações feitas à distribuição principal para que o software em desenvolvimento não fique obsoleto. \\
 
-E finalmente, as disciplinas de \emph{Álgebra Linear} e \emph{Computação Gráfica} apresentaram os fundamentos para permitir a compreensão do problema, antes mesmo de tentar atacá-lo. \\
+E, finalmente, as disciplinas de \emph{Álgebra Linear} e \emph{Computação Gráfica} apresentaram os fundamentos para permitir a compreensão do problema, antes mesmo de tentar atacá-lo. \\
 
 Em termos profissionais, a experiência foi bastante favorável pela comunicação com pessoas influentes da área de computação gráfica, e que sempre se mostraram bastante disponíveis para os interessados em aprender e desenvolver software novo. Além disso, depois de sofridas sessões de revisões de código, é muito gratificante ter código de sua autoria em um repositório público.

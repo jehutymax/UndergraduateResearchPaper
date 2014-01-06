@@ -8,8 +8,8 @@
 \contentsline {subsubsection}{Blender Internal Render}{9}{section*.10}
 \contentsline {subsubsection}{Cycles Render}{9}{section*.11}
 \contentsline {section}{\numberline {2.2}Texturas}{9}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Defini\IeC {\c c}\IeC {\~a}o}{10}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Mapeamento de Textura}{11}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Vis\IeC {\~a}o Geral}{10}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Mapeamento de Textura}{10}{subsection.2.2.2}
 \contentsline {subsubsection}{Coordenadas de Textura}{11}{section*.14}
 \contentsline {subsection}{\numberline {2.2.3}Estrat\IeC {\'e}gias de \emph {Wrapping}}{12}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Texturas Tridimensionais}{13}{subsection.2.2.4}
@@ -28,7 +28,7 @@
 \contentsline {subsection}{\numberline {3.1.1}A Estrutura de Dados VDB}{27}{subsection.3.1.1}
 \contentsline {subsubsection}{Detalhes de implementa\IeC {\c c}\IeC {\~a}o}{28}{section*.37}
 \contentsline {subsection}{\numberline {3.1.2}Algoritmos de Acesso \IeC {\`a} Estrutura}{32}{subsection.3.1.2}
-\contentsline {subsubsection}{Acesso aleat\IeC {\'o}rio}{33}{section*.44}
+\contentsline {subsubsection}{Acesso aleat\IeC {\'o}rio}{32}{section*.44}
 \contentsline {subsubsection}{Acesso sequencial}{33}{section*.45}
 \contentsline {subsubsection}{Acesso por Est\IeC {\^e}ncil}{34}{section*.46}
 \contentsline {section}{\numberline {3.2}Compara\IeC {\c c}\IeC {\~a}o com Estruturas Semelhantes}{34}{section.3.2}

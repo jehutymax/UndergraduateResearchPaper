@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  9 DEC 2013 11:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  6 JAN 2014 10:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -755,9 +755,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 57.
 [5]
 Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
@@ -792,7 +792,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-<images/blender_gui.png, id=226, 1445.4pt x 903.375pt>
+<images/blender_gui.png, id=228, 1445.4pt x 903.375pt>
 File: images/blender_gui.png Graphic file (type png)
 
 <use images/blender_gui.png>
@@ -817,7 +817,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
-<images/blender_render_option.png, id=238, 322.20375pt x 145.54375pt>
+<images/blender_render_option.png, id=240, 322.20375pt x 145.54375pt>
 File: images/blender_render_option.png Graphic file (type png)
 
 <use images/blender_render_option.png>
@@ -833,7 +833,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-<images/Cycles_nodes.png, id=247, 492.33937pt x 277.035pt>
+<images/Cycles_nodes.png, id=249, 492.33937pt x 277.035pt>
 File: images/Cycles_nodes.png Graphic file (type png)
 
 <use images/Cycles_nodes.png>
@@ -855,7 +855,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 72.
  [10 <./images/Cycles_nodes.png>]
-<images/tex_mapping.png, id=263, 345.79187pt x 328.22626pt>
+<images/tex_mapping.png, id=265, 345.79187pt x 328.22626pt>
 File: images/tex_mapping.png Graphic file (type png)
 
 <use images/tex_mapping.png>
@@ -889,7 +889,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 133.
  [12 <./images/tex_mapping.png>]
-<images/grid_example.png, id=281, 582.175pt x 286.06876pt>
+<images/grid_example.png, id=283, 582.175pt x 286.06876pt>
 File: images/grid_example.png Graphic file (type png)
 
 <use images/grid_example.png>
@@ -957,14 +957,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-<images/recon_filters.png, id=327, 604.2575pt x 226.8475pt>
+<images/recon_filters.png, id=329, 604.2575pt x 226.8475pt>
 File: images/recon_filters.png Graphic file (type png)
 
 <use images/recon_filters.png>
 Package pdftex.def Info: images/recon_filters.png used on input line 200.
 (pdftex.def)             Requested size: 426.79134pt x 160.22517pt.
 
-<images/produtoTensorial.png, id=329, 605.26125pt x 231.86626pt>
+<images/produtoTensorial.png, id=331, 605.26125pt x 231.86626pt>
 File: images/produtoTensorial.png Graphic file (type png)
 
 <use images/produtoTensorial.png>
@@ -1000,7 +1000,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 233--233
  []
 
 (./sourceCode/nearestNeighbor.cpp)
-<images/nearestNeighbor.png, id=340, 352.31625pt x 279.0425pt>
+<images/nearestNeighbor.png, id=342, 352.31625pt x 279.0425pt>
 File: images/nearestNeighbor.png Graphic file (type png)
 
 <use images/nearestNeighbor.png>
@@ -1027,7 +1027,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 261--261
 [][][][][][][] 
  []
 
-(./sourceCode/linear1d.cpp) <images/linear.png, id=374, 457.71pt x 361.35pt>
+(./sourceCode/linear1d.cpp) <images/linear.png, id=376, 457.71pt x 361.35pt>
 File: images/linear.png Graphic file (type png)
 
 <use images/linear.png>
@@ -1054,7 +1054,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 306.
  [20 <./images/linear.png>]
-<images/cubic.png, id=420, 418.56375pt x 325.215pt>
+<images/cubic.png, id=422, 418.56375pt x 325.215pt>
 File: images/cubic.png Graphic file (type png)
  <use images/cubic.png>
 Package pdftex.def Info: images/cubic.png used on input line 360.
@@ -1072,14 +1072,14 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 372.
  [21]
-<images/objectSpace.png, id=432, 386.44376pt x 275.0275pt>
+<images/objectSpace.png, id=434, 386.44376pt x 275.0275pt>
 File: images/objectSpace.png Graphic file (type png)
 
 <use images/objectSpace.png>
 Package pdftex.def Info: images/objectSpace.png used on input line 379.
 (pdftex.def)             Requested size: 199.16928pt x 141.74776pt.
 
-<images/worldSpace.png, id=434, 260.975pt x 229.85875pt>
+<images/worldSpace.png, id=436, 260.975pt x 229.85875pt>
 File: images/worldSpace.png Graphic file (type png)
 
 <use images/worldSpace.png>
@@ -1183,7 +1183,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-<images/tree_structure.png, id=535, 718.685pt x 474.77374pt>
+<images/tree_structure.png, id=537, 718.685pt x 474.77374pt>
 File: images/tree_structure.png Graphic file (type png)
 
 <use images/tree_structure.png>
@@ -1200,7 +1200,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 42.
  [29 <./images/tree_structure.png>]
-<images/mFlags.png, id=545, 621.32124pt x 179.67125pt>
+<images/mFlags.png, id=553, 621.32124pt x 179.67125pt>
 File: images/mFlags.png Graphic file (type png)
  <use images/mFlags.png>
 Package pdftex.def Info: images/mFlags.png used on input line 46.
@@ -1210,11 +1210,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 54.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 54.
-[30 <./images/mFlags.png>]
+
 Overfull \hbox (6.0pt too wide) in paragraph at lines 56--56
 [][][][][][][] 
  []
@@ -1224,7 +1220,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
-
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 60.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 60.
+[30 <./images/mFlags.png>]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 64--64
 [][][][][][][] 
  []
@@ -1235,7 +1235,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 69.
  [31]
-<images/tree_inverted.png, id=590, 515.9275pt x 305.14pt>
+<images/tree_inverted.png, id=607, 515.9275pt x 305.14pt>
 File: images/tree_inverted.png Graphic file (type png)
 
 <use images/tree_inverted.png>
@@ -1273,9 +1273,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--95
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 97.
 [33]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 101.
@@ -1286,14 +1286,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 112.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 112.
-[34] <images/Octree2.png, id=623, 803.0pt x 460.72125pt>
+<images/Octree2.png, id=622, 803.0pt x 460.72125pt>
 File: images/Octree2.png Graphic file (type png)
-
-<use images/Octree2.png>
+ <use images/Octree2.png>
 Package pdftex.def Info: images/Octree2.png used on input line 116.
 (pdftex.def)             Requested size: 284.52756pt x 163.25137pt.
 Package babel Info: Redefining portuges shorthand "|
@@ -1303,6 +1298,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 124.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 124.
+[34]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 127.
 
@@ -1315,7 +1315,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 134.
 [35 <./images/Octree2.png>]
-<images/Bplustree.png, id=630, 623.18977pt x 286.85631pt>
+<images/Bplustree.png, id=635, 623.18977pt x 286.85631pt>
 File: images/Bplustree.png Graphic file (type png)
 
 <use images/Bplustree.png>
@@ -1331,28 +1331,28 @@ Cap\'{\i }tulo 4.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 136.
 (./resultados.tex
-<images/2drendering_approach.png, id=639, 470.75874pt x 158.5925pt>
+<images/2drendering_approach.png, id=644, 470.75874pt x 158.5925pt>
 File: images/2drendering_approach.png Graphic file (type png)
 
 <use images/2drendering_approach.png>
 Package pdftex.def Info: images/2drendering_approach.png used on input line 9.
 (pdftex.def)             Requested size: 369.88582pt x 124.61151pt.
 
-<images/vdb_view1.png, id=643, 1017.8025pt x 939.51pt>
+<images/vdb_view1.png, id=648, 1017.8025pt x 939.51pt>
 File: images/vdb_view1.png Graphic file (type png)
 
 <use images/vdb_view1.png>
 Package pdftex.def Info: images/vdb_view1.png used on input line 19.
 (pdftex.def)             Requested size: 145.11052pt x 133.9389pt.
 
-<images/vdb_view2.png, id=644, 1017.8025pt x 939.51pt>
+<images/vdb_view2.png, id=649, 1017.8025pt x 939.51pt>
 File: images/vdb_view2.png Graphic file (type png)
 
 <use images/vdb_view2.png>
 Package pdftex.def Info: images/vdb_view2.png used on input line 26.
 (pdftex.def)             Requested size: 145.11052pt x 133.9389pt.
 
-<images/vdb_view3.png, id=645, 1017.8025pt x 939.51pt>
+<images/vdb_view3.png, id=650, 1017.8025pt x 939.51pt>
 File: images/vdb_view3.png Graphic file (type png)
 
 <use images/vdb_view3.png>
@@ -1374,14 +1374,14 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 45--45
 [][][][][][][] 
  []
 
-(./sourceCode/log.cpp) <images/vdb_node.png, id=665, 686.565pt x 154.5775pt>
+(./sourceCode/log.cpp) <images/vdb_node.png, id=670, 686.565pt x 154.5775pt>
 File: images/vdb_node.png Graphic file (type png)
 
 <use images/vdb_node.png>
 Package pdftex.def Info: images/vdb_node.png used on input line 50.
 (pdftex.def)             Requested size: 341.43306pt x 76.87106pt.
 
-<images/vdb_blender_interface.png, id=666, 1445.4pt x 903.375pt>
+<images/vdb_blender_interface.png, id=671, 1445.4pt x 903.375pt>
 File: images/vdb_blender_interface.png Graphic file (type png)
 
 <use images/vdb_blender_interface.png>
@@ -1389,28 +1389,28 @@ Package pdftex.def Info: images/vdb_blender_interface.png used on input line 58
 .
 (pdftex.def)             Requested size: 341.43306pt x 213.3959pt.
 
-<images/transf_geometry.png, id=667, 691.58376pt x 510.90875pt>
+<images/transf_geometry.png, id=672, 691.58376pt x 510.90875pt>
 File: images/transf_geometry.png Graphic file (type png)
 
 <use images/transf_geometry.png>
 Package pdftex.def Info: images/transf_geometry.png used on input line 66.
 (pdftex.def)             Requested size: 145.11052pt x 107.20045pt.
 
-<images/transf_upsideDown.png, id=668, 698.61pt x 512.91624pt>
+<images/transf_upsideDown.png, id=673, 698.61pt x 512.91624pt>
 File: images/transf_upsideDown.png Graphic file (type png)
 
 <use images/transf_upsideDown.png>
 Package pdftex.def Info: images/transf_upsideDown.png used on input line 73.
 (pdftex.def)             Requested size: 145.11052pt x 106.54161pt.
 
-<images/transf_Mirror.png, id=669, 695.59875pt x 509.905pt>
+<images/transf_Mirror.png, id=674, 695.59875pt x 509.905pt>
 File: images/transf_Mirror.png Graphic file (type png)
 
 <use images/transf_Mirror.png>
 Package pdftex.def Info: images/transf_Mirror.png used on input line 80.
 (pdftex.def)             Requested size: 145.11052pt x 106.3674pt.
 
-<images/multiplePlanes.png, id=672, 292.09125pt x 400.49625pt>
+<images/multiplePlanes.png, id=677, 292.09125pt x 400.49625pt>
 File: images/multiplePlanes.png Graphic file (type png)
 
 <use images/multiplePlanes.png>
@@ -1521,12 +1521,12 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
 Package rerunfilecheck Info: File `tcc.out' has not changed.
-(rerunfilecheck)             Checksum: 96C2B53D887F9EA75E41F5A8B2033032;1873.
+(rerunfilecheck)             Checksum: 04E52D6BD374C10C7BD94ECDA04B32A1;1872.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
  ) 
 Here is how much of TeX's memory you used:
- 10826 strings out of 493315
- 158335 string characters out of 6137904
+ 10827 strings out of 493315
+ 158347 string characters out of 6137904
  393004 words of memory out of 5000000
  13669 multiletter control sequences out of 15000+600000
  33510 words of font info for 86 fonts, out of 8000000 for 9000
@@ -1569,10 +1569,10 @@ i1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfxc1
 200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfxc144
 0.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfxc1728.
 pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on tcc.pdf (44 pages, 4178825 bytes).
+Output written on tcc.pdf (44 pages, 4180841 bytes).
 PDF statistics:
- 932 PDF objects out of 1000 (max. 8388607)
- 805 compressed objects within 9 object streams
- 330 named destinations out of 1000 (max. 500000)
+ 937 PDF objects out of 1000 (max. 8388607)
+ 809 compressed objects within 9 object streams
+ 331 named destinations out of 1000 (max. 500000)
  373 words of extra memory for PDF output out of 10000 (max. 10000000)
 
